@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centella</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
+
+        <style type="text/css">
+        .season{
+                background:-webkit-linear-gradient(#8612E1,#16F2E5);
+                 background-clip: content-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+        }
+        #colr{
+                
+                 background:-webkit-linear-gradient(#ffffff,#5c5555);
+                 background-clip: content-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+        }
+        #box{
+          transition:.1s ;
+        }
+        #box:hover{
+          z-index: 0;
+          
+          background-color: #efe8f0;
+          
+          transform: scale(1.05);
+        }
+        html{
+                scroll-behavior: smooth;
+        }
+        @media (max-width: 767px) {
+  .navicon {
+    width: 1.125em;
+    height: .125em;
+  }
+
+  .navicon::before,
+  .navicon::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-out;
+    content: '';
+    background: #3D4852;
+  }
+
+  .navicon::before {
+    top: 5px;
+  }
+
+  .navicon::after {
+    top: -5px;
+  }
+
+  .menu-btn:not(:checked) ~ .menu {
+    display: none;
+  }
+
+  .menu-btn:checked ~ .menu {
+    display: block;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::before,
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    top: 0;
+  }
+}
+
+.info p {
+  text-align:center;
+  color: #999;
+  text-transform:none;
+  font-weight:600;
+  font-size:15px;
+  margin-top:2px
+}
+
+.info i {
+  color:#F6AA93;
+}
+form h1 {
+  font-size: 18px;
+  background: #F6AA93 none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  padding: 22px 25px;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  text-shadow: none; 
+  text-align:left
+}
+
+form {
+  
+  border-width: 2px;
+  border-radius: 20px;
+  border-color: #ffffff;
+  max-width:700px;
+  width:100%;
+  padding-left: 3%;
+  padding-bottom: 2%;
+  margin: 5% auto;
+  background-color:transparent;
+  overflow: hidden;
+}
+
+p span {
+  color: #F00;
+}
+
+p {
+  margin: 0px;
+  font-weight: 500;
+  line-height: 2;
+  color:#ffffff;
+}
+
+h1 {
+  text-align:center; 
+  
+  text-shadow: 1px 1px 0px #FFF;
+  margin:50px 0px 0px 0px
+}
+
+input {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  width: 75%;
+  height: 40px;
+  float: left;
+  padding: 0px 15px;
+  
+}
+
+a {
+  text-decoration:inherit
+}
+
+textarea {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #EEE;
+  margin: 0;
+  width: 88%;
+  height: 40px; 
+  float: left;
+  padding: 0px 15px;
+}
+
+.form-group {
+  overflow: hidden;
+  clear: both;
+}
+
+.icon-case {
+  width: 35px;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+  background:#eeeeee;
+  height:40px;
+  position: relative;
+  text-align: center;
+  line-height:40px;
+}
+
+i {
+  color:#555;
+}
+
+.contentform {
+  padding: 40px 30px;
+}
+
+.bouton-contact{
+  background-color: #CADC43;
+  color:#000000;
+  text-align: center;
+  margin-left: 250px;
+  width: 20%;
+  border:0;
+  
+  
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  margin-top: 0px;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 28px;
+}
+.bouton-contact:hover{
+  transition: .5s;
+  
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+.leftcontact {
+  width:50%; 
+  float:left;
+  
+  box-sizing: border-box;
+  padding: 0px 15px 0px 0px;
+}
+
+.rightcontact {
+  width:50%;
+  float:right;
+  box-sizing: border-box;
+  padding: 0px 0px 0px 15px;
+}
+
+.validation {
+  display:none;
+  margin: 0 0 10px;
+  font-weight:400;
+  font-size:13px;
+  color: #DE5959;
+}
+.overlay{
+  position:absolute;
+  z-index: 100;
+}
+
+<!--footer css-->
+.overlay{
+        width: 150%;
+        position: absolute;
+        z-index: 100;
+}
+.contain{
+  width: 150%;
+}
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+  background-color: rgba(0, 181, 245, 0.05);
+}
+
+.social-container {
+  width: 166px;
+  margin: 0vh auto;
+  margin-right: 1%;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: .1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.18em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00B5F5, #002A8F);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00B5F5;
+  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+        </style>
+</head>
+<body>
+  <div class="mx-auto" style="background-image: url(pics/bg.png);background-repeat: no-repeat;background-size:cover;">
+        <header class="fixed mx-auto text-gray-600 body-font w-full ">
+                <div class="contain overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgba(0, 0, 0, 0.9); " >
+                  <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 md:ml-6 " style="padding-right:15%;" href="home.html">
+                    <img class="w-30 h-20 p-0 " src="pics/centella.png" alt="">
+                    
+                  </a>
+                  <nav class=" md:mr-auto md:ml-6 md:py-2 md:pl-4  md:border-gray-100 z-100	flex flex-wrap items-center text-white justify-center ">
+                    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+  <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none  " style="padding-right: 620px;padding-top: 0px;" for="menu-btn">
+    <span class="navicon bg-blue-900 flex object-center relative " ></span>
+  </label>          
+                    <ul  class="menu mx-1 border-b md:border-none text-lg flex justify-end list-reset m-0 w-full md:w-auto ">
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="#about">About</a></li>
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="#team">Team</a></li>
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="#service">Offerings</a></li>
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="#whycentella">Why Centella?</a></li>
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="#consult">Consulting</a></li>
+                     
+                      <li class="border-t md:border-none"><button class="inline-flex  items-center bg-gray-100 border-0 p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-36 md:mt-0"  ><a href="#consult" >Contact us</a>
+                    
+                    </button></li>
+                    </ul>
+                  </nav>
+                </div>
+              </header>
+              <section class="text-gray-600 body-font">
+                <div class="container px-5 py-36 mx-auto mb-0 bg-transparent"  >
+                  <h4 class=" text-5xl font-medium  text-center text-white mb-0 p-2" style="font-family: roboto;" >Turning <span class="season"> Science </span> Into 
+                  </h4>
+                  <h4 class="text-7xl  font-medium title-font-roboto text-center mx-auto text-white mb-8 p-3" id="colr" >High Impact <span class="season" >Solutions </span>
+                </h4>
+                <h4 class="sm:text-2xl text-2xl font-medium  text-center text-white mb-12" id="colr" style="font-family: 'Montserrat';">Enable your work to create impact and <br>reach out to Global Audience
+                </h4>
+                 
+                
+                <div class="flex justify-center" >
+                        <button class="inline-flex text-white bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-100 rounded text-lg" style="font-weight: 500;background-color:#736CB1;" > <a href="#consult">Get Solution</a></button>
+                        <button class="ml-4 inline-flex text-black bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" style="font-weight: 500;background-color: #CADC43;">Know more</button>
+                      </div>
+                </div>
+              </section>
+  </div>
+              <section class="text-gray-600 body-font">
+                <div class=" px-5 py-10 mx-auto bg-black">
+                  <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                   
+                    <h3 class="leading-relaxed text-lg text-white mb-0 text-2xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;"></i>  <br> Scientists have become the bearers of the torch of discovery in our quest for knowledge. <i class="fa fa-quote-right" style="padding-left: 95%;"></i></h3>
+                    <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-2"></span>
+                    <h2 class="text-yellow-300 font-large title-font tracking-wider text-sm mb-8" style="font-size: x-large;font-family: Montserrat;"> Stephen Hawking</h2>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                  </div>
+                </div>
+                
+              </section>
+              <section class="text-white mx-auto ">
+                <h3 id="about" style="text-align: center;padding-top: 0%;color: #6FCDF4;font-size:xxx-large;background-color: black;font-family: advent pro;font-weight: bold;letter-spacing: 3px;">ABOUT CENTELLA</h3>                
+                <div class=" px-0 py-16 mx-auto bg-black " style="padding-top: 10px;padding-bottom: 0px;">
+
+                  <div class=" flex-col mx-auto text-center  mb-0">
+                    <h2 class=" text-2xl text-indigo-500   mb-4"><span style="font-weight: bold;background-color: black;font-family: advent pro;font-weight: bold;">SCIENCE INTO SOLUTIONS</span></h2>
+                    <h3 class="  mx-auto text-xl  "  style="font-family:Rajdhani;padding-left: auto;padding: 5%;padding-top: 1%;padding-bottom: 0%;">Centella was founded by Dr.Riyaz Syed to help researchers to turn their scientific ideas into high impact  publications in order to reach out to the global audience and enable their work to create impact. While as a Ph.D research scholar, RS used to mentor and guide his junior research colleagues in drafting the manuscripts, dissertations, thesis. During his 4 yrs of Post-doctoral tenure his unwavering passion for scientific writing has further intensified and made him to support his fellow colleagues in writing & winning successful national and international grant proposals. Post his tenure as a CSIR-Pool Scientist, he founded Centella with a purpose to help Non-native English-speaking researcher’s scientific discoveries turn into solutions. 
+                      Centella is founded and lead by experienced & practicing research scientists. The team has a 60+yrs of cumulative academic and industrial research experiences in organic medicinal chemistry, cancer biology, molecular biology, microbiology, biotechnology, drug discovery, and chemi/bio informatics.</h3>
+                  </div>
+                 
+                </div>
+              </section>
+              <section class="text-gray-600 body-font">
+                <div class=" px-5 py-24 mx-auto flex flex-row bg-black" style="padding-bottom: 0px;">
+                  <div class="flex flex-wrap mx-auto mt-auto mb-10 lg:w-1/2 sm:w-2/3 content-start sm:pr-10" style="margin-left: 60px;">
+                    <div class=" mx-auto sm:p-4 px-4 mb-0">
+                      <h4 class="title-font font-medium text-4xl mx-auto mb-2 text-white " style="font-family: Montserrat;">Our team has 60+ years of Cumulative experiences <br></h4>
+                      <h4 class=" mx-auto text-2xl text-white"> in Academic & Industrial Research.</h4>
+                      
+                    </div >
+                    
+                  <img class="mx-auto" src="pics/counts.png" alt="" width="auto">
+                  </div>
+                  <div class="lg:w-1/2 sm:w-2/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0 mx-auto" >
+                    <img class="object-fit block object-center w-200 h-80"  src="pics/r.png" alt="stats" style="padding-left: 100px;">
+                  </div>
+                </div>
+              </section>
+              <section class="text-white body-font bg-black">
+
+                <div class="container px-5 py-10 mx-auto" style="padding-top: 0px;padding-bottom: 2px;font-family: roboto;">
+                  <div class="flex flex-col  w-full mb-12">
+                   <div class="flex flex-col  w-full mb-6">
+                    <h2 class="text-xs text-5xl text-indigo-500 text-center font-medium title-font mb-1" ><span style="font-family: advent pro;font-weight: bold;letter-spacing: 1px;">What we believe</span></h2>
+                  </div>
+                  <div class="mx-auto  mb-2" style="font-family: roboto;">
+                  <h4 class="mb-2" style="font-size: x-large;">• Science is the bedrock of healthier & thriving society and has immense capability to transform lives.</h4>
+                  <h4 class="mb-2" style="font-size: x-large;">• Enabling, empowering and encouraging better scientific expressions leading to high impact solutions.</h4>
+                  <h4 class="mb-2" style="font-size: x-large;">• Nurturing, inculcating, developing research traits in education eco-systems.</h4>
+                  <h4 class="mb-2" style="font-size: x-large;">• Creating equal opportunities for those who have an intention to pursue research as a career option.</h4>                  
+                  </div>
+                  <div>
+                </div>
+              </section>
+
+                  
+                  <section class="text-white  body-font bg-black" id="whycentella" style="padding-top: 0%;font-family: montserrat;">
+                      <h3 class="text-5xl  text-center text-indigo-500 mb-0 text-white" style="font-family: advent pro;font-weight: bold;"> Why Centella?</h3>
+
+                    <div class="container mx-auto  px-5 py-24 " style="padding: 10%;padding-bottom: 4%;padding-top: 5%;">
+                      <div class="flex flex-wrap -m-4">
+                        <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-12">
+                          <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="relative object-fit object-center w-full h-full block " src="pics/1.svg">
+                          </a>
+                          <div class="mt-4 mb-6">
+                            
+                            <h2 class="text-white text-center title-font text-2xl font-medium">Unparallel Scientific Expertise</h2>
+                          </div>
+                        </div>
+                        <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-12">
+                          <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class=" object-fit object-center w-full h-full block" src="pics/2.svg">
+                          </a>
+                          <div class="mt-4 mb-6">
+                            
+                            <h2 class="text-white text-center title-font text-2xl font-medium">Quick turnaround</h2>
+                            
+                          </div>
+                        </div>
+                        <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-12">
+                          <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/3.svg">
+                          </a>
+                          <div class="mt-4 mb-6">
+                            
+                            <h2 class="text-white text-center title-font text-2xl font-medium">Value addition</h2>
+                            
+                          </div>
+                        </div>
+                        <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-2">
+                          <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/4.svg">
+                          </a>
+                          <div class="mt-4">
+                            
+                            <h2 class="text-white text-center title-font text-2xl font-medium">Assured confidentiality</h2>
+                            
+                          </div>
+                        </div>
+                        <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-2 ">
+                          <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/5.svg">
+                          </a>
+                          <div class="mt-4">
+                            
+                            <h2 class="text-white text-center title-font text-2xl font-medium">On-time delivery</h2>
+                            
+                          </div>
+                        </div>
+                        <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-2">
+                          <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-fit object-center w-full h-full block  " src="pics/6.svg">
+                          </a>
+                          <div class="mt-4">
+                            
+                            <h2 class="text-white text-center title-font text-2xl font-medium">Interactive & Proven processes </h2>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                
+              <section class="text-gray-600 body-font bg-black " id="service">
+                <div class="container px-5 py-12 mx-auto " style="padding-left: 10%;padding-right: 10%;padding-top: 28px;">
+                  <div class="flex flex-col text-center w-full mb-16">
+                    <h2 class="text-xs text-5xl text-indigo-500 tracking-widest font-medium title-font mb-1"  ><span style="font-family: advent pro;font-weight: bold;">What we offer</span></h2>
+                  </div>
+                  <div class="flex flex-wrap -m-12">
+                    <div class="p-4 md:w-1/2 ">
+                      <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
+                        <div class="flex items-center mb-3">
+                          <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-yellow-500 text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 20 20" fill="currentColor">
+                              <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
+                            </svg>
+                          </div>
+                          <h3 class="text-gray-900 text-xl text-lg title-font  font-medium">SCIENTIFIC COMMUNICATIONS</h3>
+                        </div>
+                        <div class="flex-grow">
+                          <p class="leading-relaxed text-base text-black"  style="font-family: Roboto;"> Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing,authors come under intense pressure <br> to get their findings published.</p>
+                          <a class="mt-3 text-red-600  inline-flex items-center" style="font-weight: bold;" href="sci.html">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/2">
+                      <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
+                        <div class="flex items-center mb-3">
+                          <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-green-500 text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 1 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                          </div>
+                          <h2 class="text-gray-900 text-xl text-lg title-font font-medium">MEDICAL COMMUNICATIONS</h2>
+                        </div>
+                        <div class="flex-grow">
+                          <p class="leading-relaxed text-base text-black" style="font-family: Roboto;" >Accurate, clearly written, scientifically sound and well-articulated documents are key to timely approval of drugs that get submitted for regulatory approval.Centella supports all the scientific and medical communication needs of Pharma...</p>
+                          <a class="mt-3 text-red-600 inline-flex items-center" style="font-weight: bold;" href="med.html">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                
+                  </div>
+                </div>
+                <div class="container px-5 py-8 mx-auto " style="padding-left: 10%;padding-right: 10%;">
+                        <div class="flex flex-col text-center w-full mb-10">  
+                        </div>
+                        <div class="flex flex-wrap -m-12">
+                          <div class="p-4 md:w-1/2">
+                            <div class="flex rounded-lg h-full bg-white p-8 flex-col " id="box">
+                              <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-purple-700  text-white flex-shrink-0">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                  </svg>
+                                </div>
+                                <h2 class="text-gray-900 text-xl title-font font-medium">MARKET RESEARCH</h2>
+                              </div>
+                              <div class="flex-grow">
+                                <p class="leading-relaxed text-base text-black " style="font-family: Roboto;">Whether it is startup or grown-up company, a thorough data driven market research is the key differentiator in making the product or service forceful. An adept market research enables organizations to rally employees... </p>
+                                <a class="mt-3 text-red-600 inline-flex items-center" style="font-weight: bold;" href="market.html">Learn More
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                  </svg>
+                                  
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="p-4 md:w-1/2 " >
+                            <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
+                              <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center  rounded-full bg-red-500 text-white flex-shrink-0">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                                  </svg>
+                                </div>
+                                <h2 class="text-gray-900 text-xl title-font font-medium">CENTELLA ACADEMY</h2>
+                              </div>
+                              <div class="flex-grow">
+                                <p class="leading-relaxed text-base text-black" style="font-family: Roboto;">Scientific rigor, Scientific thinking, Research Temperament, Research bent of mind, Catalytic questioning, Provocative.Being researchers whether it is graduate or postdoc or tenure track scientist, we imbibe the skills of designing....</p>
+                                <a class="mt-3 text-red-600  inline-flex items-center" style="font-weight: bold;" href="centella.html">Learn More
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      
+                        </div>
+                      </div>
+              </section>
+              <section class="text-gray-600 body-font bg-black" id="team">
+                <div class="container flex-col px-5 py-24 mx-auto" style="padding-top: 9%;padding-bottom: 0px;">
+                  <div class="flex flex-col text-center w-full mb-2">
+                    <h3 class="text-5xl font-medium title-font mb-10 text-white" style="font-family: advent pro;font-weight: bold;">Our Team</h3>
+                    
+                  </div>
+                  <div class="flex flex-wrap -m-4">
+                    <div class="p-6 lg:w-1/4 md:w-1/2 mx-auto">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/team.png">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-2xl text-lg text-white">Dr. Riyaz Syed</h2>
+                          <h3 class="text-white mb-3">CEO, CENTELLA</h3>
+                          
+                          <span class="inline-flex">
+                            <a class="text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="p-6 lg:w-1/4 md:w-1/2 mx-auto">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/team.png">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-lg text-white text-2xl">Dr. Poorna</h2>
+                          <h3 class="text-white mb-3">CEO, CENTELLA</h3>
+                          
+                          <span class="inline-flex">
+                            <a class="text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="p-6 lg:w-1/4 md:w-1/2 mx-auto">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/team.png">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-lg text-white text-2xl">Dr. Poorna</h2>
+                          <h3 class="text-white mb-3">CEO, CENTELLA</h3>
+                          
+                          <span class="inline-flex">
+                            <a class="text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="p-6 lg:w-1/4 md:w-1/2 mx-auto">
+                      <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/team.png">
+                        <div class="w-full">
+                          <h2 class="title-font font-medium text-lg text-2xl text-white">Dr. Venkatesh</h2>
+                          <h3 class="text-white mb-3">CEO, CENTELLA</h3>
+                          
+                          <span class="inline-flex">
+                            <a class="text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                              </svg>
+                            </a>
+                            <a class="ml-2 text-gray-500">
+                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                
+                  </div></div>
+                
+                </section>
+              <section class="text-gray-600 body-font bg-black" >
+                
+                <div class="container px-5 py-12 mx-auto  flex flex-wrap items-center" id="consult" style="padding-top: 5%;padding-bottom: 0%;">
+                        
+                  <div class=" md:w-full bg-transparent rounded-lg p-0 flex flex-col md:ml-200 w-full mt-6 md:mt-0">
+                    <h2 class=" text-5xl text-indigo-500 tracking-widest font-medium title-font mb-0 text-center  "><span class="season"  >Reach Us out</span></h2>
+                    <form id="submit-to-google-sheet" onsubmit="window.location.reload()">
+                      
+                      
+                    <div class="contentform" style="font-family: Roboto;">
+                    
+                
+                      <div class="leftcontact">
+                            <div class="form-group">
+                              <p>First Name<span>*</span></p>
+                              <span class="icon-case"><i class="fa fa-user"></i></span>
+                                <input type="text" name="firstname" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                                <div class="validation"></div>
+                       </div> 
+                       
+                
+                       <div class="form-group">
+                        <p>Last Name <span>*</span></p>  
+                        <span class="icon-case"><i class="fa fa-user"></i></span>
+                                  <input type="text" name="lastname" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                                  <div class="validation"></div>
+                        </div>  
+                
+                      <div class="form-group">
+                      <p>E-mail <span>*</span></p>  
+                      <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                                <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                                <div class="validation"></div>
+                      </div>  
+                      
+                      <div class="form-group">
+                        <p>Phone number <span>*</span></p>  
+                        <span class="icon-case"><i class="fa fa-phone"></i></span>
+                          <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                                  <div class="validation"></div>
+                        </div>
+
+                      <div class="form-group">
+                      <p>Organisation/Institution<span>*</span></p>
+                      <span class="icon-case"><i class="fa fa-home"></i></span>
+                        <input type="text" name="organisation" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+                                <div class="validation"></div>
+                      </div>
+                
+                      
+
+                  </div>
+                
+                  <div class="rightcontact">  
+                    
+                    <div class="form-group">
+                      <p>Designation<span></span></p>
+                      <span class="icon-case"><i class="fa fa-info"></i></span>
+                        <input type="text" name="designation" id="postal"  data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+                                <div class="validation"></div>
+                      </div>  
+                      <div class="form-group">
+                        <p>Country </p>
+                        <span class="icon-case"><i class="fa fa-map-marker"></i></span>
+                          <input type="text" name="country" id="adresse"  data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                                  <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                          <p>City </p>
+                          <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                            <input type="text" name="city" id="ville"  data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+                                    <div class="validation"></div>
+                          </div>  
+                      <div class="form-group">
+                        <p>Subject <span></span></p> 
+                        <span class="icon-case"><i class="fa fa-comment-o"></i></span>
+                                  <input type="text" name="subject" id="sujet"  data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+                                  <div class="validation"></div>
+                        </div>
+                      <div class="form-group">
+                      <p>Area Of Study<span></span></p>
+                      <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+                        <input type="text" name="area-study" id="ville"  data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+                                <div class="validation"></div>
+                      </div>  
+
+                
+                      
+                    
+                       
+                  </div>
+                  <div class="form-group">
+                    <p>Message <span></span></p>
+                    <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+                              <textarea name="message" rows="14"  ></textarea>
+                              <div class="validation"></div>      
+                    </div> 
+                  </div>
+                <button type="submit" id="submit" class="bouton-contact" style="font-family: Montserrat;"><h2>Submit</h2></button>
+               </form>
+               </div>  
+                </div>
+                
+              </section>
+              <script>
+                $("#submit").click(function() {
+                    alert("Successfully Submited");
+                });
+         
+            </script>
+            <script>
+              $(document).ready(function() {
+    $('#your_form_id').on('submit', function(evt) {
+          evt.preventDefault();
+          setTimeout(function() {
+               window.location.reload();
+          },0);
+          this.submit();
+    });
+});
+            </script>
+           <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+            <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+            <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>-->
+            <script>
+                  const scriptURL = 'https://script.google.com/macros/s/AKfycbyKGU_7weZjdMIcVZHL2hmRXN51voYwmM9rWnc_U-QpfNOt2iMT/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+              </script>
+
+              <section>
+                <hr style="height:1px;border-width:1;background-color: #736CB1;color: #736CB1;" >
+              <footer class="text-white body-font bg-black" style="font-family: Roboto;" >
+                <a class="flex title-font font-medium items-center  text-gray-900 mb-4 md:mb-2 md:ml-9" href="home.html">
+                        <img class="w-30 h-20 p-0  " style="object-fit: cover;padding-left: 45%;padding-top: 6px;" src="pics/centella.png" alt="logo">
+                        
+                      </a>
+                        <nav class="md:mr-auto md:ml-5 md:py- md:pl-4  md:border-gray-100 flex flex-wrap items-center text-white justify-center">
+                          
+                        <a class="mr-5 text-xl hover:text-blue-600"  href="#about">About</a>
+                        <a class="mr-5 text-xl hover:text-blue-600" href="#service">Services</a>
+                        <a class="mr-5 text-xl hover:text-blue-600" href="#team">Our Team</a>
+                        <a class="mr-5 text-xl hover:text-blue-600" href="#consult" >Contact Us</a>
+                        <a class="mr-5 text-xl hover:text-blue-600">Privacy Policy</a>
+                      </nav>
+                      <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
+                        <p >© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
+                        </p>
+                        <div class="social-container">
+                          <ul class="social-icons">
+                              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          </ul>
+                        </div>
+                      
+                </div>
+              </footer>
+        </section>
+        
+</body>
+</html>

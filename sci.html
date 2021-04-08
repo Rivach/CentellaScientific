@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCIENTIFIC COMMUNICATIONS</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type="text/css">
+         #colr{
+                
+                background:-webkit-linear-gradient(#ffffff,#252525);
+                background-clip: content-box;
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+       }
+       html{
+               scroll-behavior: smooth;
+       }
+       @media (max-width: 767px) {
+  .navicon {
+    width: 1.125em;
+    height: .125em;
+  }
+
+  .navicon::before,
+  .navicon::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-out;
+    content: '';
+    background: #3D4852;
+  }
+
+  .navicon::before {
+    top: 5px;
+  }
+
+  .navicon::after {
+    top: -5px;
+  }
+
+  .menu-btn:not(:checked) ~ .menu {
+    display: none;
+  }
+
+  .menu-btn:checked ~ .menu {
+    display: block;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::before,
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    top: 0;
+  }
+}
+
+.overlay{
+        position: absolute;
+        z-index: 100;
+}
+.overlay{
+        width: 150%;
+        position: absolute;
+        z-index: 100;
+}
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+  background-color: rgba(0, 181, 245, 0.05);
+}
+
+.social-container {
+  width: 166px;
+  margin: 0vh auto;
+  margin-right: 1%;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: .1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.18em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00B5F5, #002A8F);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00B5F5;
+  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+.contain{
+  width: 150%;
+}
+        </style>
+</head>
+<body>
+        <div class="mx-auto" style="background-color:black">
+          <header class="fixed mx-auto text-gray-600 body-font w-full ">
+            <div class="contain overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgba(0, 0, 0, 0.9); " >
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 md:ml-6 " style="padding-right:15%;" href="home.html">
+                <img class="w-30 h-20 p-0 " src="pics/centella.png" alt="">
+                
+              </a>
+              <nav class=" md:mr-auto md:ml-6 md:py-2 md:pl-4  md:border-gray-100 z-100	flex flex-wrap items-center text-white justify-center ">
+                <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+<label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none  " style="padding-right: 620px;padding-top: 0px;" for="menu-btn">
+<span class="navicon bg-blue-900 flex object-center relative " ></span>
+</label>          
+                    <ul  class="menu mx-1 border-b md:border-none flex justify-end list-reset m-0  w-full md:w-auto">
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl  hover:text-blue-600" href="home.html#about">About</a></li>
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600 " href="home.html#team">Team</a></li>
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="#offer">Offerings</a></li>
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="home.html#whycentella">Why Centella?</a></li>
+                      <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="home.html#consult">Consulting</a></li>
+                     
+                      <li class="border-t md:border-none"><button class="inline-flex mx-24 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-black mt-4 md:mt-0"  ><a href="home.html#consult" >Contact us</a>
+                    
+                    </button></li>
+                    </ul>
+                  </nav>
+                </div>
+              </header>  
+        </div>
+        <section class="text-white body-font bg-black py-16" style="padding-top: 10%;padding-bottom: 2%;">
+                <div class="container px-5 py-0 mx-auto mb-0 bg-transparent"   >
+                  <h1 class="text-7xl mx-auto font-medium title-roboto text-center text-white mb-0 p-2" id="colr" >SCIENTIFIC <br> COMMUNICATIONS </h1>
+                </div>
+                
+              </section>
+              <section class="text-gray-600 body-font">
+                <div class="container px-5 py-6 mx-auto">
+                  <div class="flex flex-wrap mx-0 mb-0 text-center" style="padding: 10%;padding-top: 0%;padding-bottom: 0%;">
+                    <div class="sm:w-1/3 mb-0 px-4">
+                      <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-fit object-center h-full w-full" src="pics/s1.svg">
+                      </div>
+                   </div>
+                   <div class="sm:w-1/3 mb-0 px-4">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                      <img alt="content" class="object-fit object-center h-full w-full" src="pics/s2.svg">
+                    </div>
+                 </div>
+                    <div class="sm:w-1/3 mb-0 px-4">
+                      <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-fit object-center h-full w-full" src="pics/a2.svg">
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+              <section class="text-black bg-white py-18" style="padding-top: 0px;">
+                <h1 class="text-xl font-medium title-roboto text-center text-black mb-0 " style="font-family: montserrat;padding: 15%;padding-top: 0px;padding-bottom: 3%;">Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing, authors come under intense pressure to get their findings published. Academia & research institutions are continuously seeking to improve the quality and quantity of their research out with an objective of attracting finest talent.
+                        It is essentially needed to for researchers and institutions to accelerate the pace of publication without undermining on quality. With a unique blend of our best research experience and skillset, our team of subject matter experts supports you in the end-to-end publication journey and tailor solutions to your unique needs.
+                        </h1>
+
+                <h1 class="text-4xl font-medium title-roboto text-center text-black mb-12 ">“Make your manuscript meet international standards”</h1>
+                <div class="bg-black" style="padding-top: 2%;padding-bottom: 3%;">
+                <h1 class="text-xl font-medium  text-center text-white mb-0 " style="font-family: montserrat;" ><span class="text-4xl mb-6"> Academic editing </span> <br> Shaping your manuscripts communication-ready</h1>     
+                <h1  class="text-xl font-medium   text-white mb-0 " style="font-family: montserrat;padding: 15%;padding-top: 2%;padding-bottom: 1%; ">Precisely written, clearly articulated and meticulously drafted manuscripts are the cornerstones to get published in high impact journals. Our academic editing services are customized to cater the challenges confronted by both non-native English speakers as well as native English speakers to who wish to get published. </h1>                   
+                <h1  class="text-xl font-medium   text-white mb-0 " style="font-family: montserrat;padding: 15%;padding-top: 0%;padding-bottom: 0%; "> </h1>
+                
+                        <div class="text-center object-center "  x-data={show:false}>
+                          <p class="flex">
+                            <a x-on:click.prevent="show=!show" class="bg-transparent text-blue-600 rounded  px-0 py-0  cursor-pointer focus:outline-none " style="padding-left: 15%;">
+                              Read more..
+                            </a>
+                            
+                          </p> 
+                          <div x-show="show" class=" text-xl font-medium title-roboto  text-white mb-0 " style="padding: 15%;padding-top: 0%;padding-bottom: 0%; ">
+                                Having published in Nature Biotechnology, Journal of Cheminformatics and Modelling, Scientific Reports, Nanoscale and Expert Opinion in Therapeutic Patents, Centella’s core team strives to make sure your manuscripts comply international journal standards and ensure the content of your articles is devoid of spelling, grammatical and common language errors. We take care of polishing your manuscript so you can focus on research besides saving your time and energy.
+                          </div>
+                      </div>
+                    </div>      
+                    
+                
+        </section>
+        <section id="offer" class="mx-auto text-gray-600 overflow-hidden" style="font-family: Montserrat;">
+                <div class="container mx-auto px-5 py-24 " style="padding: 5%;">
+                  <div class="flex flex-col text-center w-full mb-4">
+                    <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">What we Offer</h1>
+                    
+                  </div>
+                  <div class="flex flex-wrap -m-4">
+                    <div class="p-4 xl:w-1/3 md:w-1/2 w-full " >
+                      <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                        <h2 class="text-sm tracking-widest title-font mb-6 text-2xl font-medium text-black">BASIC</h2>
+                        <p class="flex items-center text-black mb-2">
+                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span> Spell check, Punctuation and grammar 
+                        </p>
+                        <p class="flex items-center text-black mb-2">
+                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>Sentence structure, terminology
+                        </p>
+                        <p class="flex items-center text-black mb-2">
+                          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>Certificate of Editing
+                        </p>
+                        <p class="flex items-center text-black mb-2">
+                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                  </svg>
+                                </span>Journal specific formatting (Up to one journal)
+                              </p>
+                       
+                      </div>
+                    </div>
+                    <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                      <div class="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
+                        <span class="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+                        <h2 class="text-sm tracking-widest title-font mb-6 text-2xl text-black font-medium">ADVANCE</h2>
+                        
+                        <p class="flex items-center text-black mb-2">
+                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                  </svg>
+                                </span> Spell check, Punctuation and grammar 
+                              </p>
+                              <p class="flex items-center text-black mb-2">
+                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                  </svg>
+                                </span>Sentence structure, terminology
+                              </p>
+                              <p class="flex items-center text-black mb-2">
+                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                  </svg>
+                                </span>Certificate of Editing
+                              </p>
+                              <p class="flex items-center text-black mb-2">
+                                      <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                          <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                      </span>Journal specific formatting (Up to one journal)
+                                    </p>
+                                    <p class="flex items-center text-black mb-2">
+                                        <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                          </svg>
+                                        </span>Rephrasing & Restructuring
+                                      </p>
+                                      <p class="flex items-center text-black mb-2">
+                                        <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                          </svg>
+                                        </span>Presentation Check (Logic, Clarity & Flow)
+                                      </p>
+                                      <p class="flex items-center text-black mb-2">
+                                        <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                          </svg>
+                                        </span>Feedback on original writing
+                                      </p>
+                                      <p class="flex items-center text-black mb-2">
+                                        <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                          </svg>
+                                        </span>Customized cover letter
+                                      </p>
+                                      <p class="flex items-center text-black mb-2">
+                                        <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                          </svg>
+                                        </span>Reference check (Consistency & Accuracy)
+                                      </p>
+                             
+                            </div>
+                          </div>      
+                          
+                                <div class="p-4 xl:w-1/3 md:w-1/2 w-full " >
+                                  <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                                    <h2 class="text-sm tracking-widest title-font mb-6 text-2xl font-medium text-black">PREMIUM</h2>
+                                    <p class="flex items-center text-black mb-2">
+                                      <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                          <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                      </span> Spell check, Punctuation and grammar 
+                                    </p>
+                                    <p class="flex items-center text-black mb-2">
+                                      <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                          <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                      </span>Sentence structure, terminology
+                                    </p>
+                                    <p class="flex items-center text-black mb-2">
+                                      <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                          <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                      </span>Certificate of Editing
+                                    </p>
+                                    <p class="flex items-center text-black mb-2">
+                                            <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                                <path d="M20 6L9 17l-5-5"></path>
+                                              </svg>
+                                            </span>Journal specific formatting (Up to one journal)
+                                          </p>
+                                          <p class="flex items-center text-black mb-2">
+                                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                  </svg>
+                                                </span>Rephrasing & Restructuring
+                                              </p>
+                                              <p class="flex items-center text-black mb-2">
+                                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                  </svg>
+                                                </span>Presentation Check (Logic, Clarity & Flow)
+                                              </p>
+                                              <p class="flex items-center text-black mb-2">
+                                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                  </svg>
+                                                </span>Feedback on original writing
+                                              </p>
+                                              <p class="flex items-center text-black mb-2">
+                                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                  </svg>
+                                                </span>Customized cover letter
+                                              </p>
+                                              <p class="flex items-center text-black mb-2">
+                                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                  </svg>
+                                                </span>Reference check (Consistency & Accuracy)
+                                              </p>
+                                              <p class="flex items-center text-black mb-2">
+                                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                  </svg>
+                                                </span>Rebuttal Letter editing
+                                              </p>
+                                              <p class="flex items-center text-black mb-2">
+                                                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                                    <path d="M20 6L9 17l-5-5"></path>
+                                                  </svg>
+                                                </span>Crosschecking responses with revised manuscript
+                                              </p>
+                                                                                            
+                                  </div>
+                                </div>   
+                                
+                <div class="flex object-center container py-2 items-center justify-center">
+                        <button class="object-center inline-flex items-center text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded text-lg" style="background-color: #CADC43;"><a href="home.html#consult"> Get Solution</a></button>
+                        
+                      </div>           
+                  </div>
+                </div>
+              </section>
+              <section class="text-black bg-black py-18" style="padding-top: 30px;">
+              <h1 class="mx-16 sm:text-4xl e text-3xl font-medium title-font mb-6 text-white" style="font-family: advent pro;">Publication support:</h1>
+              <h1  class="mx-16 text-xl font-medium   text-white mb-0 " style="font-family: montserrat;">Precisely written, clearly articulated and meticulously drafted manuscripts are the cornerstones to get published in high impact journals. Our academic editing services are customized to cater the challenges confronted by both non-native English speakers as well as native English speakers to who wish to get published. </h1>                   
+              <div class=" object-center "  x-data={show:false}>
+                <p class="flex">
+                  <a x-on:click.prevent="show=!show" class="bg-transparent text-blue-600 rounded  px-0 py-0 mb-4 cursor-pointer focus:outline-none mb-1 mx-16" >
+                    Read more..
+                  </a>
+                  
+                </p> 
+                <div x-show="show" class="mx-16  text-xl font-medium title-roboto  text-white mb-0 " style="padding-bottom: 3%;" >
+                        <h1  class=" text-xl font-medium title-roboto   mb-2 " > • Journal selection & submission</h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-0 " >Improve your chances of publication by letting Centella help you match with the most suitable journals for your research article. Upon sharing your criteria, our team will suggest you with top 3-5 journals that fit in the area of your work.</h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-0 " > Criteria for selecting the journal : </h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-0 " > 1.Target journal type  </h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-0 " > 2. Indexing(PubMed, Scopus, SCI, Web of Science..etc)  </h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-0 " >3. Impact factor  </h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-4 " > 4. Type of article </h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-2 " >• Rejected/Revised paper editing</h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-4 " >Centella offers customized editing services in the fixing the rejected manuscript either by resubmitting to the same target journal with substantive or communicating to new journal after enhancing the quality of the manuscript. Our subject matter experts ensure that your manuscript revised and rewritten meticulously as per the reviewer comments and drafts a strong rebuttal to the queries.</h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-2 " >•	Artwork preparation </h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-4 " > Centella’s experienced artwork editors, armed with latest software tools will check and address all the technical aspects of your manuscript such as color, resolution (DPI or PPI), file size to confirm adherence to journal guidelines.  </h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-2 " > •	Video abstract</h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-4 " >“Stand out from the crowd”- With more than 5000 manuscripts published every day, it will be challenging task to make your work stand out. Off late Videos have emerged as an important medium to reach out and connect with a wider target audience. With the help of Centella’s video abstract service, you can transform your published manuscript into a top quality engaging and impactful video that  recapitulates and showcase the essential findings. Our team of creative experts with scientific background will create 2-3 minute audiovisual file that you can share, post in social media handles and even present at symposiums that enhance your chance of funding and citations.</h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-4 " >•	Poster preparation</h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-4 " > •	Plagiarism check </h1>
+                        <h1  class=" text-xl font-medium title-roboto   mb-4 " > •	Journal submission & Post-submission assistance </h1>
+                        <div class="flex object-center container py-2 items-center justify-center">
+                                <button class="object-center inline-flex items-center text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-100 rounded text-lg"><a href="home.html#consult"> Get Solution</a></button>
+                                
+                              </div> 
+                </div>
+            </div>
+              </section>
+              <section class="text-black bg-white py-18" style="padding-top: 30px;">
+                <h1 class=" sm:text-4xl  mx-auto text-3xl font-medium text-center title-font mb-2 text-black" style="font-family: advent pro;">Scientific illustration & Video abstract: </h1>
+                <h1 class="mx-auto   text-xl font-medium text-center title-font mb-0 text-gray-900">Interactive Define Process
+                  Expert /People experienced in doing this
+                  </h1>
+                <section class="text-gray-600 body-font">
+                        <div class="container mx-auto px-5 py-24 mx-16 flex flex-wrap" style="padding-top: 3%;padding-bottom: 0%;">
+                          <div class="flex flex-wrap w-full">
+               
+                            
+                            <img class=" object-cover mx-auto rounded-lg md:mt-0 mt-12 " style="padding: 5%;padding-top: 2%;padding-bottom:2% ;" src="pics/step.png" alt="step">
+                            
+                          
+                        </div>
+                        </div>
+                      </section>
+        </section>
+        <section>
+          <hr style="height:1px;border-width:1;background-color: #736CB1;color: #736CB1;" >
+        <footer class="text-white body-font bg-black" style="font-family: Roboto;" >
+          <a class="flex title-font font-medium items-center  text-gray-900 mb-4 md:mb-2 md:ml-9" href="home.html">
+                  <img class="w-30 h-20 p-0  " style="object-fit: cover;padding-left: 45%;padding-top: 6px;" src="pics/centella.png" alt="logo">
+                  
+                </a>
+                  <nav class="md:mr-auto md:ml-5 md:py- md:pl-4  md:border-gray-100 flex flex-wrap items-center text-white justify-center">
+                    
+                  <a class="mr-5 text-xl hover:text-blue-600"  href="#about">About</a>
+                  <a class="mr-5 text-xl hover:text-blue-600" href="#service">Services</a>
+                  <a class="mr-5 text-xl hover:text-blue-600" href="#team">Our Team</a>
+                  <a class="mr-5 text-xl hover:text-blue-600" href="#consult" >Contact Us</a>
+                  <a class="mr-5 text-xl hover:text-blue-600">Privacy Policy</a>
+                </nav>
+                <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
+                  <p >© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
+                  </p>
+                  <div class="social-container">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                  </div>
+                
+          </div>
+        </footer>
+  </section>
+</body>
+</html>
