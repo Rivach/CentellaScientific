@@ -1,236 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MEDICAL COMMUNICATIONS</title>
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-        <style type="text/css">
-         #colr{
-                
-                background:-webkit-linear-gradient(#ffffff,#252525);
-                background-clip: content-box;
-               -webkit-background-clip: text;
-               -webkit-text-fill-color: transparent;
-       }
-       html{
-               scroll-behavior: smooth;
-       }
-       @media (max-width: 767px) {
-  .navicon {
-    width: 1.125em;
-    height: .125em;
-  }
-
-  .navicon::before,
-  .navicon::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: all .2s ease-out;
-    content: '';
-    background: #3D4852;
-  }
-
-  .navicon::before {
-    top: 5px;
-  }
-
-  .navicon::after {
-    top: -5px;
-  }
-
-  .menu-btn:not(:checked) ~ .menu {
-    display: none;
-  }
-
-  .menu-btn:checked ~ .menu {
-    display: block;
-  }
-
-  .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-
-  .menu-btn:checked ~ .menu-icon .navicon::before {
-    transform: rotate(-45deg);
-  }
-
-  .menu-btn:checked ~ .menu-icon .navicon::after {
-    transform: rotate(45deg);
-  }
-
-  .menu-btn:checked ~ .menu-icon .navicon::before,
-  .menu-btn:checked ~ .menu-icon .navicon::after {
-    top: 0;
-  }
-}
-
-.overlay{
-        position: absolute;
-        z-index: 100;
-}
-.overlay{
-        width: 150%;
-        position: absolute;
-        z-index: 100;
-}
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body {
-  background-color: rgba(0, 181, 245, 0.05);
-}
-
-.social-container {
-  width: 166px;
-  margin: 0vh auto;
-  margin-right: 1%;
-  text-align: center;
-}
-
-.social-icons {
-  padding: 0;
-  list-style: none;
-  margin: .1em;
-}
-.social-icons li {
-  display: inline-block;
-  margin: 0.18em;
-  position: relative;
-  font-size: 1.2em;
-}
-.social-icons i {
-  color: #fff;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  transition: all 265ms ease-out;
-}
-.social-icons a {
-  display: inline-block;
-}
-.social-icons a:before {
-  transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  content: " ";
-  width: 26px;
-  height: 26px;
-  border-radius: 100%;
-  display: block;
-  background: linear-gradient(45deg, #00B5F5, #002A8F);
-  transition: all 265ms ease-out;
-}
-.social-icons a:hover:before {
-  transform: scale(0);
-  transition: all 265ms ease-in;
-}
-.social-icons a:hover i {
-  transform: scale(2.2);
-  -ms-transform: scale(2.2);
-  -webkit-transform: scale(2.2);
-  color: #00B5F5;
-  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 265ms ease-in;
-}
-.contain{
-  width: 150%;
-}
-        </style>
-</head>
-<body>
-        <div style="background-color:black">
-        <header class="fixed text-gray-600 body-font w-full ">
-                <div class="contain mx-auto overlay flex flex-wrap p-0 flex-col md:flex-row items-center " id="bar" style="background-color:rgba(0, 0, 0, 0.9); " >
-                  <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 md:ml-16"  href="home.html" >
-                    <img class="w-30 h-20 p-0  items-center" src="pics/centella.png" alt="">
-                    
-                  </a>
-                  <nav class="md:mr-auto md:ml-56 md:py- md:pl-4  md:border-gray-100	flex flex-wrap items-center text-white justify-center">
-                    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-  <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none " style="padding-right: 600px;padding-top: 0px;" for="menu-btn">
-    <span class="navicon bg-blue-900 flex object-center relative " ></span>
-  </label>          
-  <ul  class="menu border-b md:border-none flex justify-end list-reset m-0  w-full md:w-auto">
-    <li class="border-t md:border-none"><a class="mr-7 text-xl  hover:text-blue-600" href="home.html#about">About</a></li>
-    <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600 " href="home.html#team">Team</a></li>
-    <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="#offer">Offerings</a></li>
-    <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="home.html#whycentella">Why Centella?</a></li>
-    <li class="border-t md:border-none"><a class="mr-7 text-xl hover:text-blue-600" href="home.html#consult">Consulting</a></li>
-   
-    <li class="border-t md:border-none"><button class="inline-flex mx-24 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-black mt-4 md:mt-0"  ><a href="home.html#consult" >Contact us</a>
-  
-  </button></li>
-                    </ul>
-                  </nav>
-                </div>
-              </header>  
-        </div>
-        <section class="text-white body-font bg-black py-24" style="padding-bottom: 1%;">
-                <div class="container px-5 py-0 mx-auto mb-0 bg-transparent"   >
-                  <h1 class="text-7xl font-medium title-roboto text-center text-white mb-0 p-2" id="colr" >MEDICAL <br> COMMUNICATIONS </h1>
-                </div>
-
-              </section>
-              <section class="text-black bg-white py-18" style="padding-top: 10px;">
-                <h1 class="text-xl font-medium  text-center text-black mb-0 " style="font-family: montserrat;padding: 15%;padding-top: 0px;padding-bottom: 3%;">Accurate, clearly written, scientifically sound and well-articulated documents are key to timely approval of drugs that get submitted for regulatory approval. Centella supports all the scientific and medical communication needs of Pharma, Bio-tech and Medical industries. Our comprehensive mix of clinicians, doctors, writers and scientists from life sciences sector with MD, PhD, MBBS, and Masters degrees has expertise to provide solutions to all your medical writing needs.
-                  Centella has thorough discernment of various regulatory guidelines of the international bodies such as FDA, GCP, ICH, and EMA. Our team of medical writers help you to articulate and write documents that are required throughout the drug development process. We adopt stringent quality check protocols and seamless processes to address needs of diverse stakeholders including patients, Institutional Review Boards (IRB), clinical investigators, study sponsors, and medical coordinators.
-                  </h1>
-
-               
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICAL COMMUNICATIONS</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <style type="text/css">
+        #colr {
+            background: -webkit-linear-gradient(#ffffff, #252525);
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         
-        </section>
-        <section class="text-black bg-white py-18" style="padding-top: 30px;">
-          <h1 class=" sm:text-4xl  mx-auto  font-medium text-center title-font mb-2 text-black" style="font-family: advent pro;"> </h1>
-          <h1 class="mx-auto   text-xl font-medium text-center title-font mb-0 text-gray-900">
-            </h1>
-          <section class="text-gray-600 body-font">
-                  <div class="container mx-auto px-5 py-24 mx-16 flex flex-wrap" style="padding-top: 3%;padding-bottom: 0%;">
-                    <div class="flex flex-wrap w-full">
-         
-                      
-                      <img class=" object-cover mx-auto rounded-lg md:mt-0 mt-12 " style="padding: 5%;padding-top: 2%;padding-bottom:2% ;" src="pics/step.png" alt="step">
-                      
-                    
-                  </div>
-                  </div>
-                </section>
-  </section>
-  <section>
-    <hr style="height:1px;border-width:1;background-color: #736CB1;color: #736CB1;" >
-  <footer class="text-white body-font bg-black" style="font-family: Roboto;" >
-    <a class="flex title-font font-medium items-center  text-gray-900 mb-4 md:mb-2 md:ml-9" href="home.html">
-            <img class="w-30 h-20 p-0  " style="object-fit: cover;padding-left: 45%;padding-top: 6px;" src="pics/centella.png" alt="logo">
-            
-          </a>
-            <nav class="md:mr-auto md:ml-5 md:py- md:pl-4  md:border-gray-100 flex flex-wrap items-center text-white justify-center">
-              
-            <a class="mr-5 text-xl hover:text-blue-600"  href="#about">About</a>
-            <a class="mr-5 text-xl hover:text-blue-600" href="#service">Services</a>
-            <a class="mr-5 text-xl hover:text-blue-600" href="#team">Our Team</a>
-            <a class="mr-5 text-xl hover:text-blue-600" href="#consult" >Contact Us</a>
-            <a class="mr-5 text-xl hover:text-blue-600">Privacy Policy</a>
-          </nav>
-          <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
-            <p >© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
-            </p>
-            <div class="social-container">
-              <ul class="social-icons">
-                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              </ul>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            transform-style: preserve-3d;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        
+        header {
+            transform-style: preserve-3d;
+            position: relative;
+            top: 0;
+            transition: top 0.3s ease-in-out;
+            z-index: 100000;
+        }
+        
+        .nav-up {
+            top: -110px;
+        }
+        
+        @media (max-width: 767px) {
+            .navicon {
+                width: 1.125em;
+                height: .125em;
+            }
+            .navicon::before,
+            .navicon::after {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: all .2s ease-out;
+                content: '';
+                background: #3D4852;
+            }
+            .navicon::before {
+                top: 5px;
+            }
+            .navicon::after {
+                top: -5px;
+            }
+            .menu-btn:not(:checked)~.menu {
+                display: none;
+            }
+            .menu-btn:checked~.menu {
+                display: block;
+            }
+            .menu-btn:checked~.menu-icon .navicon {
+                background: transparent;
+            }
+            .menu-btn:checked~.menu-icon .navicon::before {
+                transform: rotate(-45deg);
+            }
+            .menu-btn:checked~.menu-icon .navicon::after {
+                transform: rotate(45deg);
+            }
+            .menu-btn:checked~.menu-icon .navicon::before,
+            .menu-btn:checked~.menu-icon .navicon::after {
+                top: 0;
+            }
+        }
+        
+        .overlay {
+            position: absolute;
+            z-index: 100;
+        }
+        
+        .overlay {
+            width: 150%;
+            position: absolute;
+            z-index: 100;
+        }
+        
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+        .social-container {
+            width: 166px;
+            margin: 0vh auto;
+            margin-right: 1%;
+            text-align: center;
+        }
+        
+        .social-icons {
+            padding: 0;
+            list-style: none;
+            margin: .1em;
+        }
+        
+        .social-icons li {
+            display: inline-block;
+            margin: 0.18em;
+            position: relative;
+            font-size: 1.2em;
+        }
+        
+        .social-icons i {
+            color: #fff;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: all 265ms ease-out;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+        }
+        
+        .social-icons a:before {
+            transform: scale(1);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            content: " ";
+            width: 26px;
+            height: 26px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, #00B5F5, #002A8F);
+            transition: all 265ms ease-out;
+        }
+        
+        .social-icons a:hover:before {
+            transform: scale(0);
+            transition: all 265ms ease-in;
+        }
+        
+        .social-icons a:hover i {
+            transform: scale(2.2);
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            color: #00B5F5;
+            background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 265ms ease-in;
+        }
+        
+        .contain {
+            width: 150%;
+        }
+        
+        ul li ul {
+            display: none;
+        }
+        
+        ul li:hover ul {
+            display: block;
+        }
+        
+        ul li ul {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        ul li:hover ul {
+            display: block;
+            background-color: whitesmoke;
+            border-radius: 2%;
+            padding: 1%;
+            z-index: 1;
+        }
+        
+        .steps {
+            margin: 30px 30px 20px 30px;
+            padding-bottom: 1%;
+        }
+        
+        .steps img {
+            width: 136px;
+            margin-left: 15%;
+        }
+        
+        .steps ul li .fa::after {
+            content: '';
+            background-color: #148e14;
+            height: 4px;
+            width: 205px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 160px;
+            z-index: -1;
+        }
+        
+        .steps ul {
+            padding: 5%;
+            text-align: center;
+        }
+        
+        .steps ul li {
+            display: inline-block;
+            width: 200px;
+            position: relative;
+        }
+        
+        .steps ul li .fa {
+            font-size: 20px;
+            background-color: #148e14;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+        .steps ul li:first-child .fa::after {
+            width: 810px;
+            left: 100px;
+        }
+        
+        .steps ul li:last-child .fa::after {
+            width: 0px;
+        }
+        
+        .steps ul li:nth-child(2) .fa::after {
+            width: 0px;
+        }
+        
+        .steps ul li:nth-child(3) .fa::after {
+            width: 0px;
+        }
+        
+        .steps ul li:nth-child(4) .fa::after {
+            width: 0px;
+        }
+        
+        .steps p {
+            font-size: large;
+            color: #000000;
+            font-weight: 600;
+            font-family: montserrat;
+            padding-top: 4%;
+        }
+        
+        .steps h2 {
+            font-size: larger;
+            color: #b25ceb;
+            font-family: montserrat;
+            font-weight: bold;
+            margin-top: 5%;
+        }
+        
+        .steps h1 {
+            font-size: larger;
+            font-family: montserrat;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color:black">
+        <header class="fixed nav-down mx-auto text-gray-600 body-font w-full ">
+            <div class="contain overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgba(0, 0, 0, .89); ">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 md:ml-6 " style="padding-right:14%;" href="home.html">
+                    <img class="w-30 h-20 p-0 " src="pics/centella.png" alt="">
+
+                </a>
+                <nav class=" md:mr-auto md:ml-6 md:py-2 md:pl-4  md:border-gray-100 z-100	flex flex-wrap items-center text-white justify-center ">
+                    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none  " style="padding-right: 620px;padding-top: 0px;" for="menu-btn">
+<span class="navicon bg-blue-900 flex object-center relative " ></span>
+</label>
+                    <ul class="menu mx-1 border-b md:border-none text-lg flex justify-end list-reset m-0 w-full md:w-auto ">
+                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#about">About</a></li>
+                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#team">Team</a></li>
+                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#service">Offerings</a>
+                            <ul>
+                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="sci.html">Scientific Communication</a></li>
+                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="med.html">Medical Communication</a></li>
+                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="market.html">Market Research</a></li>
+                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="centella.html">Centella Academy</a></li>
+                            </ul>
+                        </li>
+                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#whycentella">Why Centella?</a></li>
+
+                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#consult">Career</a></li>
+                        <li class="border-t md:border-none"><button class="inline-flex  items-center bg-gray-100 border-0 p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0"><a href="home.html#consult" >Contact us</a>
+                
+                </button></li>
+                    </ul>
+                </nav>
             </div>
-          
+        </header>
     </div>
-  </footer>
-</section>
+    <section class="text-white body-font bg-black py-24" style="padding-bottom: 1%;">
+        <div class="container px-5 py-0 mx-auto mb-0 bg-transparent">
+            <h1 class="text-7xl font-medium title-roboto text-center text-white mb-0 p-2" id="colr">MEDICAL COMMUNICATIONS </h1>
+        </div>
+
+    </section>
+    <section class="text-black bg-white py-18" style="padding-top: 10px;">
+        <h1 class="text-xl font-medium  text-left
+         text-black mb-0 " style="font-family: montserrat;padding: 10%;padding-top: 0px;padding-bottom: 3%;">Accurate, clearly written, scientifically sound and well-articulated documents are key to timely approval of drugs that get submitted for regulatory approval. Centella supports all the scientific and medical communication needs of Pharma, Bio-Tech
+            and medical industries. <br> Our comprehensive mix of clinicians, doctors, writers and scientists from life sciences sector (MD, PhD, MBBS, and Masters) has expertise to provide solutions to all your medical writing needs. Centella has thorough
+            discernment of various regulatory guidelines of the international bodies such as FDA, GCP, ICH, and EMA. Our team of medical writers help you to articulate and write documents that are required throughout the drug development process. We adopt
+            stringent quality check protocols and seamless processes to address needs of diverse stakeholders including patients, Institutional Review Boards (IRB), clinical investigators, study sponsors, and medical coordinators.
+        </h1>
+
+
+
+    </section>
+    <section class="">
+        <h1 class=" text-5xl text-center mb-2 text-black" style="font-family: Montserrat;">How it works?</h1>
+        <div class="steps">
+            <ul>
+                <li>
+                    <img src="step1.svg"><br>
+
+                    <i class="fa fa-check"></i>
+                    <p style="padding-bottom: 1px;">Step 1</p>
+                    <h2>Submit </h2>
+                    <h1>Describe your specific need and choose the service you avail</h1>
+
+                </li>
+                <li><img src="step2.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p style="padding-bottom: 1px;">Step 2</p>
+                    <h2>Evaluation </h2>
+                    <h1>Our experts critically evaluate & edit the document as requested</h1>
+                </li>
+                <li><img src="step3.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p> Step 3</p>
+                    <h2>QC Check </h2>
+                    <h1 style="padding-bottom: 8px;">Two-tier stringent quality check </h1><br> <br> </li>
+                <li><img src="step4.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p style="padding-bottom: 3.5px;">Step 4</p>
+                    <h2>Update </h2>
+                    <h1>Edited files will be shared & seek feedback</h1><br></li>
+                <li><img class="object-fit" src="step5.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p style="padding-bottom: 1px;">Step 5</p>
+                    <h2>Approve </h2>
+                    <h1>Verify the document in entirety and submit to author</h1>
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+    <section>
+
+        <footer class="text-white body-font bg-black" style="font-family: Roboto;">
+            <a class="flex title-font font-medium items-center  text-gray-900 mb-4 md:mb-2 md:ml-9" href="home.html">
+                <img class="w-30 h-20 p-0  " style="object-fit: cover;padding-left: 45%;padding-top: 6px;" src="pics/centella.png" alt="logo">
+
+            </a>
+            <nav class="md:mr-auto md:ml-5 md:py- md:pl-4  md:border-gray-100 flex flex-wrap items-center text-white justify-center mb-4">
+
+                <a class="mr-5 text-lg hover:text-blue-600" href="#about">About</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="#service">Services</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="#team">Our Team</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="#consult">Contact Us</a>
+                <a class="mr-5 text-lg hover:text-blue-600">Privacy Policy</a>
+            </nav>
+            <hr style="height:1px;border-width:1;background-color: #ffffff;color: #ffffff;">
+            <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
+
+                <p>© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
+                </p>
+                <div class="social-container">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    </section>
 </body>
+
 </html>
