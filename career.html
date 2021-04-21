@@ -8,7 +8,6 @@
     <title>CAREER</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/nav.js"></script>
     <style type="text/css">
@@ -156,14 +155,36 @@
             -webkit-text-fill-color: transparent;
             transition: all 265ms ease-in;
         }
+        
+        ul li ul {
+            display: none;
+        }
+        
+        ul li:hover ul {
+            display: block;
+        }
+        
+        ul li ul {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        ul li:hover ul {
+            display: block;
+            background-color: whitesmoke;
+            border-radius: 2%;
+            padding: 1%;
+            z-index: 1;
+        }
     </style>
 </head>
 
 <body>
     <div class="text-center object-center" style="background-color:black">
         <header class="fixed nav-down mx-auto text-gray-600 body-font w-full ">
-            <div class="contain overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgba(0, 0, 0, 0.7); ">
-                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 md:ml-6 " style="padding-right:10%;" href="home.html">
+            <div class="contain overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgba(0, 0, 0, 0.89); ">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 md:ml-6 " style="padding-right:14%;" href="home.html">
                     <img class="w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
                 </a>
@@ -173,13 +194,19 @@
 <span class="navicon bg-blue-900 flex object-center relative " ></span>
 </label>
                     <ul class="menu mx-1 border-b md:border-none text-lg flex justify-end list-reset m-0 w-full md:w-auto ">
-                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="#about">About</a></li>
-                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="#team">Team</a></li>
-                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="#service">Offerings</a></li>
-                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="#whycentella">Why Centella?</a></li>
-                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="#consult">Consulting</a></li>
-                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="#consult">Career</a></li>
-                        <li class="border-t md:border-none"><button class="inline-flex  items-center bg-gray-100 border-0 p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-16 md:mt-0"><a href="#consult" >Contact us</a>
+                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="home.html#about">About</a></li>
+                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="home.html#team">Team</a></li>
+                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="home.html#service">Offerings</a>
+                            <ul>
+                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="sci.html">Scientific Communication</a></li>
+                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="med.html">Medical Communication</a></li>
+                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="market.html">Market Research</a></li>
+                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="centella.html">Centella Academy</a></li>
+                            </ul>
+                        </li>
+                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="home.html#whycentella">Why Centella?</a></li>
+                        <li class="border-t md:border-none"><a class="mr-6 text-xl hover:text-blue-600" href="career.html">Career</a></li>
+                        <li class="border-t md:border-none"><button class="inline-flex  items-center bg-gray-100 border-0 p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0"><a href="#consult" >Contact us</a>
                 
                 </button></li>
                     </ul>
@@ -229,10 +256,10 @@
             </a>
             <nav class="md:mr-auto md:ml-5 md:py- md:pl-4  md:border-gray-100 flex flex-wrap items-center text-white justify-center mb-4">
 
-                <a class="mr-5 text-lg hover:text-blue-600" href="#about">About</a>
-                <a class="mr-5 text-lg hover:text-blue-600" href="#service">Services</a>
-                <a class="mr-5 text-lg hover:text-blue-600" href="#team">Our Team</a>
-                <a class="mr-5 text-lg hover:text-blue-600" href="#consult">Contact Us</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="home.html#about">About</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="home.html#service">Services</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="home.html#team">Our Team</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="home.html#consult">Contact Us</a>
                 <a class="mr-5 text-lg hover:text-blue-600">Privacy Policy</a>
             </nav>
             <hr style="height:1px;border-width:1;background-color: #ffffff;color: #ffffff;">
