@@ -363,6 +363,7 @@
             margin: 30px 30px 20px 30px;
             padding-bottom: 1%;
             padding-right: 15%;
+            width: 100%;
         }
         
         .steps img {
@@ -573,18 +574,155 @@
             background-color: rgb(255, 255, 255);
         }
         
-        @media screen and (max-width:400px) {
+        @media only screen and (max-width:768px) {
             .hero {
                 padding-top: 20%;
                 width: 100%;
+                font-size: 1vw;
             }
-            #about {
-                width: 100%;
+            .txt {
+                width: 90%;
+                font-size: .1vw;
+            }
+            .abt1 {
+                font-size: 8vw;
             }
             .exp {
                 padding-top: 10%;
                 padding-left: 5%;
                 width: 80%;
+                padding-bottom: 10%;
+            }
+            .steps {
+                width: 100%;
+            }
+            .steps ul li:first-child .fa::after {
+                width: 810px;
+                left: 100px;
+                visibility: hidden;
+            }
+            .steps ul li:last-child {
+                position: relative;
+            }
+            #team {
+                width: 90%;
+                padding-left: 10%;
+            }
+            .form {
+                width: 100%;
+            }
+            .form .info p {
+                text-align: center;
+                color: #999;
+                text-transform: none;
+                font-weight: 600;
+                font-size: 15px;
+                margin-top: 2px
+            }
+            .form .info i {
+                color: #F6AA93;
+            }
+            .form form h1 {
+                font-size: 18px;
+                background: #F6AA93 none repeat scroll 0% 0%;
+                color: rgb(255, 255, 255);
+                padding: 22px 25px;
+                border-radius: 5px 5px 0px 0px;
+                margin: auto;
+                text-shadow: none;
+                text-align: left
+            }
+            .form form {
+                border-width: 2px;
+                border-radius: 20px;
+                border-color: #37990a;
+                max-width: 700px;
+                width: 100%;
+                padding-top: 0%;
+                padding-left: 3%;
+                padding-bottom: 2%;
+                margin: 2% auto;
+                margin-bottom: 5%;
+                background-color: transparent;
+                overflow: hidden;
+            }
+            .form p span {
+                color: #F00;
+            }
+            .form p {
+                font-family: montserrat;
+                margin: 0px;
+                font-weight: 500;
+                font-size: small;
+                line-height: 2;
+                color: #000000;
+            }
+            .form h1 {
+                text-align: center;
+                text-shadow: 1px 1px 0px #FFF;
+                margin: 50px 0px 0px 0px
+            }
+            .form input {
+                border-radius: 0px 5px 5px 0px;
+                border: 1px solid #7365AD;
+                margin-bottom: 15px;
+                width: 75%;
+                height: 30px;
+                float: left;
+                padding: 0px 15px;
+            }
+            .form a {
+                text-decoration: inherit
+            }
+            .form textarea {
+                border-radius: 0px 5px 5px 0px;
+                border: 1px solid #927ee2;
+                margin: 0;
+                width: 88%;
+                height: 30px;
+                float: left;
+                padding: 0px 15px;
+            }
+            .form-group {
+                overflow: hidden;
+                clear: both;
+            }
+            .form .icon-case {
+                padding-top: 0%;
+                margin-top: 0%;
+                width: 20px;
+                float: left;
+                border-radius: 5px 0px 0px 5px;
+                background: #927ee2;
+                height: 30px;
+                position: relative;
+                text-align: center;
+                line-height: 40px;
+            }
+            .form i {
+                color: rgb(0, 0, 0);
+            }
+            .contentform {
+                padding: 30px 5px;
+            }
+            .bouton-contact {
+                background-color: #CADC43;
+                color: #000000;
+                text-align: center;
+                margin-left: 100px;
+                width: 30%;
+                border: 0;
+                border-radius: 5px 5px 5px 5px;
+                cursor: pointer;
+                margin-top: 0px;
+                font-family: cursive;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .bouton-contact:hover {
+                transition: .5s;
+                transform: scale(1.1);
+                border-radius: 5px;
             }
         }
     </style>
@@ -660,12 +798,12 @@
 
     </section>
     <section id="about" class="text-black mx-auto ">
-        <h3 class="season" style="text-align: center;padding-top: 0%;font-size:xxx-large;font-family: advent pro;font-weight: bold;letter-spacing: 3px;">ABOUT CENTELLA</h3>
+        <h3 class="season abt1" style="text-align: center;font-size: xxx-large;padding-top: 0%;font-family: advent pro;font-weight: bold;letter-spacing: 3px;">ABOUT CENTELLA</h3>
         <div class=" px-0 py-16 mx-auto " style="padding-top: 10px;padding-bottom: 0px;">
 
-            <div class=" flex-col mx-auto text-center  mb-0">
+            <div class="abt2 flex-col mx-auto text-center  mb-0" style="font-size: large;">
 
-                <h4 class="  mx-auto text-xl font-medium " style="text-align: center;font-weight: 500;font-family:montserrat;padding-left: 7%;padding-right: 7%;padding-top: 1%;padding-bottom: 0%;">Centella was founded by Dr.Riyaz Syed to help researchers to turn their scientific ideas into high impact publications in order to reach out to the global audience and enable their work to create impact. While as a Ph.D research scholar,
+                <h4 class="  mx-auto font-medium " style="text-align: center;font-weight: 500;font-family:montserrat;padding-left: 7%;padding-right: 7%;padding-top: 1%;padding-bottom: 0%;">Centella was founded by Dr.Riyaz Syed to help researchers to turn their scientific ideas into high impact publications in order to reach out to the global audience and enable their work to create impact. While as a Ph.D research scholar,
                     RS used to mentor and guide his junior research colleagues in drafting the manuscripts, dissertations, thesis. During his 4 yrs of Post-doctoral tenure his unwavering passion for scientific writing has further intensified and made
                     him to support his fellow colleagues in writing & winning successful national and international grant proposals. Post his tenure as a CSIR-Pool Scientist, he founded Centella with a purpose to help Non-native English-speaking researcher’s
                     scientific discoveries turn into solutions. Centella is founded and lead by experienced & practicing research scientists. The team has a 60+yrs of cumulative academic and industrial research experiences in organic medicinal chemistry,
@@ -925,7 +1063,7 @@
                     <p style="padding-bottom: 3.5px;">Step 4</p>
                     <h2>Update </h2>
                     <h1>Edited files will be shared & feedback sought</h1><br></li>
-                <li><img class="object-fit" src="pics/step5.svg"><br>
+                <li><img src="pics/step5.svg"><br>
                     <i class="fa fa-check"></i>
                     <p style="padding-bottom: 1px;">Step 5</p>
                     <h2>Approve </h2>
