@@ -574,24 +574,47 @@
             background-color: rgb(255, 255, 255);
         }
         
-        @media only screen and (max-width:768px) {
+        @media only screen and (max-width:360px) {
             .hero {
                 padding-top: 20%;
                 width: 100%;
                 font-size: 1vw;
             }
             .txt {
-                width: 90%;
-                font-size: .1vw;
+                width: 95%;
+            }
+            .txt1 {
+                font-size: 28px;
+                padding-bottom: 0%;
+            }
+            .txt2 {
+                padding-top: 0%;
+                font-size: 36px;
+                line-height: 135%;
+                padding-bottom: 0%;
+            }
+            .txt3 {
+                margin-top: 0%;
+                font-size: 17px;
+                padding-bottom: 0%;
+            }
+            .quote {
+                font-size: smaller;
             }
             .abt1 {
-                font-size: 8vw;
+                font-size: xx-large;
+            }
+            .abt2 {
+                font-size: smaller;
             }
             .exp {
                 padding-top: 10%;
                 padding-left: 5%;
                 width: 80%;
                 padding-bottom: 10%;
+            }
+            .why2 {
+                font-size: 18px;
             }
             .steps {
                 width: 100%;
@@ -740,6 +763,22 @@
                 padding-top: 0%;
                 width: 100%;
             }
+            .hero img {
+                padding-top: 5%;
+                margin: 1%;
+            }
+            .steps h1 {
+                font-size: 16px;
+                font-family: montserrat;
+                padding-bottom: 2%;
+            }
+            .steps h2 {
+                margin-top: 1%;
+            }
+        }
+        
+        .hero img {
+            border-radius: 3%;
         }
     </style>
 </head>
@@ -778,18 +817,18 @@
             </div>
         </header>
         <section class="hero body-font">
-            <div class="container mx-auto flex px-0 py-36 md:flex-row flex-col items-center bg-transparent" style="padding-top: 13%;padding-bottom: 4%;">
-                <div class="mx-auto  md:w-5/6   flex flex-col items-center">
+            <div class="container mx-auto flex px-0  md:flex-row flex-col items-center bg-transparent" style="padding-top: 8%;padding-bottom: 4%;">
+                <div class="mx-auto  md:w-4/5   flex flex-col " style="padding-right: 2%;">
 
-                    <img class="sol1 w-full mt-auto " src="pics/i2.png" alt="">
+                    <img class="mx-12 sol1 w-full  " src="pics/cc.png" alt="">
                 </div>
 
                 <div class="txt md:w-3/4 flex flex-col items-center">
-                    <h4 class=" text-4xl font-medium  text-center text-black mb-2 p-0" style="font-family:  Montserrat;font-weight: 800;">Turning <span class="season"> Science </span> Into
+                    <h4 class="txt1 text-4xl font-medium  text-center text-black mb-2 p-0" style="font-family:  Montserrat;font-weight: 800;">Turning <span class="season"> Science </span> Into
                     </h4>
-                    <h4 class="text-5xl  font-medium  text-center  text-black mb-8 p-2" style="font-family:  Montserrat;font-weight: 1000;">High Impact <span class="season">Solutions </span>
+                    <h4 class="txt2 text-5xl  font-medium  text-center  text-black mb-8 p-2" style="font-family:  Montserrat;font-weight: 1000;">High Impact <span class="season">Solutions </span>
                     </h4>
-                    <h4 class=" text-2xl font-medium  text-center text-black mb-12" style="font-family: 'Montserrat';font-weight: 500;">Enable your work to create impact and <br>reach out to Global Audience
+                    <h4 class="txt3 text-2xl font-medium  text-center text-black mb-12" style="font-family: 'Montserrat';font-weight: 500;">Enable your work to create impact and <br>reach out to Global Audience
                     </h4>
 
 
@@ -805,21 +844,21 @@
         <div class=" px-5 py-10 mx-auto text-black">
             <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
 
-                <h3 class="leading-relaxed text-lg  mb-0 text-2xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;color: #002A8F;"></i> <br> Scientists have become the bearers of the torch of discovery in our quest for knowledge. <i class="fa fa-quote-right" style="color: #002A8F;padding-left: 95%;"></i></h3>
+                <h3 class="quote leading-relaxed text-lg  mb-0 text-2xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;color: #002A8F;"></i> <br> Scientists have become the bearers of the torch of discovery in our quest for knowledge. <i class="fa fa-quote-right" style="color: #002A8F;padding-left: 95%;"></i></h3>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-2"></span>
-                <h2 class=" font-large title-font tracking-wider text-sm mb-8" style="font-size: x-large;font-family: Montserrat;color: #1904E5;font-weight: bold;"> Stephen Hawking</h2>
+                <h2 class="quote1   tracking-wider text-sm mb-8" style="font-size: x-large;font-family: Montserrat;color: #1904E5;font-weight: bold;"> Stephen Hawking</h2>
                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             </div>
         </div>
 
     </section>
     <section id="about" class="text-black mx-auto ">
-        <h3 class="season abt1" style="text-align: center;font-size: xxx-large;padding-top: 0%;font-family: advent pro;font-weight: bold;letter-spacing: 3px;">ABOUT CENTELLA</h3>
+        <h3 class="season abt1 text-5xl" style="text-align: center;font-family: advent pro;font-weight: bold;letter-spacing: 3px;">ABOUT CENTELLA</h3>
         <div class=" px-0 py-16 mx-auto " style="padding-top: 10px;padding-bottom: 0px;">
 
             <div class="abt2 flex-col mx-auto text-center  mb-0" style="font-size: large;">
 
-                <h4 class="  mx-auto font-medium " style="text-align: center;font-weight: 500;font-family:montserrat;padding-left: 7%;padding-right: 7%;padding-top: 1%;padding-bottom: 0%;">Centella was founded by Dr.Riyaz Syed to help researchers to turn their scientific ideas into high impact publications in order to reach out to the global audience and enable their work to create impact. While as a Ph.D research scholar,
+                <h4 class="abt2  mx-auto font-medium " style="text-align: center;font-weight: 500;font-family:montserrat;padding-left: 7%;padding-right: 7%;padding-top: 1%;padding-bottom: 0%;">Centella was founded by Dr.Riyaz Syed to help researchers to turn their scientific ideas into high impact publications in order to reach out to the global audience and enable their work to create impact. While as a Ph.D research scholar,
                     RS used to mentor and guide his junior research colleagues in drafting the manuscripts, dissertations, thesis. During his 4 yrs of Post-doctoral tenure his unwavering passion for scientific writing has further intensified and made
                     him to support his fellow colleagues in writing & winning successful national and international grant proposals. Post his tenure as a CSIR-Pool Scientist, he founded Centella with a purpose to help Non-native English-speaking researcher’s
                     scientific discoveries turn into solutions. Centella is founded and lead by experienced & practicing research scientists. The team has a 60+yrs of cumulative academic and industrial research experiences in organic medicinal chemistry,
@@ -867,13 +906,13 @@
         <div class="container px-5 py-10 mx-auto" style="padding-top: 0px;padding-bottom: 10px;font-family: roboto;">
             <div class="flex flex-col  w-full mb-12">
                 <div class="flex flex-col  w-full mb-6">
-                    <h2 class="season text-xs text-5xl text-indigo-500 text-center font-medium title-font mb-1"><span style="font-family: advent pro;font-weight: bold;letter-spacing: 1px;">What we believe</span></h2>
+                    <h2 class="why1 season text-xs text-5xl text-indigo-500 text-center font-medium title-font mb-1"><span style="font-family: advent pro;font-weight: bold;letter-spacing: 1px;">What we believe</span></h2>
                 </div>
-                <div class="mx-auto  mb-2" style="font-family: montserrat;">
-                    <h4 class="mb-2" style="font-size:20px;">• Science is the bedrock of healthier & thriving society and has immense capability to transform lives.</h4>
-                    <h4 class="mb-2" style="font-size:20px;">• Enabling, empowering and encouraging better scientific expressions leading to high impact solutions.</h4>
-                    <h4 class="mb-2" style="font-size: 20px;">• Nurturing, inculcating, developing research traits in education eco-systems.</h4>
-                    <h4 class="mb-2" style="font-size: 20px;">• Creating equal opportunities for those who have an intention to pursue research as a career option.</h4>
+                <div class="why2 mx-auto text-xl mb-2" style="font-family: montserrat;">
+                    <h4 class="mb-2">• Science is the bedrock of healthier & thriving society and has immense capability to transform lives.</h4>
+                    <h4 class="mb-2">• Enabling, empowering and encouraging better scientific expressions leading to high impact solutions.</h4>
+                    <h4 class="mb-2">• Nurturing, inculcating, developing research traits in education eco-systems.</h4>
+                    <h4 class="mb-2">• Creating equal opportunities for those who have an intention to pursue research as a career option.</h4>
                 </div>
                 <div>
                 </div>
@@ -1091,7 +1130,7 @@
         </div>
     </section>
     <section class="text-black" id="team">
-        <div class="container flex-col px-5 py-24 mx-auto" style="padding-top: 4%;padding-bottom: 0px;">
+        <div class="container flex-col px-0 py-24 mx-auto" style="padding-top: 4%;padding-bottom: 0px;">
             <div class="flex flex-col text-center w-full mb-2">
                 <h3 class="season text-5xl font-medium title-font mb-10 text-indigo-500" style="font-family: advent pro;font-weight: bold;">Our Team</h3>
 
@@ -1102,25 +1141,8 @@
                         <img alt="team" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/team.png">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-2xl text-lg ">Dr. Riyaz Syed</h2>
-                            <h3 class=" mb-3">CEO, CENTELLA</h3>
+                            <h3 class="teamt mb-3">CEO, CENTELLA</h3>
 
-                            <span class="inline-flex">
-                            <a class="text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                              </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                              </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                              </svg>
-                            </a>
-                          </span>
                         </div>
                     </div>
 
@@ -1132,23 +1154,7 @@
                             <h2 class="title-font font-medium text-lg  text-2xl">Dr. Poorna</h2>
                             <h3 class=" mb-3">CEO, CENTELLA</h3>
 
-                            <span class="inline-flex">
-                            <a class="text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                              </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                              </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                              </svg>
-                            </a>
-                          </span>
+
                         </div>
                     </div>
 
@@ -1160,23 +1166,7 @@
                             <h2 class="title-font font-medium text-lg  text-2xl">Dr. Poorna</h2>
                             <h3 class=" mb-3">CEO, CENTELLA</h3>
 
-                            <span class="inline-flex">
-                            <a class="text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                              </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                              </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                              </svg>
-                            </a>
-                          </span>
+
                         </div>
                     </div>
 
@@ -1188,23 +1178,7 @@
                             <h2 class="title-font font-medium text-lg text-2xl ">Dr. Venkatesh</h2>
                             <h3 class=" mb-3">CEO, CENTELLA</h3>
 
-                            <span class="inline-flex">
-                            <a class="text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                              </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                              </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                              </svg>
-                            </a>
-                          </span>
+
                         </div>
                     </div>
 
@@ -1338,7 +1312,7 @@
             <hr style="height:1px;border-width:1;background-color: #000000;color: #000000;">
             <div class="container  px-5 py-3 mx-auto flex items-center sm:flex-row flex-col " style="padding-top: 3%;">
 
-                <p>© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved <br> Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+                <p>© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
                 </p>
 
                 <div class="social-container">
