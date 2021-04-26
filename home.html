@@ -51,7 +51,7 @@
         
         #box:hover {
             z-index: 0;
-            background-color: rgb(226, 195, 255);
+            background-color: #E2E2E2;
             transform: scale(1.05);
             -webkit-box-shadow: 0 8px 6px -6px #999;
             -moz-box-shadow: 0 8px 6px -6px #999;
@@ -453,14 +453,6 @@
             font-family: montserrat;
         }
         
-        .naav ul li:hover {
-            border-radius: 8%;
-            background-color: whitesmoke;
-            -webkit-box-shadow: 0 8px 6px -6px #999;
-            -moz-box-shadow: 0 8px 6px -6px #999;
-            box-shadow: 0 8px 6px -5px rgb(129, 126, 126)
-        }
-        
         .naav ul li ul {
             display: none;
         }
@@ -812,7 +804,7 @@
                 z-index: 10;
             }
             .logo {
-                padding-right: 0%;
+                margin-right: 0%;
             }
         }
         
@@ -824,15 +816,15 @@
 
 <body>
     <div class="mx-auto naav">
-        <header class="fixed nav-down mx-auto  w-full ">
-            <div class="contain  overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
-                <a class="logo flex  items-center  mb-0  md:ml-6 " style="margin-right:15%;" href="home.html">
+        <header class=" fixed nav-down mx-auto  w-full ">
+            <div class="contain  container overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
+                <a class="logo flex  items-center  mb-0  md:ml-6 " style="margin-right:25%;" href="home.html">
                     <img class=" w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
                 </a>
                 <nav class=" menu  md:py-2 md:pl-4  md:border-gray-100 z-100	flex flex-wrap items-center text-black justify-center ">
                     <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-0 relative " style="position: relative;top:-15px ;padding-left: 25%;padding-top: 0%;" for="menu-btn">
+                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-0 relative " style="position: relative;top:-10px ;padding-left: 25%;padding-top: 0%;" for="menu-btn">
     <span class="navicon bg-blue-900 flex object-center relative " ></span>
   </label>
                     <ul class="menu  border-b md:border-none text-xl flex justify-end list-reset m-0    " style="font-weight: 450;">
@@ -849,7 +841,7 @@
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="#whycentella">Why Centella?</a></li>
 
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="career.html">Career</a></li>
-                        <button class="cont inline-flex text-xl  items-center bg-gray-400 border-0 p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #82e255;"><a href="#consult" >Contact us</a></button>
+                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #FADC54;"><a href="#consult" >Contact us</a></button>
                     </ul>
 
                 </nav>
@@ -872,8 +864,8 @@
 
 
                     <div class="contb  flex justify-center">
-                        <button class="cont contact1  text-black   py-2 px-6   rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color:#6fd9f4;"> <a href="#consult">Get Solution</a></button>
-                        <button class="cont contact2 ml-16 text-black  py-2 px-6  rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color: #82e255;"><a href="#about">Know More</a></button>
+                        <button class="cont contact1  text-black   py-2 px-6   rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color:#FADC54;"> <a href="#consult">Get Solution</a></button>
+                        <button class="cont contact2 ml-16 text-black  py-2 px-6  rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color: #F67160;"><a href="#about">Know More</a></button>
                     </div>
                 </div>
             </div>
@@ -1040,10 +1032,10 @@
                               <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
                             </svg>
                             </div>
-                            <h3 class="text-gray-900 text-xl text-lg title-font  ">SCIENTIFIC COMMUNICATIONS</h3>
+                            <h3 class="text-gray-900 text-xl text-lg title-font  " style="font-family: montserrat;font-weight: bold;">SCIENTIFIC COMMUNICATIONS</h3>
                         </div>
                         <div class="flex-grow">
-                            <p class="leading-relaxed text-base text-black" style="font-family: Roboto;"> Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing,authors come under intense pressure <br> to get their findings published.</p>
+                            <p class=" text-x text-black" style="font-family: montserrat;"> Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing,authors come under intense pressure <br> to get their findings published.</p>
                             <a class="mt-3 text-red-600  inline-flex items-center" style="font-weight: bold;" href="sci.html">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -1060,10 +1052,10 @@
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                             </svg>
                             </div>
-                            <h2 class="text-gray-900 text-xl text-lg title-font ">MEDICAL COMMUNICATIONS</h2>
+                            <h2 class="text-gray-900 text-xl text-lg title-font " style="font-family: montserrat;font-weight: bold;">MEDICAL COMMUNICATIONS</h2>
                         </div>
                         <div class="flex-grow">
-                            <p class="leading-relaxed text-base text-black" style="font-family: Roboto;">Accurate, clearly written, scientifically sound and well-articulated documents are key to timely approval of drugs that get submitted for regulatory approval.Centella supports all the scientific and medical communication needs
+                            <p class=" text-x text-black" style="font-family: montserrat;">Accurate, clearly written, scientifically sound and well-articulated documents are key to timely approval of drugs that get submitted for regulatory approval.Centella supports all the scientific and medical communication needs
                                 of Pharma...</p>
                             <a class="mt-3 text-red-600 inline-flex items-center" style="font-weight: bold;" href="med.html">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -1091,10 +1083,10 @@
                                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                   </svg>
                             </div>
-                            <h2 class="text-gray-900 text-xl title-font ">MARKET RESEARCH</h2>
+                            <h2 class="text-gray-900 text-xl title-font " style="font-family: montserrat;font-weight: bold;">MARKET RESEARCH</h2>
                         </div>
                         <div class="flex-grow">
-                            <p class="leading-relaxed text-base text-black " style="font-family: Roboto;">Whether it is startup or grown-up company, a thorough data driven market research is the key differentiator in making the product or service forceful. An adept market research enables organizations to rally employees... </p>
+                            <p class=" text-base text-black " style="font-family: montserrat;">Whether it is startup or grown-up company, a thorough data driven market research is the key differentiator in making the product or service forceful. An adept market research enables organizations to rally employees... </p>
                             <a class="mt-3 text-red-600 inline-flex items-center" style="font-weight: bold;" href="market.html">Learn More
                                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -1112,10 +1104,10 @@
                                     <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                                   </svg>
                             </div>
-                            <h2 class="text-gray-900 text-xl title-font ">CENTELLA ACADEMY</h2>
+                            <h2 class="text-gray-900 text-xl title-font " style="font-family: montserrat;font-weight: bold;">CENTELLA ACADEMY</h2>
                         </div>
                         <div class="flex-grow">
-                            <p class="leading-relaxed text-base text-black" style="font-family: Roboto;">Scientific rigor, Scientific thinking, Research Temperament, Research bent of mind, Catalytic questioning, Provocative.Being researchers whether it is graduate or postdoc or tenure track scientist, we imbibe the skills of designing....</p>
+                            <p class=" text-base text-black" style="font-family: montserrat;">Scientific rigor, Scientific thinking, Research Temperament, Research bent of mind, Catalytic questioning, Provocative.Being researchers whether it is graduate or postdoc or tenure track scientist, we imbibe the skills of designing....</p>
                             <a class="mt-3 text-red-600  inline-flex items-center" style="font-weight: bold;" href="centella.html">Learn More
                                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -1334,7 +1326,7 @@
     </section>
     <section>
 
-        <footer class="text-white" style="font-family: Roboto;padding-bottom: 4%;padding-top: 0%;background-color: rgb(0, 0, 0);">
+        <footer class="text-white" style="font-family: Montserrat;padding-bottom: 4%;padding-top: 0%;background-color: rgb(0, 0, 0);">
             <a class="flex title-font  items-center   mb-4 md:mb-2 md:ml-9" href="home.html">
                 <img class="w-30 h-20 p-0  " style="object-fit: cover;padding-left: 45%;padding-top: 6px;" src="pics/centella.png" alt="logo">
 
