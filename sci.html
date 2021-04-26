@@ -343,11 +343,16 @@
         @media only screen and (max-width:768px) {
             .txt {
                 padding-top: 30%;
+                font-size: xx-large;
+                color: white;
             }
             .txt2 {
                 width: 110%;
                 margin: 0%;
-                font-size: 1px;
+                font-size: 14px;
+            }
+            .ac1 {
+                font-size: 14px;
             }
             .steps {
                 width: 100%;
@@ -364,10 +369,27 @@
             .public {
                 width: 100%;
             }
-        }
-        
-        .txt2 {
-            font-size: 18px;
+            .sci {
+                padding-top: 0%;
+            }
+            .quo {
+                font-size: 18px;
+            }
+            .pb1 {
+                font-size: 14px;
+            }
+            .how {
+                font-size: 36px;
+            }
+            .steps h2 {
+                margin-top: 0%;
+            }
+            .steps h1 {
+                font-size: 16px;
+            }
+            .pbb h1 {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -376,13 +398,13 @@
     <div class="mx-auto" style="background-color:black">
         <header class="fixed nav-down mx-auto text-gray-600 body-font w-full ">
             <div class="contain overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgba(0, 0, 0, 0.9); ">
-                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 md:ml-6 " style="padding-right:14%;" href="home.html">
+                <a class="flex  md:mb-0 md:ml-6 " style="margin-right:14%;" href="home.html">
                     <img class="w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
                 </a>
                 <nav class=" md:mr-auto md:ml-6 md:py-2 md:pl-4  md:border-gray-100 z-100	flex flex-wrap items-center text-white justify-center ">
                     <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none  " style="padding-right: 55%;padding-top: 0px;" for="menu-btn">
+                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none  " style="position: relative;top: -15px;padding-right: 55%;padding-top: 0px;" for="menu-btn">
 <span class="navicon bg-blue-900 flex object-center relative " ></span>
 </label>
                     <ul class="menu mx-1 border-b md:border-none text-lg flex justify-end list-reset m-0 w-full md:w-auto ">
@@ -408,8 +430,8 @@
         </header>
     </div>
     <section class="text-white body-font bg-black py-16" style="padding-top: 8%;padding-bottom: 2%;">
-        <div class="container txt px-5 py-0 mx-auto mb-0 bg-transparent">
-            <h1 class="text-6xl  mx-auto font-medium title-roboto text-center text-white mb-0 p-2" style="font-size: 4.5vw;" id="colr">SCIENTIFIC COMMUNICATIONS </h1>
+        <div class="container  px-5 py-0 mx-auto mb-0 bg-transparent">
+            <h1 class="text-6xl txt mx-auto font-medium title-roboto text-center text-white mb-0 p-2" id="colr">SCIENTIFIC COMMUNICATIONS </h1>
         </div>
 
     </section>
@@ -418,11 +440,11 @@
         <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
             <div data-aos="fade-down-right" class="pl-20 lg:max-w-lg  md:mb-0">
 
-                <img class="h-64 object-fit   object-center rounded" alt="hero" src="pics/a2.svg">
+                <img class="sci h-64 object-fit   object-center rounded" alt="hero" src="pics/a2.svg">
 
             </div>
             <div data-aos="fade-up-left" class=" lg:w-2/3  flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="txt2 text-left text-black mb-0 " style="font-family: montserrat;padding-right: 3%;padding-left: 3%;padding-top: 0%;padding-bottom: 3%;">Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing, authors come under intense pressure to get their findings published. Academia & research institutions
+                <h1 class="txt2 text-lg  text-left text-black mb-0 " style="font-family: montserrat;padding-right: 3%;padding-left: 3%;padding-top: 0%;padding-bottom: 3%;">Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing, authors come under intense pressure to get their findings published. Academia & research institutions
                     are continuously seeking to improve the quality and quantity of their research out with an objective of attracting finest talent. It is essentially needed to for researchers and institutions to accelerate the pace of publication without
                     undermining on quality. With a unique blend of our best research experience and skillset, our team of subject matter experts supports you in the end-to-end publication journey and tailor solutions to your unique needs.
                 </h1>
@@ -434,7 +456,7 @@
         <div class=" px-0 py-0 mx-auto text-black">
             <div class="lg:w-3/4 w-full mx-auto text-center">
 
-                <h3 class="leading-relaxed text-lg  mb-0 text-3xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;color: #002A8F;"></i> <br>Make your manuscript meet international standards. <i class="fa fa-quote-right" style="color: #002A8F;padding-left: 95%;"></i></h3>
+                <h3 class="leading-relaxed text-lg quo mb-0 text-3xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;color: #002A8F;"></i> <br>Make your manuscript meet international standards. <i class="fa fa-quote-right" style="color: #002A8F;padding-left: 95%;"></i></h3>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-2"></span>
 
             </div>
@@ -447,10 +469,10 @@
                 <img class="object-cover object-center rounded" alt="hero" src="pics/ex.png">
             </div>
             <div data-aos="fade-up-left" class=" lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class=" sm:text-4xl text-3xl mb-0 font-medium text-gray-900" style="font-family: montserrat;">Academic editing
+                <h1 class=" text-3xl mb-0 font-medium text-gray-900" style="font-family: montserrat;">Academic editing
                 </h1>
                 <h1><span class="text-xl " style="font-family: montserrat;padding-bottom: 8%;"> Shaping your manuscripts communication-ready </span></h1>
-                <h1 class="text-lg font-medium   text-black mb-0 " style="font-family: montserrat;padding-right: 1%;padding-top: 4%;padding-bottom: 1%; ">Precisely written, clearly articulated and meticulously drafted manuscripts are the cornerstones to get published in high impact journals. Our academic editing services are customized to cater the challenges confronted by both non-native
+                <h1 class="text-lg ac1   text-black mb-0 " style="font-family: montserrat;padding-right: 1%;padding-top: 4%;padding-bottom: 1%; ">Precisely written, clearly articulated and meticulously drafted manuscripts are the cornerstones to get published in high impact journals. Our academic editing services are customized to cater the challenges confronted by both non-native
                     English speakers as well as native English speakers to who wish to get published. </h1>
             </div>
         </div>
@@ -661,102 +683,95 @@
     </section>
     <section class="public text-white bg-white py-18" style="padding-top: 30px;">
         <h1 class="mx-4 sm:text-4xl e text-3xl font-medium title-font mb-2 text-black" style="font-family: Montserrat;">Publication support:</h1>
-        <h1 class="mx-4 text-xl font-medium   text-black mb-0 " style="font-family: montserrat;">Precisely written, clearly articulated and meticulously drafted manuscripts are the cornerstones to get published in high impact journals. Our academic editing services are customized to cater the challenges confronted by both non-native English
+        <h1 class="mx-4 pb1 text-lg font-medium   text-black mb-0 " style="font-family: montserrat;">Precisely written, clearly articulated and meticulously drafted manuscripts are the cornerstones to get published in high impact journals. Our academic editing services are customized to cater the challenges confronted by both non-native English
             speakers as well as native English speakers to who wish to get published. </h1>
-        <div class=" object-center " x-data={show:false}>
-            <p class="flex">
-                <a x-on:click.prevent="show=!show" class="bg-transparent text-blue-600 rounded  px-0 py-0 mb-4 cursor-pointer focus:outline-none mb-1 mx-4">
-                    Read more..
-                  </a>
 
-            </p>
+    </section>
+    <div class="pbb">
+        <section class="text-black ">
+            <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
+                <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img class="pl-20 w-86  rounded" alt="hero" src="pics/p1.svg">
+                </div>
+                <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center" style="font-family: Montserrat;">
+                    <h2 class=" text-3xl  mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Journal selection <br> &nbsp; & submission
+                    </h2>
+                    <h1 class=" text-lg font-medium    mb-0 ">Improve your chances of publication by letting Centella help you match with the most suitable journals for your research article. Upon sharing your criteria, our team will suggest you with top 3-5 journals that fit in the area of your
+                        work.
+                    </h1>
+                    <h1 class=" text-lg font-medium    mb-0 "> Criteria for selecting the journal : </h1>
+                    <h1 class=" text-lg font-medium    mb-0 "> 1.Target journal type </h1>
+                    <h1 class=" text-lg font-medium    mb-0 "> 2. Indexing(PubMed, Scopus, SCI, Web of Science..etc) </h1>
+                    <h1 class=" text-lg font-medium    mb-0 ">3. Impact factor </h1>
+                    <h1 class=" text-lg font-medium    mb-4 "> 4. Type of article </h1>
+                </div>
 
-            <div x-show="show" class="mx-16  text-xl font-medium   text-black mb-0 " style="font-family: montserrat;padding-bottom: 3%;">
-                <section class="text-black ">
-                    <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
-                        <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                            <img class="pl-20 w-86  rounded" alt="hero" src="pics/p1.svg">
-                        </div>
-                        <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                            <h1 class=" sm:text-4xl text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Journal selection <br> &nbsp; & submission
-                            </h1>
-                            <h1 class=" text-xl font-medium    mb-0 ">Improve your chances of publication by letting Centella help you match with the most suitable journals for your research article. Upon sharing your criteria, our team will suggest you with top 3-5 journals that fit in the area
-                                of your work.
-                            </h1>
-                            <h1 class=" text-xl font-medium    mb-0 "> Criteria for selecting the journal : </h1>
-                            <h1 class=" text-xl font-medium    mb-0 "> 1.Target journal type </h1>
-                            <h1 class=" text-xl font-medium    mb-0 "> 2. Indexing(PubMed, Scopus, SCI, Web of Science..etc) </h1>
-                            <h1 class=" text-xl font-medium    mb-0 ">3. Impact factor </h1>
-                            <h1 class=" text-xl font-medium    mb-4 "> 4. Type of article </h1>
-                        </div>
-                    </div>
-                </section>
-                <section class="text-black ">
-                    <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
-                        <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                            <h1 class=" sm:text-4xl text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Rejected/Revised <br> &nbsp; paper editing
-                            </h1>
-                            <h1 class=" text-xl font-medium    mb-4 ">Centella offers customized editing services in the fixing the rejected manuscript either by resubmitting to the same target journal with substantive or communicating to new journal after enhancing the quality of the manuscript.
-                                Our subject matter experts ensure that your manuscript revised and rewritten meticulously as per the reviewer comments and drafts a strong rebuttal to the queries.</h1>
+        </section>
+        <section class="text-black ">
+            <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center" style="font-family: Montserrat;">
+                <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h2 class="  text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Rejected/Revised <br> &nbsp; paper editing
+                    </h2>
+                    <h1 class=" text-lg font-medium    mb-4 ">Centella offers customized editing services in the fixing the rejected manuscript either by resubmitting to the same target journal with substantive or communicating to new journal after enhancing the quality of the manuscript. Our
+                        subject matter experts ensure that your manuscript revised and rewritten meticulously as per the reviewer comments and drafts a strong rebuttal to the queries.</h1>
 
-
-                        </div>
-                        <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6  md:mb-0">
-                            <img class="pl-24 h-64 object-center rounded" alt="hero" src="pics/p2.svg">
-                        </div>
-                    </div>
-                </section>
-                <section class="text-black ">
-                    <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
-                        <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6  md:mb-0">
-                            <img class="pl-24 h-72  object-center rounded" alt="hero" src="pics/p3.svg">
-                        </div>
-                        <div data-aos="fade-up-left" class=" lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                            <h1 class=" sm:text-4xl text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Artwork preparation
-                            </h1>
-                            <h1 class=" text-xl font-medium    mb-4 "> Centella’s experienced artwork editors, armed with latest software tools will check and address all the technical aspects of your manuscript such as color, resolution (DPI or PPI), file size to confirm adherence to journal
-                                guidelines.
-                            </h1>
-                        </div>
-                    </div>
-                </section>
-                <section class="text-black ">
-                    <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
-                        <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                            <h1 class=" sm:text-4xl text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;"> • Video abstract
-                            </h1>
-                            <h1 class=" text-xl mb-4 ">“Stand out from the crowd”- With more than 5000 manuscripts published every day, it will be challenging task to make your work stand out. Off late Videos have emerged as an important medium to reach out and connect with a wider
-                                target audience. With the help of Centella’s video abstract service, you can transform your published manuscript into a top quality engaging and impactful video that recapitulates and showcase the essential findings. Our
-                                team of creative experts with scientific background will create 2-3 minute audiovisual file that you can share, post in social media handles and even present at symposiums that enhance your chance of funding and citations.</h1>
-
-                        </div>
-                        <div data-aos="fade-down-right" class="lg:max-w-lg  md:w-1/3 w-2/3 md:mb-0">
-                            <img class="object-cover object-center rounded" alt="hero" src="pics/p4.svg">
-                        </div>
-                    </div>
-                </section>
-                <section class="text-black ">
-                    <div class="container mx-auto flex px-0 py-6 md:flex-row flex-col items-center">
-                        <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                            <img class="object-cover object-center rounded" alt="hero" src="pics/p5.svg">
-                        </div>
-                        <div data-aos="fade-up-left" class=" lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                            <h1 class=" text-3xl font-medium    mb-4 ">• Poster preparation</h1>
-                            <h1 class=" text-3xl font-medium    mb-4 "> • Plagiarism check </h1>
-                            <h1 class=" text-3xl font-medium    mb-4 "> • Journal submission & <br> &nbsp; Post-submission assistance </h1>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="flex object-center container py-2 items-center justify-center">
-                    <button class="object-center inline-flex items-center text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-100 rounded text-lg" style="background-color: #CADC43;"><a href="home.html#consult"> Get Solution</a></button>
 
                 </div>
+                <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6  md:mb-0">
+                    <img class="pl-24 h-64 object-center rounded" alt="hero" src="pics/p2.svg">
+                </div>
             </div>
+        </section>
+        <section class="text-black ">
+            <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center" style="font-family: Montserrat;">
+                <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6  md:mb-0">
+                    <img class="pl-24 h-72  object-center rounded" alt="hero" src="pics/p3.svg">
+                </div>
+                <div data-aos="fade-up-left" class=" lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h2 class=" text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Artwork preparation
+                    </h2>
+                    <h1 class=" text-lg font-medium    mb-4 "> Centella’s experienced artwork editors, armed with latest software tools will check and address all the technical aspects of your manuscript such as color, resolution (DPI or PPI), file size to confirm adherence to journal guidelines.
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section class="text-black ">
+            <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center" style="font-family: Montserrat;">
+                <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h2 class=" text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;"> • Video abstract
+                    </h2>
+                    <h1 class=" text-lg mb-4 ">“Stand out from the crowd”- With more than 5000 manuscripts published every day, it will be challenging task to make your work stand out. Off late Videos have emerged as an important medium to reach out and connect with a wider target
+                        audience. With the help of Centella’s video abstract service, you can transform your published manuscript into a top quality engaging and impactful video that recapitulates and showcase the essential findings. Our team of creative
+                        experts with scientific background will create 2-3 minute audiovisual file that you can share, post in social media handles and even present at symposiums that enhance your chance of funding and citations.</h1>
+
+                </div>
+                <div data-aos="fade-down-right" class="lg:max-w-lg  md:w-1/3 w-2/3 md:mb-0">
+                    <img class="object-cover object-center rounded" alt="hero" src="pics/p4.svg">
+                </div>
+            </div>
+        </section>
+        <section class="text-black ">
+            <div class="container mx-auto flex px-0 py-6 md:flex-row flex-col items-center" style="font-family: Montserrat;">
+                <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img class="object-cover object-center rounded" alt="hero" src="pics/p5.svg">
+                </div>
+                <div data-aos="fade-up-left" class=" lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h2 class=" text-3xl font-medium    mb-4 ">• Poster preparation</h1>
+                        <h2 class=" text-3xl font-medium    mb-4 "> • Plagiarism check </h1>
+                            <h2 class=" text-3xl font-medium    mb-4 "> • Journal submission & <br> &nbsp; Post-submission assistance </h1>
+                </div>
+            </div>
+        </section>
         </div>
+        <div class="flex object-center container py-2 items-center justify-center">
+            <button class="object-center inline-flex items-center text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-100 rounded text-lg" style="background-color: #CADC43;"><a href="home.html#consult"> Get Solution</a></button>
+
+        </div>
+    </div>
+    </div>
     </section>
     <section class="">
-        <h1 class="season text-5xl text-center mb-2 " style="font-family: Montserrat;padding-top: 3%;">How it works?</h1>
+        <h1 class="how season text-5xl text-center mb-2 " style="font-family: Montserrat;padding-top: 3%;">How it works?</h1>
         <div data-aos="fade-up-right" class="steps">
             <ul>
                 <li>
