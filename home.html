@@ -31,7 +31,7 @@
 
     <style type="text/css">
         .season {
-            background: -webkit-radial-gradient( rgba(0, 234, 255, 1) 0.2%, rgba(0, 124, 255, 1) 59.1%, rgba(198, 0, 255, 1) 100.2%);
+            background: -webkit-linear-gradient( rgb(106, 27, 252) 0.2%, rgba(0, 124, 255, 1) 59.1%, rgba(198, 0, 255, 1) 100.2%);
             background-clip: content-box;
             -webkit-background-clip: text;
             font-weight: 1000;
@@ -364,10 +364,9 @@
         }
         
         .steps {
-            margin: 30px 30px 20px 30px;
             padding-bottom: 1%;
-            padding-right: 15%;
             width: 100%;
+            padding-right: 15%;
         }
         
         .steps img {
@@ -394,7 +393,7 @@
         
         .steps ul li {
             display: inline-block;
-            width: 200px;
+            width: 210px;
             position: relative;
         }
         
@@ -413,7 +412,7 @@
         }
         
         .steps ul li:first-child .fa::after {
-            width: 810px;
+            width: 850px;
             left: 100px;
         }
         
@@ -434,18 +433,19 @@
         }
         
         .steps p {
-            font-size: large;
+            font-size: 22px;
             font-weight: bold;
             font-family: montserrat;
             padding-top: 4%;
         }
         
         .steps h2 {
-            font-size: larger;
+            font-size: 24px;
             color: #2370ff;
             font-family: montserrat;
             font-weight: bold;
-            margin-top: 5%;
+            margin-top: 1%;
+            margin-bottom: 2%;
         }
         
         .steps h1 {
@@ -573,6 +573,10 @@
         
         html {
             overflow-x: hidden;
+        }
+        
+        .why2 h4 {
+            font-size: 22px;
         }
         
         @media only screen and (max-width:767px) {
@@ -818,6 +822,9 @@
                 visibility: hidden;
                 animation-fill-mode: forwards;
             }
+            .why2 h4 {
+                font-size: large;
+            }
         }
         
         .hero img {
@@ -853,7 +860,7 @@
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="#whycentella">Why Centella?</a></li>
 
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="career.html">Career</a></li>
-                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #FADC54;"><a href="#consult" >Contact us</a></button>
+                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #1bb3f4;"><a href="#consult" >Contact us</a></button>
                     </ul>
 
                 </nav>
@@ -866,18 +873,18 @@
                     <img class="slide" src="pics/c1.jpg" id="simg" alt="">
                 </div>
 
-                <div class=" txt md:w-3/4 flex flex-col items-center">
-                    <h4 class="txt1 text-4xl   text-center text-black mb-2 p-0" style="font-family:  Montserrat;font-weight: 800;">Turning <span class="season"> Science </span> Into
+                <div class=" txt md:w-4/5 flex flex-col items-center">
+                    <h4 class="txt1 text-3xl   text-center text-black mb-2 p-0" style="font-family:  Montserrat;font-weight: 800;">Turning <span class="season text-4xl"> Science </span> Into
                     </h4>
-                    <h4 class="txt2 text-5xl    text-center  text-black mb-8 p-2" style="font-family:  Montserrat;font-weight: 1000;">High Impact <span class="season">Solutions </span>
+                    <h4 class="txt2 text-4xl    text-center  text-black mb-8 p-2" style="font-family:  Montserrat;font-weight: 1000;">High Impact <span class="season text-5xl">Solutions </span>
                     </h4>
                     <h4 class="txt3 text-2xl   text-center text-black mb-12" style="font-family: 'Montserrat';font-weight: 500;">Enable your work to create impact and <br>reach out to Global Audience
                     </h4>
 
 
                     <div class="contb  flex justify-center">
-                        <button class="cont contact1  text-black   py-2 px-6   rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color:#FADC54;"> <a href="#consult">Get Solution</a></button>
-                        <button class="cont contact2 ml-16 text-black  py-2 px-6  rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color: #F67160;"><a href="#about">Know More</a></button>
+                        <button class="cont contact1  text-black   py-2 px-6   rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color:#ffde08;"> <a href="#consult">Get Solution</a></button>
+                        <button class="cont contact2 ml-16 text-black  py-2 px-6  rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color: #1bb3f4;"><a href="#about">Know More</a></button>
                     </div>
                 </div>
             </div>
@@ -896,7 +903,7 @@
 
     </section>
     <section id="about" class="text-black mx-auto ">
-        <h3 class="season abt1 text-5xl" style="text-align: center;font-family: advent pro;font-weight: bold;letter-spacing: 3px;">ABOUT CENTELLA</h3>
+        <h3 class="season py-0 abt1 text-5xl" style="text-align: center;font-family: advent pro;font-weight: bold;">ABOUT CENTELLA</h3>
         <div class=" px-0 py-16 mx-auto " style="padding-top: 10px;padding-bottom: 0px;">
 
             <div class="abt2 flex-col mx-auto text-center  mb-0" style="font-size: large;">
@@ -946,16 +953,16 @@
 
     <section class="text-black  ">
 
-        <div class="container px-5 py-10 mx-auto" style="padding-top: 0px;padding-bottom: 10px;font-family: roboto;">
-            <div class="flex flex-col  w-full mb-12">
+        <div class="container px-5 py-10 mx-auto" style="padding-top: 0px;padding-bottom: 5px;font-family: roboto;">
+            <div class="flex flex-col  w-full mb-8">
                 <div class="flex flex-col  w-full mb-6">
                     <h2 class="why1 season text-xs text-5xl text-indigo-500 text-center  title-font mb-1"><span style="font-family: advent pro;font-weight: bold;letter-spacing: 1px;">What we believe</span></h2>
                 </div>
-                <div class="why2 mx-auto text-xl mb-2" style="font-family: montserrat;">
-                    <h4 class="mb-2">• Science is the bedrock of healthier & thriving society and has immense capability to transform lives.</h4>
-                    <h4 class="mb-2">• Enabling, empowering and encouraging better scientific expressions leading to high impact solutions.</h4>
-                    <h4 class="mb-2">• Nurturing, inculcating, developing research traits in education eco-systems.</h4>
-                    <h4 class="mb-2">• Creating equal opportunities for those who have an intention to pursue research as a career option.</h4>
+                <div class="why2 mx-auto  mb-2" style="font-family: montserrat;">
+                    <h4 class="mb-2">• Science is the bedrock of healthier & <span style="color: #002df5;"> thriving society </span> and has immense capability to <span style="color: #002df5;">transform lives </span>.</h4>
+                    <h4 class="mb-2">• Enabling, <span style="color: #002df5;">empowering </span> and encouraging better <span style="color: #002df5;">scientific expressions </span> leading to high impact solutions.</h4>
+                    <h4 class="mb-2">• <span style="color: #002df5;">Nurturing</span>, inculcating, developing <span style="color: #002df5;"> research traits</span> in education eco-systems.</h4>
+                    <h4 class="mb-2">• Creating <span style="color: #002df5;">equal opportunities</span> for those who have an intention to <span style="color: #002df5;">pursue research</span> as a career option.</h4>
                 </div>
                 <div>
                 </div>
@@ -1036,78 +1043,86 @@
                 <h2 class="text-xs season text-5xl text-indigo-500 tracking-widest  title-font mb-1"><span style="font-family: advent pro;font-weight: bold;">What we offer</span></h2>
             </div>
             <div class="flex flex-wrap -m-12">
-                <div class="p-4 md:w-1/2 ">
-                    <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
-                        <div class="flex items-center mb-3">
-                            <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-yellow-500 text-white flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 20 20" fill="currentColor">
+                <a href="sci.html">
+                    <div class="p-4 md:w-1/2 ">
+                        <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-yellow-500 text-white flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 20 20" fill="currentColor">
                               <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
                             </svg>
+                                </div>
+                                <h3 class="text-gray-900 text-xl text-lg title-font  " style="font-family: montserrat;font-weight: bold;">SCIENTIFIC COMMUNICATIONS</h3>
                             </div>
-                            <h3 class="text-gray-900 text-xl text-lg title-font  " style="font-family: montserrat;font-weight: bold;">SCIENTIFIC COMMUNICATIONS</h3>
-                        </div>
-                        <div class="flex-grow">
-                            <p class=" text-x text-black" style="font-family: montserrat;"> Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing,authors come under intense pressure <br> to get their findings published.</p>
-                            <a class="mt-3 text-red-600  inline-flex text-x items-center" style="font-weight: bold;font-family: montserrat;" href="sci.html">Learn More
+                            <div class="flex-grow">
+                                <p class=" text-x text-black" style="font-family: montserrat;"> Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing,authors come under intense pressure <br> to get their findings published.</p>
+                                <a class="mt-3 text-red-600  inline-flex text-x items-center" style="font-weight: bold;font-family: montserrat;" href="sci.html">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                               <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
                           </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="p-4 md:w-1/2">
-                    <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
-                        <div class="flex items-center mb-3">
-                            <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-green-500 text-white flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 1 24 24" stroke="currentColor">
+                </a>
+                <a href="med.html">
+                    <div class="p-4 md:w-1/2">
+                        <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-green-500 text-white flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 1 24 24" stroke="currentColor">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                             </svg>
+                                </div>
+                                <h2 class="text-gray-900 text-xl text-lg title-font " style="font-family: montserrat;font-weight: bold;">MEDICAL COMMUNICATIONS</h2>
                             </div>
-                            <h2 class="text-gray-900 text-xl text-lg title-font " style="font-family: montserrat;font-weight: bold;">MEDICAL COMMUNICATIONS</h2>
-                        </div>
-                        <div class="flex-grow">
-                            <p class=" text-x text-black" style="font-family: montserrat;">Accurate, clearly written, scientifically sound and well-articulated documents are key to timely approval of drugs that get submitted for regulatory approval.Centella supports all the scientific and medical communication needs
-                                of Pharma...</p>
-                            <a class="mt-3 text-red-600 inline-flex text-x items-center" style="font-weight: bold;font-family: montserrat;" href="med.html">Learn More
+                            <div class="flex-grow">
+                                <p class=" text-x text-black" style="font-family: montserrat;">Accurate, clearly written, scientifically sound and well-articulated documents are key to timely approval of drugs that get submitted for regulatory approval.Centella supports all the scientific and medical communication
+                                    needs of Pharma...</p>
+                                <a class="mt-3 text-red-600 inline-flex text-x items-center" style="font-weight: bold;font-family: montserrat;" href="med.html">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                               <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
                           </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
             </div>
         </div>
+        </a>
         <div class="container px-5 py-8 mx-auto " style="padding-left: 10%;padding-right: 10%;padding-top: 0%;">
             <div class="flex flex-col text-center w-full mb-10">
             </div>
-            <div class="flex flex-wrap -m-12">
-                <div class="p-4 md:w-1/2">
-                    <div class="flex rounded-lg h-full bg-white p-8 flex-col " id="box">
-                        <div class="flex items-center mb-3">
-                            <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-purple-700  text-white flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <a href="market.html">
+                <div class="flex flex-wrap -m-12">
+                    <div class="p-4 md:w-1/2">
+                        <div class="flex rounded-lg h-full bg-white p-8 flex-col " id="box">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-purple-700  text-white flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd" />
                                   </svg>
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                   </svg>
+                                </div>
+                                <h2 class="text-gray-900 text-xl title-font " style="font-family: montserrat;font-weight: bold;">MARKET RESEARCH</h2>
                             </div>
-                            <h2 class="text-gray-900 text-xl title-font " style="font-family: montserrat;font-weight: bold;">MARKET RESEARCH</h2>
-                        </div>
-                        <div class="flex-grow">
-                            <p class=" text-base text-black " style="font-family: montserrat;">Whether it is startup or grown-up company, a thorough data driven market research is the key differentiator in making the product or service forceful. An adept market research enables organizations to rally employees... </p>
-                            <a class="mt-3 text-red-600 inline-flex text-x items-center" style="font-family: montserrat;font-weight: bold;" href="market.html">Learn More
+                            <div class="flex-grow">
+                                <p class=" text-base text-black " style="font-family: montserrat;">Whether it is startup or grown-up company, a thorough data driven market research is the key differentiator in making the product or service forceful. An adept market research enables organizations to rally employees...
+                                </p>
+                                <a class="mt-3 text-red-600 inline-flex text-x items-center" style="font-family: montserrat;font-weight: bold;" href="market.html">Learn More
                                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                   </svg>
                                   
                                 </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+            </a>
+            <a href="centella.html">
                 <div class="p-4 md:w-1/2 ">
                     <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
                         <div class="flex items-center mb-3">
@@ -1128,6 +1143,7 @@
                         </div>
                     </div>
                 </div>
+            </a>
 
             </div>
         </div>
@@ -1236,7 +1252,7 @@
         <div class="container px-5 py-12 mx-auto  flex flex-wrap items-center" id="consult" style="padding-top: 5%;padding-bottom: 0%;">
 
             <div class=" md:w-full bg-transparent rounded-lg p-0 flex flex-col md:ml-200 w-full mt-6 md:mt-0">
-                <h2 class="season text-4xl text-indigo-500 tracking-widest  title-font mb-0 text-center  "><span style="font-family: advent pro; font-weight: bold;padding-bottom: 0%;">Reach Us out</span></h2>
+                <h2 class="season text-5xl text-indigo-500 tracking-widest  title-font mb-0 text-center  "><span style="font-family: advent pro; font-weight: bold;padding-bottom: 0%;">Reach Us out</span></h2>
                 <form data-aos="fade-up-right" style="animation-delay: 1s;" id="submit-to-google-sheet" onsubmit="window.location.reload()">
 
 
