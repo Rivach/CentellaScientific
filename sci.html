@@ -365,7 +365,16 @@
             overflow-x: hidden;
         }
         
-        @media only screen and (max-width:768px) {
+        @media only screen and (max-width:767px) {
+            .steps ul li:last-child {
+                margin-top: 200%;
+                bottom: 0px;
+                top: 600px;
+                right: 100px;
+            }
+            .steps ul li:nth-child(4) {
+                padding-bottom: 100%;
+            }
             .txt {
                 padding-top: 30%;
                 font-size: xx-large;
@@ -387,9 +396,6 @@
                 width: 810px;
                 left: 100px;
                 visibility: hidden;
-            }
-            .steps ul li:last-child {
-                position: relative;
             }
             .public {
                 width: 100%;
@@ -414,6 +420,10 @@
             }
             .pbb h1 {
                 font-size: 16px;
+            }
+            .logo {
+                margin-right: 0%;
+                width: 50%;
             }
         }
         
@@ -484,7 +494,7 @@
         <div class=" px-0 py-0 mx-auto text-black">
             <div class="lg:w-3/4 w-full mx-auto text-center">
 
-                <h3 class="leading-relaxed text-lg quo mb-0 text-3xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;color: #002A8F;"></i> <br>Make your manuscript meet international standards. <i class="fa fa-quote-right" style="color: #002A8F;padding-left: 900px"></i></h3>
+                <h3 class="leading-relaxed text-lg quo mb-0 text-3xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="position: absolute;left: 15%;color: #002A8F;"></i><br> Make your manuscript meet international standards. <br> <i class="fa fa-quote-right" style="position: absolute;right: 15%;color: #002A8F;padding-left: 10px"></i></h3>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-2"></span>
 
             </div>
