@@ -357,7 +357,6 @@
         }
         
         body {
-            background-color: rgb(255, 255, 255);
             overflow: hidden;
         }
         
@@ -425,6 +424,21 @@
                 margin-right: 0%;
                 width: 50%;
             }
+            .menu {
+                padding-top: 0%;
+                width: 100%;
+                animation: moveright .1s linear 1;
+                visibility: hidden;
+                animation-fill-mode: forwards;
+                position: relative;
+                z-index: 10;
+            }
+            .contain {
+                width: 150%;
+                -webkit-box-shadow: 0 8px 6px -6px #999;
+                -moz-box-shadow: 0 8px 6px -6px #999;
+                box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+            }
         }
         
         .steps ul li:last-child {
@@ -434,10 +448,10 @@
 </head>
 
 <body>
-    <div class="container mx-auto naav">
-        <header class="fixed nav-down mx-auto  w-full absolute ">
-            <div class="contain   overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
-                <a class="logo flex  items-center  mb-0  md:ml-6 " style="margin-right:15%;" href="home.html">
+    <div class="mx-auto naav">
+        <header class=" fixed nav-down mx-auto  w-full ">
+            <div class="contain  container overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
+                <a class="logo flex  items-center  mb-0  md:ml-6 " style="margin-right:25%;" href="home.html">
                     <img class=" w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
                 </a>
