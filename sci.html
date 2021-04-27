@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script type="text/javascript" src="js/nav.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+
     <link rel="stylesheet" href="aos.css">
     <link rel="stylesheet" href="aos.js">
     <style type="text/css">
@@ -141,6 +141,19 @@
             transition: all 265ms ease-out;
         }
         
+        .overlay {
+            width: 150%;
+            position: absolute;
+            z-index: 100;
+        }
+        
+        .contain {
+            width: 150%;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
+        
         .social-icons a:hover:before {
             transform: scale(0);
             transition: all 265ms ease-in;
@@ -162,24 +175,26 @@
             width: 150%;
         }
         
-        ul li ul {
+        .naav ul li ul {
             display: none;
         }
         
-        ul li:hover ul {
+        .naav ul li:hover ul {
             display: block;
         }
         
-        ul li ul {
+        .naav ul li ul {
             display: none;
             position: absolute;
             z-index: 1;
         }
         
-        ul li:hover ul {
+        .naav ul li:hover ul {
             display: block;
             background-color: whitesmoke;
-            border-radius: 2%;
+            border-top-right-radius: 2%;
+            border-bottom-left-radius: 2%;
+            border-bottom-right-radius: 2%;
             padding: 1%;
             z-index: 1;
         }
@@ -341,12 +356,13 @@
             }
         }
         
-        html {
-            overflow-x: hidden;
+        body {
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
         }
         
-        body {
-            overflow: hidden;
+        html {
+            overflow-x: hidden;
         }
         
         @media only screen and (max-width:768px) {
@@ -408,36 +424,35 @@
 </head>
 
 <body>
-    <div class="mx-auto" style="background-color:black">
-        <header class="fixed nav-down mx-auto text-gray-600 body-font w-full ">
-            <div class="contain overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgba(0, 0, 0, 0.9); ">
-                <a class="flex  md:mb-0 md:ml-6 " style="margin-right:14%;" href="home.html">
-                    <img class="w-30 h-20 p-0 " src="pics/centella.png" alt="">
+    <div class="container mx-auto naav">
+        <header class="fixed nav-down mx-auto  w-full absolute ">
+            <div class="contain   overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
+                <a class="logo flex  items-center  mb-0  md:ml-6 " style="margin-right:15%;" href="home.html">
+                    <img class=" w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
                 </a>
-                <nav class=" md:mr-auto md:ml-6 md:py-2 md:pl-4  md:border-gray-100 z-100	flex flex-wrap items-center text-white justify-center ">
+                <nav class=" menu  md:py-2 md:pl-4  md:border-gray-100 z-100	flex flex-wrap items-center text-black justify-center ">
                     <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none  " style="position: relative;top: -15px;padding-right: 55%;padding-top: 0px;" for="menu-btn">
-<span class="navicon bg-blue-900 flex object-center relative " ></span>
-</label>
-                    <ul class="menu mx-1 border-b md:border-none text-lg flex justify-end list-reset m-0 w-full md:w-auto ">
-                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#about">About</a></li>
-                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#team">Team</a></li>
-                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#service">Offerings</a>
+                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-0 relative " style="position: relative;top:-10px ;padding-left: 25%;padding-top: 0%;" for="menu-btn">
+    <span class="navicon bg-blue-900 flex object-center relative " ></span>
+  </label>
+                    <ul class="menu  border-b md:border-none text-xl flex justify-end list-reset m-0    " style="font-weight: 450;">
+                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="#about">About</a></li>
+                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="#team">Team</a></li>
+                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="#service">Offerings</a>
                             <ul>
-                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="sci.html">Scientific Communication</a></li>
-                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="med.html">Medical Communication</a></li>
-                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="market.html">Market Research</a></li>
-                                <li class="active text-black border-t md:border-none"><a class="m-3 text-xl hover:text-blue-500" href="centella.html">Centella Academy</a></li>
+                                <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="sci.html">Scientific Communication</a></li>
+                                <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="med.html">Medical Communication</a></li>
+                                <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="market.html">Market Research</a></li>
+                                <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="centella.html">Centella Academy</a></li>
                             </ul>
                         </li>
-                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="home.html#whycentella">Why Centella?</a></li>
+                        <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="#whycentella">Why Centella?</a></li>
 
-                        <li class="border-t md:border-none"><a class="m-3 text-xl hover:text-blue-600" href="career.html">Career</a></li>
-                        <li class="border-t md:border-none"><button class="inline-flex  items-center bg-gray-100 border-0 p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-36 md:mt-0"><a href="home.html#consult" >Contact us</a>
-                
-                </button></li>
+                        <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="career.html">Career</a></li>
+                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #FADC54;"><a href="#consult" >Contact us</a></button>
                     </ul>
+
                 </nav>
             </div>
         </header>
@@ -469,7 +484,7 @@
         <div class=" px-0 py-0 mx-auto text-black">
             <div class="lg:w-3/4 w-full mx-auto text-center">
 
-                <h3 class="leading-relaxed text-lg quo mb-0 text-3xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;color: #002A8F;"></i> <br>Make your manuscript meet international standards. <i class="fa fa-quote-right" style="color: #002A8F;padding-left: 95%;"></i></h3>
+                <h3 class="leading-relaxed text-lg quo mb-0 text-3xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;color: #002A8F;"></i> <br>Make your manuscript meet international standards. <i class="fa fa-quote-right" style="color: #002A8F;padding-left: 900px"></i></h3>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-2"></span>
 
             </div>
@@ -687,15 +702,15 @@
                     </div>
                 </div>
 
-                <div class="flex object-center container py-2 items-center justify-center">
-                    <button class="object-center inline-flex items-center text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded text-lg" style="background-color: #CADC43;"><a href="home.html#consult"> Get Solution</a></button>
-
+                <div class="container " style="padding-left: 42%;">
+                    <button class="items-center  object-center  text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded text-lg" style="align-items: center; background-color:#FADC54;"><a href="home.html#consult"> Get Solution</a></button>
                 </div>
+
             </div>
         </div>
     </section>
-    <section class="public text-white bg-white py-18" style="padding-top: 30px;">
-        <h1 class="mx-4 sm:text-4xl e text-3xl font-medium title-font mb-2 text-black" style="font-family: Montserrat;">Publication support:</h1>
+    <section class="container mx-auto flex px-5 py-6  flex-col items-center public text-white bg-white py-18" style="padding-top: 30px;">
+        <h1 class="mx-4 sm:text-4xl e text-3xl font-medium title-font mb-2 text-black" style="font-family: Montserrat;">Publication support</h1>
         <h1 class="mx-4 pb1 text-lg font-medium   text-black mb-0 " style="font-family: montserrat;">Precisely written, clearly articulated and meticulously drafted manuscripts are the cornerstones to get published in high impact journals. Our academic editing services are customized to cater the challenges confronted by both non-native English
             speakers as well as native English speakers to who wish to get published. </h1>
 
@@ -707,9 +722,9 @@
                     <img class="pl-20 w-86  rounded" alt="hero" src="pics/p1.svg">
                 </div>
                 <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center" style="font-family: Montserrat;">
-                    <h2 class=" text-3xl  mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Journal selection <br> &nbsp; & submission
+                    <h2 class=" text-3xl  mb-2 font-medium text-gray-900" style="font-family: montserrat;">Journal selection & submission
                     </h2>
-                    <h1 class=" text-lg font-medium    mb-0 ">Improve your chances of publication by letting Centella help you match with the most suitable journals for your research article. Upon sharing your criteria, our team will suggest you with top 3-5 journals that fit in the area of your
+                    <h1 class=" text-x font-medium    mb-0 ">Improve your chances of publication by letting Centella help you match with the most suitable journals for your research article. Upon sharing your criteria, our team will suggest you with top 3-5 journals that fit in the area of your
                         work.
                     </h1>
                     <h1 class=" text-lg font-medium    mb-0 "> Criteria for selecting the journal : </h1>
@@ -723,9 +738,9 @@
         <section class="text-black ">
             <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center" style="font-family: Montserrat;">
                 <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h2 class="  text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Rejected/Revised <br> &nbsp; paper editing
+                    <h2 class="  text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">Rejected/Revised paper editing
                     </h2>
-                    <h1 class=" text-lg font-medium    mb-4 ">Centella offers customized editing services in the fixing the rejected manuscript either by resubmitting to the same target journal with substantive or communicating to new journal after enhancing the quality of the manuscript. Our
+                    <h1 class=" text-x font-medium    mb-4 ">Centella offers customized editing services in the fixing the rejected manuscript either by resubmitting to the same target journal with substantive or communicating to new journal after enhancing the quality of the manuscript. Our
                         subject matter experts ensure that your manuscript revised and rewritten meticulously as per the reviewer comments and drafts a strong rebuttal to the queries.</h1>
 
 
@@ -741,9 +756,9 @@
                     <img class="pl-24 h-72  object-center rounded" alt="hero" src="pics/p3.svg">
                 </div>
                 <div data-aos="fade-up-left" class=" lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h2 class=" text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">• Artwork preparation
+                    <h2 class=" text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">Artwork preparation
                     </h2>
-                    <h1 class=" text-lg font-medium    mb-4 "> Centella’s experienced artwork editors, armed with latest software tools will check and address all the technical aspects of your manuscript such as color, resolution (DPI or PPI), file size to confirm adherence to journal guidelines.
+                    <h1 class=" text-x font-medium    mb-4 "> Centella’s experienced artwork editors, armed with latest software tools will check and address all the technical aspects of your manuscript such as color, resolution (DPI or PPI), file size to confirm adherence to journal guidelines.
                     </h1>
                 </div>
             </div>
@@ -751,9 +766,9 @@
         <section class="text-black ">
             <div class="container mx-auto flex px-5 py-6 md:flex-row flex-col items-center" style="font-family: Montserrat;">
                 <div data-aos="fade-up-left" class=" lg:flex-grow md:w-2/3 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h2 class=" text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;"> • Video abstract
+                    <h2 class=" text-3xl mb-2 font-medium text-gray-900" style="font-family: montserrat;">Video abstract
                     </h2>
-                    <h1 class=" text-lg mb-4 ">“Stand out from the crowd”- With more than 5000 manuscripts published every day, it will be challenging task to make your work stand out. Off late Videos have emerged as an important medium to reach out and connect with a wider target
+                    <h1 class=" text-x mb-4 ">“Stand out from the crowd”- With more than 5000 manuscripts published every day, it will be challenging task to make your work stand out. Off late Videos have emerged as an important medium to reach out and connect with a wider target
                         audience. With the help of Centella’s video abstract service, you can transform your published manuscript into a top quality engaging and impactful video that recapitulates and showcase the essential findings. Our team of creative
                         experts with scientific background will create 2-3 minute audiovisual file that you can share, post in social media handles and even present at symposiums that enhance your chance of funding and citations.</h1>
 
@@ -769,20 +784,21 @@
                     <img class="object-cover object-center rounded" alt="hero" src="pics/p5.svg">
                 </div>
                 <div data-aos="fade-up-left" class=" lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h2 class=" text-3xl font-medium    mb-4 ">• Poster preparation</h1>
-                        <h2 class=" text-3xl font-medium    mb-4 "> • Plagiarism check </h1>
-                            <h2 class=" text-3xl font-medium    mb-4 "> • Journal submission & <br> &nbsp; Post-submission assistance </h1>
+                    <h2 class=" text-2xl font-medium    mb-4 ">• Poster preparation</h1>
+                        <h2 class=" text-2xl font-medium    mb-4 "> • Plagiarism check </h1>
+                            <h2 class=" text-2xl font-medium    mb-4 "> • Journal submission & <br> &nbsp; Post-submission assistance </h1>
                 </div>
             </div>
         </section>
         </div>
-        <div class="flex object-center container py-2 items-center justify-center">
-            <button class="object-center inline-flex items-center text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-gray-100 rounded text-lg" style="background-color: #CADC43;"><a href="home.html#consult"> Get Solution</a></button>
 
-        </div>
     </div>
     </div>
+
     </section>
+    <div class="container " style="padding-left: 42%;">
+        <button class="  text-black   py-2 px-6  rounded text-lg" style="align-items: center; background-color:#FADC54;"><a href="home.html#consult"> Get Solution</a></button>
+    </div>
     <section class="">
         <h1 class="how season text-5xl text-center mb-2 " style="font-family: Montserrat;padding-top: 3%;">How it works?</h1>
         <div data-aos="fade-up-right" class="steps" style="padding-right: 12%;">
