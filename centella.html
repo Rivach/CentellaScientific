@@ -46,6 +46,7 @@
             .navicon {
                 width: 1.125em;
                 height: .125em;
+                margin-left: 600%;
             }
             .navicon::before,
             .navicon::after {
@@ -82,17 +83,6 @@
             .menu-btn:checked~.menu-icon .navicon::after {
                 top: 0;
             }
-        }
-        
-        .overlay {
-            position: absolute;
-            z-index: 100;
-        }
-        
-        .overlay {
-            width: 150%;
-            position: absolute;
-            z-index: 100;
         }
         
         ul li ul {
@@ -204,6 +194,7 @@
             .menu {
                 padding-top: 0%;
                 width: 100%;
+                margin-left: 0px;
                 animation: moveright .1s linear 1;
                 visibility: hidden;
                 animation-fill-mode: forwards;
@@ -214,29 +205,26 @@
                 margin-right: 0%;
                 width: 50%;
             }
-            .contain {
-                width: 150%;
-                -webkit-box-shadow: 0 8px 6px -6px #999;
-                -moz-box-shadow: 0 8px 6px -6px #999;
-                box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
-            }
         }
         
-        .naav {
+        .overlay {
             width: 100%;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
         }
     </style>
 </head>
 
 <body>
-    <div class="mx-auto  naav">
-        <header class=" container fixed nav-down mx-auto  w-full ">
-            <div class="contain   overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
-                <a class="logo flex  items-center  mb-0  md:ml-6 " style="margin-right:15%;" href="home.html">
+    <div class="mx-0  naav">
+        <header class=" fixed nav-down mx-auto  w-full ">
+            <div class=" overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
+                <a class="logo flex  items-center  mb-0 mr-auto md:ml-auto " href="home.html">
                     <img class=" w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
                 </a>
-                <nav class=" menu  md:py-2 md:pl-4  md:border-gray-100 z-100	flex flex-wrap items-center text-black justify-center ">
+                <nav id="nvb" class="menu  md:py-2 md:pl-4  md:border-gray-100 z-100 ml-56 mr-auto	flex flex-wrap items-center text-black justify-center ">
                     <input class="menu-btn hidden" type="checkbox" id="menu-btn">
                     <label class="menu-icon block cursor-pointer md:hidden px-2 py-0 relative " style="position: relative;top:-10px ;padding-left: 25%;padding-top: 0%;" for="menu-btn">
     <span class="navicon bg-blue-900 flex object-center relative " ></span>
