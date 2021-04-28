@@ -94,6 +94,16 @@
             width: 150%;
             position: absolute;
             z-index: 100;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
+        
+        .contain {
+            width: 150%;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
         }
         
         .social-container {
@@ -211,13 +221,6 @@
             text-align: center;
         }
         
-        .contain {
-            width: 130%;
-            -webkit-box-shadow: 0 8px 6px -6px #999;
-            -moz-box-shadow: 0 8px 6px -6px #999;
-            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
-        }
-        
         .steps ul li {
             display: inline-block;
             width: 200px;
@@ -323,8 +326,8 @@
 
 <body>
     <div class="mx-auto naav">
-        <header class=" fixed nav-down mx-auto  w-full ">
-            <div class="contain  container overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
+        <header class="container fixed nav-down mx-auto  w-full ">
+            <div class="contain   overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
                 <a class="logo flex  items-center  mb-0  md:ml-6 " style="margin-right:15%;" href="home.html">
                     <img class=" w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
