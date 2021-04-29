@@ -602,10 +602,17 @@
                 z-index: 1000;
             }
             .hero {
-                background-image: #000000;
                 padding-top: 23%;
                 width: 100%;
                 font-size: 1vw;
+            }
+            .hero1 {
+                padding-top: 11%;
+                padding-bottom: 9%;
+                background-image: url(pics/bg.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.5)) !important;
+                background-blend-mode: overlay;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
             .txt {
                 animation: moveup 1s linear 1;
@@ -615,13 +622,11 @@
                 width: 100%;
             }
             .txt1 {
-                color: #000000;
                 font-size: 28px;
                 padding-bottom: 0%;
             }
             .txt2 {
                 padding-top: 0%;
-                color: #000000;
                 font-size: 36px;
                 line-height: 135%;
                 padding-bottom: 0%;
@@ -839,8 +844,13 @@
             }
         }
         
-        .hero img {
-            border-radius: 1%;
+        .hero1 {
+            padding-top: 11%;
+            padding-bottom: 9%;
+            background-image: url(pics/bg.jpg);
+            background-blend-mode: overlay;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         .overlay {
@@ -885,7 +895,7 @@
     </div>
     <section class="hero body-font">
 
-        <div class="hero1  mx-auto flex px-0 back md:flex-row flex-col items-center bg-transparent" style="padding-top: 11%;padding-bottom: 9%;background-image: url(pics/bg.jpg);background-repeat: no-repeat;background-size: cover;">
+        <div class="hero1  mx-auto flex px-0 back md:flex-row flex-col items-center ">
             <div class="  mx-6  md:w-3/4   flex flex-col " style="padding-right: 2%;">
 
 
