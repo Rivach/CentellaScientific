@@ -594,7 +594,15 @@
             html {
                 scroll-behavior: smooth;
             }
+            .naav {
+                background-color: white;
+            }
+            .overlay {
+                background-color: white;
+                z-index: 1000;
+            }
             .hero {
+                background-image: #000000;
                 padding-top: 23%;
                 width: 100%;
                 font-size: 1vw;
@@ -602,19 +610,18 @@
             .txt {
                 animation: moveup 1s linear 1;
                 visibility: hidden;
+                margin-top: 5%;
                 animation-fill-mode: forwards;
-                background-color: rgb(0, 0, 0, 0.2);
                 width: 100%;
             }
             .txt1 {
-                padding-top: 0%;
-                color: #ffffff;
+                color: #000000;
                 font-size: 28px;
                 padding-bottom: 0%;
             }
             .txt2 {
                 padding-top: 0%;
-                color: #ffffff;
+                color: #000000;
                 font-size: 36px;
                 line-height: 135%;
                 padding-bottom: 0%;
@@ -792,10 +799,6 @@
                 padding-top: 0%;
                 width: 90%;
             }
-            .hero img {
-                padding-top: 5%;
-                margin: 1%;
-            }
             .steps h1 {
                 font-size: 16px;
                 font-family: montserrat;
@@ -874,7 +877,7 @@
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="centella-discovery.html">Centella Discovery</a></li>
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="home.html#whycentella">Why Centella?</a></li>
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="career.html">Career</a></li>
-                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #1bb3f4;"><a href="#consult" >Contact us</a></button>
+                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-3 focus:outline-none  rounded text-black mx-24 md:mt-0" style="background-color: #1bb3f4;"><a href="#consult" >Contact us</a></button>
                     </ul>
                 </nav>
             </div>
@@ -882,7 +885,7 @@
     </div>
     <section class="hero body-font">
 
-        <div class=" mx-auto  flex px-0 back md:flex-row flex-col items-center bg-transparent" style="padding-top: 11%;padding-bottom: 9%;background-image: url(pics/bg.jpg);background-repeat: no-repeat;background-size: cover;">
+        <div class="hero1  mx-auto flex px-0 back md:flex-row flex-col items-center bg-transparent" style="padding-top: 11%;padding-bottom: 9%;background-image: url(pics/bg.jpg);background-repeat: no-repeat;background-size: cover;">
             <div class="  mx-6  md:w-3/4   flex flex-col " style="padding-right: 2%;">
 
 
@@ -900,7 +903,7 @@
 
                 <div class="contb  flex justify-center">
                     <button class="cont contact1  text-black   py-2 px-6   rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color:#1bb3f4;"> <a href="#consult">Get solution</a></button>
-                    <button class="cont contact2 ml-16 text-black  py-2 px-6  rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color: #ffe642;"><a href="#about">Know more</a></button>
+                    <button class="cont contact2 ml-16 text-black  py-2 px-6  rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color: #ddc423;"><a href="#about">Know more</a></button>
                 </div>
             </div>
         </div>
