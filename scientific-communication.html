@@ -189,90 +189,6 @@
             z-index: 1;
         }
         
-        .steps {
-            margin: 30px 30px 20px 30px;
-            padding-bottom: 1%;
-        }
-        
-        .steps img {
-            width: 136px;
-            margin-left: 15%;
-        }
-        
-        .steps ul li .fa::after {
-            content: '';
-            background-color: #148e14;
-            height: 4px;
-            width: 205px;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 160px;
-            z-index: -1;
-        }
-        
-        .steps ul {
-            padding: 5%;
-            text-align: center;
-        }
-        
-        .steps ul li {
-            display: inline-block;
-            width: 200px;
-            position: relative;
-        }
-        
-        .steps ul li .fa {
-            font-size: 20px;
-            background-color: #148e14;
-            width: 30px;
-            height: 30px;
-            color: #fff;
-            border-radius: 50%;
-            padding: 5px;
-        }
-        
-        .steps ul li:first-child .fa::after {
-            width: 810px;
-            left: 100px;
-        }
-        
-        .steps ul li:last-child .fa::after {
-            width: 0px;
-        }
-        
-        .steps ul li:nth-child(2) .fa::after {
-            width: 0px;
-        }
-        
-        .steps ul li:nth-child(3) .fa::after {
-            width: 0px;
-        }
-        
-        .steps ul li:nth-child(4) .fa::after {
-            width: 0px;
-        }
-        
-        .steps p {
-            font-size: large;
-            font-weight: bold;
-            font-family: montserrat;
-            padding-top: 4%;
-        }
-        
-        .steps h2 {
-            font-size: larger;
-            color: #9a01ff;
-            font-family: montserrat;
-            font-weight: bold;
-            margin-top: 5%;
-        }
-        
-        .steps h1 {
-            font-size: larger;
-            font-family: montserrat;
-        }
-        
         .txt {
             animation: moveright 1s linear 1;
             visibility: hidden;
@@ -355,15 +271,6 @@
         }
         
         @media only screen and (max-width:767px) {
-            .steps ul li:last-child {
-                margin-top: 200%;
-                bottom: 0px;
-                top: 600px;
-                right: 100px;
-            }
-            .steps ul li:nth-child(4) {
-                padding-bottom: 100%;
-            }
             .txt {
                 padding-top: 30%;
                 font-size: xx-large;
@@ -376,15 +283,6 @@
             }
             .ac1 {
                 font-size: 14px;
-            }
-            .steps {
-                width: 100%;
-                padding-right: 20%;
-            }
-            .steps ul li:first-child .fa::after {
-                width: 810px;
-                left: 100px;
-                visibility: hidden;
             }
             .public {
                 width: 100%;
@@ -400,12 +298,6 @@
             }
             .how {
                 font-size: 36px;
-            }
-            .steps h2 {
-                margin-top: 0%;
-            }
-            .steps h1 {
-                font-size: 16px;
             }
             .pbb h1 {
                 font-size: 16px;
@@ -433,10 +325,9 @@
             .bt1 {
                 padding-left: 0%;
             }
-        }
-        
-        .steps ul li:last-child {
-            position: absolute;
+            .fotertxt {
+                font-size: x-small;
+            }
         }
         
         .overlay {
@@ -844,19 +735,18 @@
                 <a class="mr-5 text-lg hover:text-blue-600">Privacy Policy</a>
             </nav>
             <hr style="height:1px;border-width:1;background-color: #ffffff;color: #ffffff;">
-            <div class="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
-
-                <p>© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
+            <div class="  px-5 py-3 mx-auto flex items-center sm:flex-row flex-col " style="padding-top: 3%;">
+                <p class="fotertxt">© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
                 </p>
                 <div class="social-container">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/centella.scientific/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/centellascient1"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/centellascientific/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/Centella-Scientific-103572945211581"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
-
             </div>
         </footer>
     </section>
