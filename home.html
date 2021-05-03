@@ -8,6 +8,7 @@
     <title>Centella</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="cn.css">
+    <link rel="icon" type="image/png" href="pics/centella.png">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -850,7 +851,7 @@
         .hero1 {
             padding-top: 11%;
             padding-bottom: 9%;
-            background-image: url(pics/bg.jpg);
+            background-image: url(pics/bg.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
             background-blend-mode: overlay;
             background-repeat: no-repeat;
             background-size: cover;
@@ -1393,8 +1394,24 @@
             duration: 1000,
         });
     </script>
+    <!---->
+    <script>
+        //Array of images which you want to show: Use path you want.
+        var images = new Array('pics/bg.jpg', 'pics/c3.jpg', 'pics/c1.jpg');
+        var nextimage = 0;
+        doSlideshow();
 
-
+        function doSlideshow() {
+            if (nextimage >= images.length) {
+                nextimage = 0;
+            }
+            $('.hero1')
+                .css('background-image', 'url("' + images[nextimage++] + '")')
+                .fadeIn(500, function() {
+                    setTimeout(doSlideshow, 5000);
+                });
+        }
+    </script>
 
 </body>
 
