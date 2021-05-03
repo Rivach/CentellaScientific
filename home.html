@@ -602,7 +602,7 @@
                 z-index: 1000;
             }
             .hero {
-                padding-top: 23%;
+                padding-top: 25%;
                 width: 100%;
                 font-size: 1vw;
             }
@@ -851,9 +851,14 @@
             padding-top: 11%;
             padding-bottom: 9%;
             background-image: url(pics/bg.jpg);
-            background-blend-mode: overlay;
+            background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
+            position: relative;
+            transform: translateZ(-400px) scale(1.05);
+            overflow-x: hidden;
+            overflow-y: scroll;
+            perspective: 10px;
         }
         
         .overlay {
