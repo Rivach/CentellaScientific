@@ -610,7 +610,7 @@
             .hero1 {
                 padding-top: 11%;
                 padding-bottom: 9%;
-                background-image: url(pics/bg.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)) !important;
+                background-image: url(pics/c3.jpg), linear-gradient( rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)) !important;
                 background-blend-mode: overlay;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -826,6 +826,7 @@
                 padding-top: 0%;
                 margin-left: 0%;
                 width: 100%;
+                font-size: 16px;
                 animation: moveright .1s linear 1;
                 visibility: hidden;
                 animation-fill-mode: forwards;
@@ -845,6 +846,9 @@
             }
             .fotertxt {
                 font-size: x-small;
+            }
+            .cont {
+                font-size: small;
             }
         }
         
@@ -1407,7 +1411,7 @@
             }
             $('.hero1')
                 .css('background-image', 'url("' + images[nextimage++] + '")')
-                .fadeIn(500, function() {
+                .fadeIn(1000, function() {
                     setTimeout(doSlideshow, 5000);
                 });
         }
