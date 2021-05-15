@@ -286,13 +286,49 @@
             box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
         }
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197087162-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-197087162-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PSC5X9H');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSC5X9H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="mx-0  naav">
         <header class=" fixed nav-down mx-auto  w-full ">
             <div class=" overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(255, 255, 255); ">
-                <a class="logo flex  items-center  mb-0 mr-auto md:ml-auto " href="home.html">
+                <a class="logo flex  items-center  mb-0 mr-auto md:ml-auto " href="index.html">
                     <img class=" w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
                 </a>
@@ -302,9 +338,9 @@
     <span class="navicon bg-blue-900 flex object-center relative " ></span>
   </label>
                     <ul class="menu  border-b md:border-none text-xl flex justify-end list-reset m-0    " style="font-weight: 450;">
-                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="home.html#about">About</a></li>
-                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="home.html#team">Team</a></li>
-                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="home.html#service">Offerings</a>
+                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="index.html#about">About</a></li>
+                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="index.html#team">Team</a></li>
+                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="index.html#service">Offerings</a>
                             <ul>
                                 <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="scientific-communication.html">Scientific Communication</a></li>
                                 <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="medical-communication.html">Medical Communication</a></li>
@@ -313,10 +349,10 @@
                             </ul>
                         </li>
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="centella-discovery.html">Centella Drug Discovery</a></li>
-                        <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="home.html#whycentella">Why Centella?</a></li>
+                        <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="index.html#whycentella">Why Centella?</a></li>
 
                         <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="career.html">Careers</a></li>
-                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #1bb3f4;"><a href="#consult" >Contact us</a></button>
+                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #1bb3f4;"><a href="index.html#consult" >Contact us</a></button>
                     </ul>
 
                 </nav>
@@ -468,34 +504,45 @@
             </div>
         </div>
     </section>
-    <footer class="text-white body-font bg-black " style="font-family: Montserrat; ">
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-2 md:ml-9 " href="home.html ">
-            <img class="w-30 h-20 p-0 " style="object-fit: cover;padding-left: 45%;padding-top: 6px; " src="pics/centella.png " alt="logo ">
-
+    <footer class="text-white" style="font-family: Montserrat;padding-bottom: 2%;padding-top: 0%;background-color: rgb(0, 0, 0);">
+        <a class="flex title-font  items-center   mb-4 md:mb-2 md:ml-9" href="index.html">
+            <img class=" w-30 h-20 p-0  " style="object-fit: cover;padding-left: 45%;padding-top: 6px;" src="pics/centella.png" alt="logo">
         </a>
-        <nav class="md:mr-auto md:ml-5 md:py- md:pl-4 md:border-gray-100 flex flex-wrap items-center text-white justify-center mb-4 ">
+        <nav class=" md:mr-auto md:ml-5 md:py- md:pl-4   flex flex-wrap items-center  justify-center mb-4">
 
-            <a class="mr-5 text-lg hover:text-blue-600 " href="home.html#about ">About</a>
-            <a class="mr-5 text-lg hover:text-blue-600 " href="home.html#service ">Services</a>
-            <a class="mr-5 text-lg hover:text-blue-600 " href="home.html#team ">Our Team</a>
-            <a class="mr-5 text-lg hover:text-blue-600 " href="career.html ">Careers</a>
-            <a class="mr-5 text-lg hover:text-blue-600 " href="home.html#consult ">Contact Us</a>
-            <a class="mr-5 text-lg hover:text-blue-600 ">Privacy Policy</a>
+            <a class="mr-5 text-lg hover:text-blue-600" href="index.html#about">About</a>
+            <a class="mr-5 text-lg hover:text-blue-600" href="index.html#service">Services</a>
+            <a class="mr-5 text-lg hover:text-blue-600" href="index.html#team">Our Team</a>
+            <a class="mr-5 text-lg hover:text-blue-600" href="career.html">Careers</a>
+            <a class="mr-5 text-lg hover:text-blue-600" href="index.html#consult">Contact Us</a>
+            <a class="mr-5 text-lg hover:text-blue-600">Privacy Policy</a>
+
         </nav>
-        <hr style="height:1px;border-width:1;background-color: #ffffff;color: #ffffff; ">
-        <div class=" px-5 py-3 mx-auto flex items-center sm:flex-row flex-col " style="padding-top: 3%; ">
-            <p class="fotertxt ">© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
+        <hr style="height:1px;border-width:1;background-color: #000000;color: #000000;">
+        <div class="  px-5 py-3 mx-auto flex items-center sm:flex-row flex-col " style="padding-top: 3%;">
+            <p class="fotertxt " style="font-size: 16px;">© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
             </p>
-            <div class="social-container ">
-                <ul class="social-icons ">
-                    <li><a href="https://www.instagram.com/centella.scientific/ " target="_blank "><i class="fa fa-instagram "></i></a></li>
-                    <li><a href="https://twitter.com/centellascient1 " target="_blank "><i class="fa fa-twitter "></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/centellascientific/ " target="_blank "><i class="fa fa-linkedin "></i></a></li>
-                    <li><a href="https://www.facebook.com/Centella-Scientific-103572945211581 " target="_blank "><i class="fa fa-facebook "></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w " target="_blank "><i class="fa fa-youtube "></i></a></li>
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/centella.scientific/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/centellascient1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/centellascientific/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/Centella-Scientific-103572945211581" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w" target="_blank"><i class="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
+        <section class="text-white container ">
+            <div class="container mx-auto flex px-5  md:flex-row flex-col items-center">
+                <div class="lg:flex-grow md:w-1/2   flex flex-col  text-right   ">
+                    <h4 class=" text-lg dsg" style="padding-top: 2%;"> Designed & Developed by </h4>
+
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 " style="padding-top:14px;">
+                    <a href="https://rivach.com/" style="font-weight: bold;" class="colr" target="_blank"> <img class=" h-20 object-center rounded" alt="rivach.com" src="pics/rivach.png"></a>
+                </div>
+            </div>
+        </section>
     </footer>
     </section>
     <script src="aos.js "></script>

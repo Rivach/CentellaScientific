@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centella Scientific Discovery</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cn.css">
+    <link rel="icon" type="image/png" href="pics/centella.png">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="js/nav.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $(".overlay").css("background", "#FFFFFF");
+                    $(".overlay").css("color", "#000000")
+                    $(".overlay").css('box-shadow', '0 8px 6px -5px rgb(129, 126, 126)');
+
+
+                } else {
+                    $(".overlay").css("background", "rgb(0,0,0,.01)");
+                    $(".overlay").css('box-shadow', '0px 0px 0px 0px rgb(129, 126, 126)');
+                    $(".overlay").css("color", "#FFFFFF");
+
+                }
+            })
+        })
+    </script>
+
+    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="aos.js">
+    <style type="text/css">
+        .season {
+            background: -webkit-linear-gradient( rgb(121, 49, 255) 0.2%, rgba(0, 124, 255, 1) 59.1%, rgb(219, 87, 255) 100.2%);
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            font-weight: 1000;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .colr {
+            background: -webkit-linear-gradient(rgb(3, 173, 252)50%, rgb(141, 54, 255) 100.2%);
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        #box {
+            transition: .1s;
+        }
+        
+        #box:hover {
+            z-index: 0;
+            background-color: #f6fbfc;
+            transform: scale(1.05);
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
+        
+        .slide {
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
+        
+        .cont:hover {
+            transition: .3s;
+            transform: scale(1.09);
+            border-radius: 5px;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        @media screen and (max-width: 767px) {
+            html {
+                scroll-behavior: smooth;
+            }
+            .navicon {
+                width: 1.25em;
+                height: .1em;
+                margin-left: 600%;
+            }
+            .navicon::before,
+            .navicon::after {
+                padding-top: 0%;
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: all .2s ease-out;
+                content: '';
+                background: #3D4852;
+            }
+            .navicon::before {
+                top: 5px;
+            }
+            .navicon::after {
+                top: -5px;
+            }
+            .menu-btn:not(:checked)~.menu {
+                display: none;
+            }
+            .menu-btn:checked~.menu {
+                display: block;
+            }
+            .menu-btn:checked~.menu-icon .navicon {
+                background: transparent;
+            }
+            .menu-btn:checked~.menu-icon .navicon::before {
+                transform: rotate(-45deg);
+            }
+            .menu-btn:checked~.menu-icon .navicon::after {
+                transform: rotate(45deg);
+            }
+            .menu-btn:checked~.menu-icon .navicon::before,
+            .menu-btn:checked~.menu-icon .navicon::after {
+                top: 0;
+            }
+        }
+        
+        .form .info p {
+            text-align: center;
+            color: #999;
+            text-transform: none;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: 2px
+        }
+        
+        .form .info i {
+            color: #F6AA93;
+        }
+        
+        .form form h1 {
+            font-size: 18px;
+            background: #F6AA93 none repeat scroll 0% 0%;
+            color: rgb(255, 255, 255);
+            padding: 22px 25px;
+            border-radius: 5px 5px 0px 0px;
+            margin: auto;
+            text-shadow: none;
+            text-align: left
+        }
+        
+        .form form {
+            border-width: 2px;
+            border-radius: 20px;
+            border-color: #37990a;
+            max-width: 700px;
+            width: 100%;
+            padding-top: 0%;
+            padding-left: 3%;
+            padding-bottom: 2%;
+            margin: 2% auto;
+            margin-bottom: 5%;
+            background-color: transparent;
+            overflow: hidden;
+        }
+        
+        .form p span {
+            color: #F00;
+        }
+        
+        .form p {
+            font-family: montserrat;
+            margin: 0px;
+            font-weight: 500;
+            line-height: 2;
+            color: #000000;
+        }
+        
+        .form h1 {
+            text-align: center;
+            text-shadow: 1px 1px 0px #FFF;
+            margin: 50px 0px 0px 0px
+        }
+        
+        .form input {
+            border-radius: 0px 5px 5px 0px;
+            border: 1px solid #7365AD;
+            margin-bottom: 15px;
+            width: 75%;
+            height: 40px;
+            float: left;
+            padding: 0px 15px;
+        }
+        
+        .form a {
+            text-decoration: inherit
+        }
+        
+        .form textarea {
+            border-radius: 0px 5px 5px 0px;
+            border: 1px solid #927ee2;
+            margin: 0;
+            width: 88%;
+            height: 40px;
+            float: left;
+            padding: 0px 15px;
+        }
+        
+        .form-group {
+            overflow: hidden;
+            clear: both;
+        }
+        
+        .form .icon-case {
+            width: 35px;
+            float: left;
+            border-radius: 5px 0px 0px 5px;
+            background: #927ee2;
+            height: 40px;
+            position: relative;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        .form i {
+            color: rgb(0, 0, 0);
+        }
+        
+        .contentform {
+            padding: 40px 30px;
+        }
+        
+        .bouton-contact {
+            background-color: #1bb3f4;
+            color: #000000;
+            text-align: center;
+            margin-left: 250px;
+            width: 20%;
+            border: 0;
+            border-radius: 5px 5px 5px 5px;
+            cursor: pointer;
+            margin-top: 0px;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        
+        .bouton-contact:hover {
+            transition: .5s;
+            transform: scale(1.1);
+            border-radius: 5px;
+        }
+        
+        .leftcontact {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            padding: 0px 15px 0px 0px;
+        }
+        
+        .rightcontact {
+            width: 50%;
+            float: right;
+            box-sizing: border-box;
+            padding: 0px 0px 0px 15px;
+        }
+        
+        .validation {
+            display: none;
+            margin: 0 0 10px;
+            font-weight: 400;
+            font-size: 13px;
+            color: #DE5959;
+        }
+        
+        <!--footer css-->.overlay {
+            width: 150%;
+            position: absolute;
+            z-index: 100;
+        }
+        
+        body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        
+        header {
+            transform-style: preserve-3d;
+            position: relative;
+            top: 0;
+            transition: top 0.3s ease-in-out;
+            z-index: 100000;
+        }
+        
+        .nav-up {
+            top: -110px;
+        }
+        
+        .social-container {
+            width: 186px;
+            margin: 0vh auto;
+            margin-right: 1%;
+            text-align: center;
+        }
+        
+        .social-icons {
+            padding: 0;
+            list-style: none;
+            margin: .1em;
+        }
+        
+        .social-icons li {
+            display: inline-block;
+            margin: 0.18em;
+            position: relative;
+            font-size: 1.2em;
+        }
+        
+        .social-icons i {
+            color: #fff;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: all 265ms ease-out;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+        }
+        
+        .social-icons a:before {
+            transform: scale(1);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            content: " ";
+            width: 26px;
+            height: 26px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, #00B5F5, #002A8F);
+            transition: all 265ms ease-out;
+        }
+        
+        .social-icons a:hover:before {
+            transform: scale(0);
+            transition: all 265ms ease-in;
+        }
+        
+        .social-icons a:hover i {
+            transform: scale(2.2);
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            color: #00B5F5;
+            background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 265ms ease-in;
+        }
+        
+        .steps {
+            padding-bottom: 1%;
+            width: 100%;
+            padding-right: 15%;
+        }
+        
+        .steps img {
+            width: 136px;
+            margin-left: 15%;
+        }
+        
+        .steps ul li .fa::after {
+            content: '';
+            background-color: #148e14;
+            height: 4px;
+            width: 205px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 160px;
+            z-index: -1;
+        }
+        
+        .steps ul {
+            padding-top: 5%;
+            text-align: center;
+        }
+        
+        .steps ul li {
+            display: inline-block;
+            width: 210px;
+            position: relative;
+        }
+        
+        .steps ul li .fa {
+            font-size: 20px;
+            background-color: #148e14;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+        .steps ul li:last-child {
+            position: absolute;
+        }
+        
+        .steps ul li:first-child .fa::after {
+            width: 850px;
+            left: 100px;
+        }
+        
+        .steps ul li:last-child .fa::after {
+            width: 0px;
+        }
+        
+        .steps ul li:nth-child(2) .fa::after {
+            width: 0px;
+        }
+        
+        .steps ul li:nth-child(3) .fa::after {
+            width: 0px;
+        }
+        
+        .steps ul li:nth-child(4) .fa::after {
+            width: 0px;
+        }
+        
+        .steps p {
+            font-size: 22px;
+            font-weight: bold;
+            font-family: montserrat;
+            padding-top: 4%;
+        }
+        
+        .steps h2 {
+            font-size: 24px;
+            color: #2370ff;
+            font-family: montserrat;
+            font-weight: bold;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+        
+        .steps h1 {
+            font-size: larger;
+            font-family: montserrat;
+        }
+        
+        .naav ul li ul {
+            display: none;
+        }
+        
+        .naav ul li:hover ul {
+            display: block;
+        }
+        
+        .naav ul li ul {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .naav ul li:hover ul {
+            display: block;
+            color: #000000;
+            background-color: whitesmoke;
+            border-top-right-radius: 2%;
+            border-bottom-left-radius: 2%;
+            border-bottom-right-radius: 2%;
+            padding: 1%;
+            z-index: 1;
+        }
+        
+        #whycentella h2 {
+            font-weight: bold;
+        }
+        
+        .logo {
+            animation: movedown 1s linear 1;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+            z-index: 10;
+        }
+        
+        @keyframes movedown {
+            0% {
+                transform: translateY(-100px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateY(0);
+                visibility: visible;
+            }
+        }
+        
+        .menu {
+            animation: movedown 1s linear 1;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+            z-index: 10;
+        }
+        
+        .sol1 {
+            animation: moveright 1s linear 1;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+        /* .sol1 {
+            animation: MoveUpDown 1s linear infinite;
+            position: relative;
+            left: 0;
+            bottom: 0;
+        } */
+        
+        .sol2 {
+            animation: moveleft 1s linear 1;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+        
+        .txt {
+            animation: moveleft 1s linear 1;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes moveup {
+            0% {
+                transform: translateY(0px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateY(-50);
+                visibility: visible;
+            }
+        }
+        
+        @keyframes moveleft {
+            0% {
+                transform: translateX(100px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateX(0);
+                visibility: visible;
+            }
+        }
+        
+        @keyframes moveright {
+            0% {
+                transform: translateX(-100px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateX(0);
+                visibility: visible;
+            }
+        }
+        
+        @keyframes MoveUpDown {
+            0%,
+            100% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 20px;
+            }
+        }
+        
+        body {
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
+        }
+        
+        html {
+            overflow-x: hidden;
+        }
+        
+        .why2 h4 {
+            font-size: 22px;
+        }
+        
+        @media only screen and (max-width:767px) {
+            html {
+                scroll-behavior: smooth;
+            }
+            .naav {
+                background-color: white;
+            }
+            .overlay {
+                background-color: white;
+                z-index: 1000;
+            }
+            .hero {
+                padding-top: 27%;
+                width: 100%;
+                font-size: 1vw;
+            }
+            .hero1 {
+                padding-top: 11%;
+                padding-bottom: 9%;
+                background-image: url(pics/c3.jpg), linear-gradient( rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)) !important;
+                background-blend-mode: overlay;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .txt {
+                animation: moveup 1s linear 1;
+                visibility: hidden;
+                margin-top: 5%;
+                animation-fill-mode: forwards;
+                width: 100%;
+            }
+            .txt1 {
+                font-size: 28px;
+                padding-bottom: 0%;
+            }
+            .txt2 {
+                padding-top: 0%;
+                font-size: 36px;
+                line-height: 135%;
+                padding-bottom: 0%;
+                margin-bottom: 2%;
+            }
+            .txt3 {
+                margin-top: 0%;
+                font-size: 16px;
+                padding-bottom: 3%;
+                margin: 0%;
+            }
+            .quote {
+                font-size: smaller;
+            }
+            .abt1 {
+                font-size: xx-large;
+            }
+            .abt2 {
+                font-size: smaller;
+            }
+            .exp {
+                padding-top: 10%;
+                padding-left: 5%;
+                width: 80%;
+                padding-bottom: 10%;
+            }
+            .why2 {
+                font-size: 18px;
+            }
+            .steps {
+                width: 100%;
+            }
+            .steps ul li:first-child .fa::after {
+                width: 810px;
+                left: 100px;
+                visibility: hidden;
+            }
+            .steps ul li:last-child {
+                position: relative;
+            }
+            #team {
+                width: 90%;
+                padding-left: 10%;
+            }
+            .form {
+                width: 100%;
+            }
+            .form .info p {
+                text-align: center;
+                color: #999;
+                text-transform: none;
+                font-weight: 600;
+                font-size: 15px;
+                margin-top: 2px
+            }
+            .form .info i {
+                color: #F6AA93;
+            }
+            .form form h1 {
+                font-size: 18px;
+                background: #F6AA93 none repeat scroll 0% 0%;
+                color: rgb(255, 255, 255);
+                padding: 22px 25px;
+                border-radius: 5px 5px 0px 0px;
+                margin: auto;
+                text-shadow: none;
+                text-align: left
+            }
+            .form form {
+                border-width: 2px;
+                border-radius: 20px;
+                border-color: #37990a;
+                max-width: 700px;
+                width: 100%;
+                padding-top: 0%;
+                padding-left: 3%;
+                padding-bottom: 2%;
+                margin: 2% auto;
+                margin-bottom: 5%;
+                background-color: transparent;
+                overflow: hidden;
+            }
+            .form p span {
+                color: #F00;
+            }
+            .form p {
+                font-family: montserrat;
+                margin: 0px;
+                font-weight: 500;
+                font-size: small;
+                line-height: 2;
+                color: #000000;
+            }
+            .form h1 {
+                text-align: center;
+                text-shadow: 1px 1px 0px #FFF;
+                margin: 50px 0px 0px 0px
+            }
+            .form input {
+                border-radius: 0px 5px 5px 0px;
+                border: 1px solid #7365AD;
+                margin-bottom: 15px;
+                width: 75%;
+                height: 30px;
+                float: left;
+                padding: 0px 15px;
+            }
+            .form a {
+                text-decoration: inherit
+            }
+            .form textarea {
+                border-radius: 0px 5px 5px 0px;
+                border: 1px solid #927ee2;
+                margin: 0;
+                width: 88%;
+                height: 30px;
+                float: left;
+                padding: 0px 15px;
+            }
+            .form-group {
+                overflow: hidden;
+                clear: both;
+            }
+            .form .icon-case {
+                padding-top: 0%;
+                margin-top: 0%;
+                width: 20px;
+                float: left;
+                border-radius: 5px 0px 0px 5px;
+                background: #927ee2;
+                height: 30px;
+                position: relative;
+                text-align: center;
+                line-height: 40px;
+            }
+            .form i {
+                color: rgb(0, 0, 0);
+            }
+            .contentform {
+                padding: 30px 5px;
+            }
+            .bouton-contact {
+                background-color: #1bb3f4;
+                color: #000000;
+                text-align: center;
+                margin-left: 100px;
+                width: 30%;
+                border: 0;
+                border-radius: 5px 5px 5px 5px;
+                cursor: pointer;
+                margin-top: 0px;
+                font-family: cursive;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .bouton-contact:hover {
+                transition: .5s;
+                transform: scale(1.1);
+                border-radius: 5px;
+            }
+            .contact1 {
+                font-size: 16px;
+                width: 80%;
+                margin-top: 0%;
+                padding: 1%;
+                text-align: center;
+            }
+            .contact2 {
+                font-size: 16px;
+                width: 80%;
+                padding: 0%;
+                text-align: center;
+            }
+            .contb {
+                padding-top: 0%;
+                width: 90%;
+            }
+            .steps h1 {
+                font-size: 16px;
+                font-family: montserrat;
+                padding-bottom: 2%;
+            }
+            .steps h2 {
+                margin-top: 1%;
+            }
+            .overlay {
+                width: 150%;
+                background-color: white;
+                -webkit-box-shadow: 0 8px 6px -6px #999;
+                -moz-box-shadow: 0 8px 6px -6px #999;
+                box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+            }
+            .menu {
+                background-color: white;
+                color: #000000;
+                padding-top: 0%;
+                margin-left: 0%;
+                width: 100%;
+                font-size: 16px;
+                animation: moveright .1s linear 1;
+                visibility: hidden;
+                animation-fill-mode: forwards;
+                position: relative;
+                z-index: 10;
+            }
+            .logo {
+                margin-right: 0%;
+                width: 50%;
+            }
+            .why2 h4 {
+                font-size: large;
+            }
+            .exp1,
+            .exp2 {
+                padding-bottom: 15%;
+            }
+            .fotertxt {
+                font-size: x-small;
+            }
+            .cont {
+                font-size: small;
+            }
+            .why1 {
+                font-size: 36px;
+            }
+            .whycen,
+            .what,
+            .how,
+            .team,
+            .contactus {
+                font-size: 40px;
+            }
+            .dsg {
+                font-size: 16px;
+            }
+        }
+        
+        .hero1 {
+            padding-top: 11%;
+            padding-bottom: 9%;
+            background-image: url(pics/bg.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-blend-mode: overlay;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .overlay {
+            width: 100%;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197087162-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-197087162-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PSC5X9H');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSC5X9H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="mx-0  naav">
+        <header class=" fixed nav-down mx-auto  w-full ">
+
+            <div class=" overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:rgb(0, 0, 0,0.01);color: white;">
+                <a class="logo flex  items-center  mb-0 mr-auto md:ml-auto " href="index.html">
+                    <img class=" w-31 h-24 p-0 " src="pics/centella.png" alt="">
+
+                </a>
+                <nav id="nvb" class="menu  md:py-2 md:pl-4  md:border-gray-100 z-100 ml-16 mr-auto	flex flex-wrap items-center  justify-center ">
+                    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-0 relative " style="position: relative;top:-15px ;padding-left: 25%;padding-top: 0%;" for="menu-btn">
+    <span class="navicon bg-blue-900 flex object-center relative " ></span>
+  </label>
+                    <ul class="menu  border-b md:border-none text-2xl flex justify-end list-reset m-0    " style="font-weight: 450;">
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="index.html#about">About</a></li>
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="index.html#team">Team</a></li>
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="index.html#service">Offerings</a>
+                            <ul>
+                                <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="scientific-communication.html">Scientific Communication</a></li>
+                                <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="medical-communication.html">Medical Communication</a></li>
+                                <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-600" href="market-research.html">Market Research</a></li>
+                                <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-600" href="centella-academy.html">Centella Academy</a></li>
+                            </ul>
+                        </li>
+                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="centella-discovery.html">Centella Drug Discovery</a></li>
+                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="index.html#whycentella">Why Centella?</a></li>
+                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="career.html">Careers</a></li>
+                        <button class="cont inline-flex text-lg  items-center  p-12 py-1 px-3 focus:outline-none  rounded text-black mx-9 md:mt-0" style="background-color: #1bb3f4;font-weight: bold;font-family: montserrat;"><a href="#consult" >Contact us</a></button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <section class="hero body-font">
+
+        <div class="hero1  mx-auto flex px-0 back md:flex-row flex-col items-center ">
+            <div class="  mx-6  md:w-3/4   flex flex-col " style="padding-right: 2%;">
+
+
+
+            </div>
+
+            <div class=" txt md:w-4/5 flex flex-col items-center" style="padding-top: 5%;">
+                <h4 class="txt1 text-4xl   text-center text-white mb-2 p-0" style="font-family:  Montserrat;font-weight: 800;">Turning <span class="colr text-4xl"> Science </span> into
+                </h4>
+                <h4 class="txt2 text-5xl    text-center  text-white mb-8 p-2" style="font-family:  Montserrat;font-weight: 1000;">high impact <span class="colr text-5xl">Solutions </span>
+                </h4>
+                <h4 class="txt3 text-xl   text-center text-white mb-12" style="font-family: 'Montserrat';font-weight: 500;">Enable your research to create impact and <br>reach out to global audience
+                </h4>
+
+
+                <div class="contb  flex justify-center">
+                    <button class="cont contact1  text-black   py-2 px-6   rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color:#1bb3f4;"> <a href="#consult">Get solution</a></button>
+                    <button class="cont contact2 ml-16 text-black  py-2 px-6  rounded text-lg" style="font-family: montserrat;font-weight: 700;background-color: #ddc423;"><a href="#about">Know more</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <section>
+        <div class=" px-5 py-10 mx-auto text-black">
+            <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                <h3 class="quote leading-relaxed text-lg  mb-0 text-2xl" style="font-family: Montserrat;"><i class="fa fa-quote-left " style="padding-right: 900px;color: #002A8F;"></i> <br> Scientists have become the bearers of the torch of discovery in our quest for knowledge. <i class="fa fa-quote-right" style="color: #002A8F;padding-left: 95%;"></i></h3>
+                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-2"></span>
+                <h2 class="quote1   tracking-wider text-sm mb-8" style="font-size: x-large;font-family: Montserrat;color: #1904E5;font-weight: bold;"> Stephen Hawking</h2>
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            </div>
+        </div>
+
+    </section>
+    <section id="about" class="text-black mx-auto ">
+        <h3 id="colr" class=" py-0 abt1 text-5xl colr" style="text-align: center;font-family: montserrat;font-weight: bold;">About Centella</h3>
+        <div class=" px-0 py-16 mx-auto " style="padding-top: 10px;padding-bottom: 0px;">
+
+            <div class="abt2 flex-col mx-auto text-center  mb-0" style="font-size: large;">
+                <h4 class="abt2  mx-auto  " style="text-align: center;font-weight: 500;font-family:montserrat;padding-left: 7%;padding-right: 7%;padding-top: 1%;padding-bottom: 0%;">Centella is a technology platform that provide end-to-end scientific research solutions to the scientific community. It is founded and lead by experienced & practicing research scientists. The leadership team at Centella has a 60+yrs of
+                    cumulative academic and industrial research experiences in the domains of drug discovery, medicinal chemistry, cancer biology, molecular biology, microbiology, biotechnology,and bio informatics. As a strong proponent of science, Centella
+                    aims to help the scientific community translate their research ideas and findings into a communication ready format to reach wider audience and create greater impact. We firmly believe in enabling and empowering the global researchers
+                    with our offerings and tools. Backed by strong international research collaborative network and supported by large pool of freelance subject matter experts, Centella offers a wide range of services in the space of Scientific communications,
+                    Medical Communications and Market Research.</h4>
+            </div>
+        </div>
+    </section>
+    <section class="text-black exp">
+        <div class="container px-0 py-16 mx-auto" style="padding-top: 13%;padding-bottom: 7%;">
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                <div data-aos="fade-right" class="exp1 p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div class="w-72  h-20 inline-flex items-center justify-center rounded-full  text-indigo-500 mb-20 flex-shrink-0">
+                        <img class="mx-auto " src="pics/ex.png" alt="" width="auto">
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="title-font  text-2xl mx-auto mb-2  " style="font-family: Montserrat;font-weight: 600;"><span style="font-weight: bold;color:red;font-size: xx-large;"> 60+ </span> <br> Years of Experiences </h4>
+                    </div>
+                </div>
+                <div data-aos="fade-down" class="exp2 p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div class="w-72 h-20 inline-flex items-center justify-center rounded-full  text-indigo-500 mb-20 flex-shrink-0">
+                        <img class="mx-auto  " src="pics/r.png" alt="" width="auto">
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class=" text-2xl mx-auto mb-2  " style="font-family: Montserrat;font-weight: 600;"><span style="font-weight: bold;color: red;font-size: xx-large;">  200+ </span> <br> International Publications <br> </h4>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="exp3 p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div class="w-64 h-20 inline-flex items-center justify-center rounded-full  mb-20 flex-shrink-0">
+                        <img class="mx-auto      pb-" src="pics/ex1.svg" alt="" width="300">
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="text-2xl mx-auto mb-2  " style="font-family: montserrat;font-weight: 600;"><span style="font-family: montserrat;font-weight: bold;color: red;font-size: xx-large;">  50+ </span> <br> Patents & Book Chapters<br></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-black  ">
+        <div class="container px-5 py-10 mx-auto" style="padding-top: 0px;padding-bottom: 5px;font-family: montserrat;">
+            <div class="flex flex-col  w-full mb-8">
+                <div class="flex flex-col  w-full mb-6">
+                    <h2 class="why1 colr text-xs text-5xl text-indigo-500 text-center  title-font mb-1"><span style="font-family: montserrat;font-weight: bold;letter-spacing: 1px;">What we believe</span></h2>
+                </div>
+                <div class="why2 mx-auto  mb-2" style="font-family: montserrat;">
+                    <h4 class="mb-2">• Science is the bedrock of healthier & <span style="color: #002df5;"> thriving society </span> and has immense capability to <span style="color: #002df5;"> transform lives </span>.</h4>
+                    <h4 class="mb-2">• Enabling, <span style="color: #002df5;">empowering </span> and encouraging better <span style="color: #002df5;">scientific expressions </span> leading to high impact solutions.</h4>
+                    <h4 class="mb-2">• <span style="color: #002df5;">Nurturing</span>, inculcating, developing <span style="color: #002df5;"> research traits</span> in education eco-systems.</h4>
+                    <h4 class="mb-2">• Creating <span style="color: #002df5;">equal opportunities</span> for those who have an intention to <span style="color: #002df5;">pursue research</span> as a career option.</h4>
+                </div>
+                <div>
+                </div>
+    </section>
+    <section class="text-black " id="whycentella" style="padding-top: 0%;font-family: montserrat;">
+        <h3 class="text-5xl colr whycen py-1 text-center text-indigo-500 mb-0 text-white" style="font-weight: bold;"> Why Centella?</h3>
+        <div class="container mx-auto  px-5 py-24 " style="padding: 15%;padding-bottom: 4%;padding-top:3%;">
+            <div class="flex flex-wrap -m-4">
+                <div data-aos="fade-down-right" class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-36 rounded overflow-hidden">
+                        <img alt="ecommerce" class="relative object-fit object-center w-full h-full block " src="pics/1.png">
+                    </a>
+                    <div class="mt-4 mb-0">
+                        <h2 class=" text-center title-font text-lg ">Unparalleld scientific expertise</h2>
+                    </div>
+                </div>
+                <div data-aos="fade-down" class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-36 rounded overflow-hidden">
+                        <img alt="ecommerce" class=" object-fit object-center w-full h-full block" src="pics/2.svg">
+                    </a>
+                    <div class="mt-4 mb-6">
+                        <h2 class=" text-center title-font text-lg ">Quick turnaround</h2>
+                    </div>
+                </div>
+                <div data-aos="fade-down-left" class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-36 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/3.svg">
+                    </a>
+                    <div class="mt-4 mb-6">
+                        <h2 class=" text-center title-font text-lg ">Value addition</h2>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-36 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/4.svg">
+                    </a>
+                    <div class="mt-4">
+                        <h2 class=" text-center title-font text-lg ">Assured confidentiality</h2>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0 ">
+                    <a class="block relative h-36 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/5.svg">
+                    </a>
+                    <div class="mt-4">
+                        <h2 class=" text-center title-font text-lg ">On-time delivery</h2>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-36 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block  " src="pics/6.svg">
+                    </a>
+                    <div class="mt-4">
+                        <h2 class=" text-center title-font text-lg ">Interactive & Proven processes </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="" id="service">
+        <div class="container px-5 py-12 mx-auto " style="padding-left: 10%;padding-right: 10%;padding-top: 28px;font-family: montserrat;">
+            <div class="flex flex-col text-center w-full mb-16">
+                <h2 class="text-xs what colr text-5xl text-indigo-500   title-font mb-1"><span style="font-weight: bold;">What we offer</span></h2>
+            </div>
+            <div class="flex flex-wrap -m-12">
+                <a href="scientific-communication.html">
+                    <div class="p-4 md:w-1/2 ">
+                        <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-yellow-500 text-white flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 20 20" fill="currentColor">
+                              <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
+                            </svg>
+                                </div>
+                                <h3 class="text-gray-900  text-lg title-font  " style="font-family: montserrat;font-weight: bold;">SCIENTIFIC COMMUNICATIONS</h3>
+                            </div>
+                            <div class="flex-grow">
+                                <p class=" text-x text-black" style="font-family: montserrat;"> Disseminating Science in the form of research articles is the central to researcher’s job. Given the fierce competition in academic publishing,authors come under intense pressure <br> to get their findings published.</p>
+                                <a class="mt-3 text-red-600  inline-flex text-x items-center" style="font-weight: bold;font-family: montserrat;" href="scientific-communication.html">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="medical-communication.html">
+                    <div class="p-4 md:w-1/2">
+                        <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-green-500 text-white flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 1 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                                </div>
+                                <h2 class="text-gray-900 text-lg text-lg title-font " style="font-family: montserrat;font-weight: bold;">MEDICAL COMMUNICATIONS</h2>
+                            </div>
+                            <div class="flex-grow">
+                                <p class=" text-x text-black" style="font-family: montserrat;">Accurate, clearly written, scientifically sound and well-articulated documents are key to timely approval of drugs that get submitted for regulatory approval.Centella supports all the scientific and medical communication
+                                    needs of Pharma...</p>
+                                <a class="mt-3 text-red-600 inline-flex text-x items-center" style="font-weight: bold;font-family: montserrat;" href="medical-communication.html">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </a>
+        <div class="container px-5 py-8 mx-auto " style="padding-left: 10%;padding-right: 10%;padding-top: 0%;">
+            <div class="flex flex-col text-center w-full mb-10">
+            </div>
+            <a href="market-research.html">
+                <div class="flex flex-wrap -m-12">
+                    <div class="p-4 md:w-1/2">
+                        <div class="flex rounded-lg h-full bg-white p-8 flex-col " id="box">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-purple-700  text-white flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd" />
+                                  </svg>
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                  </svg>
+                                </div>
+                                <h2 class="text-gray-900 text-lg title-font " style="font-family: montserrat;font-weight: bold;">MARKET RESEARCH</h2>
+                            </div>
+                            <div class="flex-grow">
+                                <p class=" text-base text-black " style="font-family: montserrat;">Whether it is startup or grown-up company, a thorough data driven market research is the key differentiator in making the product or service forceful. An adept market research enables organizations to rally employees...
+                                </p>
+                                <a class="mt-3 text-red-600 inline-flex text-x items-center" style="font-family: montserrat;font-weight: bold;" href="market-research.html">Learn More
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                  </svg>
+                                  
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </a>
+            <a href="centella-academy.html">
+                <div class="p-4 md:w-1/2 ">
+                    <div class="flex rounded-lg h-full bg-white p-8 flex-col" id="box">
+                        <div class="flex items-center mb-3">
+                            <div class="w-12 h-12 mr-3 inline-flex items-center justify-center  rounded-full bg-red-500 text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                                  </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font " style="font-family: montserrat;font-weight: bold;">CENTELLA ACADEMY</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class=" text-black" style="text-align: left;font-family: montserrat;">Scientific rigor, Scientific thinking, Research Temperament, Research bent of mind, Catalytic questioning, Provocative.Being researchers whether it is graduate or postdoc or tenure track scientist,...</p>
+                            <a class="mt-3 text-red-600 text-x inline-flex items-center" style="font-family: montserrat;font-weight: bold;" href="centella-academy.html">Learn More
+                                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                  </svg>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="" style="padding-top: 4%;">
+        <h3 class="colr how text-5xl text-center mb-2 " style="font-family: montserrat;font-weight: bold;padding-top: 0%;padding-bottom: 0%;">How it works?</h3>
+        <div data-aos="fade-right" style="animation-delay: 1s;" class="steps">
+            <ul>
+                <li>
+                    <img src="pics/step1.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p style="padding-bottom: 1px;">Step 1</p>
+                    <h2>Submit </h2>
+                    <h1>Describe your specific need and choose the service you avail</h1>
+                </li>
+                <li><img src="pics/step2.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p style="padding-bottom: 1px;">Step 2</p>
+                    <h2>Evaluation </h2>
+                    <h1>Our experts critically evaluate & edit the document as requested</h1>
+                </li>
+                <li><img src="pics/step3.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p> Step 3</p>
+                    <h2>QC Check </h2>
+                    <h1 style="padding-bottom: 8px;">Two-tier stringent quality check </h1><br> <br> </li>
+                <li><img src="pics/step4.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p style="padding-bottom: 3.5px;">Step 4</p>
+                    <h2>Update </h2>
+                    <h1>Edited files will be shared & feedback sought</h1><br></li>
+                <li><img src="pics/step5.svg"><br>
+                    <i class="fa fa-check"></i>
+                    <p style="padding-bottom: 1px;">Step 5</p>
+                    <h2>Approve </h2>
+                    <h1>Verify the document in entirety and submit to author</h1>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="text-black" id="team">
+        <div class="container flex-col px-0 py-24 mx-auto" style="padding-top: 4%;padding-bottom: 0px;font-family: montserrat;">
+            <div class="flex flex-col text-center w-full mb-2">
+                <h3 class="colr team text-5xl  title-font mb-10 text-indigo-500" style="font-weight: bold;">Our Team</h3>
+            </div>
+            <div data-aos="fade-right" style="animation-delay: 1s;" class="flex flex-wrap -m-4">
+                <div class="p-10 lg:w-1/4 md:w-1/2 mx-auto">
+                    <a href="team1.html">
+                        <div class="h-full flex flex-col items-center text-center">
+                            <img alt="team" id="box" class=" flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/riyaz.png">
+                            <div class="w-full">
+                                <h2 class="title-font  text-2xl text-lg ">Dr. Riyaz Syed</h2>
+                                <h3 class="teamt mb-0">Founder & Chief Scientific Officer (CSO)</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="fade-up" style="animation-delay: 1s;" class="p-8 lg:w-1/4 md:w-1/2 mx-auto">
+                    <a href="team2.html">
+                        <div class="h-full flex flex-col items-center text-center">
+                            <img alt="team" id="box" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/teja.png">
+                            <div class="w-full">
+                                <h2 class="title-font  text-lg  text-2xl">Mrs.Teja Arigela</h2>
+                                <h3 class=" mb-0">Chief‐Operations</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="fade-down" style="animation-delay: 1s;" class="p-8 lg:w-1/4 md:w-1/2 mx-auto">
+                    <a href="team3.html">
+                        <div class="h-full flex flex-col items-center text-center">
+                            <img alt="team" id="box" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/poorna.png">
+                            <div class="w-full">
+                                <h2 class="title-font  text-lg  text-2xl">Dr.Poornachandra Yedla</h2>
+                                <h3 class=" mb-0">Head‐Molecular Biology, Drug Disvoery</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="fade-down-left" style="animation-delay: 1s;" class="p-6 lg:w-1/4 md:w-1/2 mx-auto">
+                    <a href="team4.html">
+                        <div class="h-full flex flex-col items-center text-center">
+                            <img alt="team" id="box" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/Yugandhar.png">
+                            <div class="w-full">
+                                <h2 class="title-font  text-lg text-2xl ">Mr.Yugandhar Dodda</h2>
+                                <h3 class=" mb-0">Advisor‐Business & Strategy</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container px-5 py-12 mx-auto  flex flex-wrap items-center" id="consult" style="padding-top: 5%;padding-bottom: 0%;">
+            <div class=" md:w-full bg-transparent rounded-lg p-0 flex flex-col md:ml-200 w-full mt-6 md:mt-0">
+                <h2 class="colr text-5xl contactus  mb-0 text-center  "><span style="font-family: montserrat; font-weight: bold;padding-bottom: 0%;">Reach out to us</span></h2>
+                <form data-aos="fade-up-right" style="animation-delay: 1s;" id="submit-to-google-sheet" onsubmit="window.location.reload()">
+                    <div class="contentform" style="font-family: Roboto;">
+                        <div class="leftcontact">
+                            <div class="form-group">
+                                <p>First Name<span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-user"></i></span>
+                                <input type="text" name="firstname" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <p>E-mail <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                                <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire." />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <p>Designation<span></span></p>
+                                <span class="icon-case"><i class="fa fa-info"></i></span>
+                                <input type="text" name="designation" id="postal" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <p>Country </p>
+                                <span class="icon-case"><i class="fa fa-map-marker"></i></span>
+                                <input type="text" name="country" id="adresse" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <p>City </p>
+                                <span class="icon-case"><i class="fa fa-building-o"></i></span>
+                                <input type="text" name="city" id="ville" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="rightcontact">
+                            <div class="form-group">
+                                <p>Last Name <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-user"></i></span>
+                                <input type="text" name="lastname" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire." />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <p>Phone number <span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-phone"></i></span>
+                                <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <p>Organisation/Institution<span>*</span></p>
+                                <span class="icon-case"><i class="fa fa-home"></i></span>
+                                <input type="text" name="organisation" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <p>Subject <span></span></p>
+                                <span class="icon-case"><i class="fa fa-comment-o"></i></span>
+                                <input type="text" name="subject" id="sujet" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <p>Area Of Study<span></span></p>
+                                <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+                                <input type="text" name="area-study" id="ville" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné." />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p>Message <span></span></p>
+                            <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+                            <textarea name="message" rows="14"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit" class="bouton-contact" style="font-family: Montserrat;"><h2>Submit</h2></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer class="text-white" style="font-family: Montserrat;padding-bottom: 1%;padding-top: 0%;background-color: rgb(0, 0, 0);">
+            <a class="flex title-font  items-center   mb-4 md:mb-2 md:ml-9" href="index.html">
+                <img class=" w-30 h-20 p-0  " style="object-fit: cover;padding-left: 45%;padding-top: 6px;" src="pics/centella.png" alt="logo">
+            </a>
+            <nav class=" md:mr-auto md:ml-5 md:py- md:pl-4   flex flex-wrap items-center  justify-center mb-4">
+
+                <a class="mr-5 text-lg hover:text-blue-600" href="#about">About</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="#service">Services</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="#team">Our Team</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="career.html">Careers</a>
+                <a class="mr-5 text-lg hover:text-blue-600" href="#consult">Contact Us</a>
+                <a class="mr-5 text-lg hover:text-blue-600">Privacy Policy</a>
+
+            </nav>
+            <hr style="height:1px;border-width:1;background-color: #000000;color: #000000;">
+            <div class="  px-5 py-3 mx-auto flex items-center sm:flex-row flex-col " style="padding-top: 3%;">
+                <p class="fotertxt " style="font-size: 16px;">© 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
+                </p>
+                <div class="social-container">
+                    <ul class="social-icons">
+                        <li><a href="https://www.instagram.com/centella.scientific/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/centellascient1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/centellascientific/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/Centella-Scientific-103572945211581" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="text-white container ">
+                <div class="container mx-auto flex px-5  md:flex-row flex-col items-center">
+                    <div class="lg:flex-grow md:w-1/2   flex flex-col  text-right   ">
+                        <h4 class=" text-lg dsg" style="padding-top: 2%;"> Designed & Developed by </h4>
+
+                    </div>
+                    <div class="lg:max-w-lg lg:w-full md:w-1/2 " style="padding-top:14px;">
+                        <a href="https://rivach.com/" style="font-weight: bold;" class="colr" target="_blank"> <img class=" h-20 object-center rounded" alt="rivach.com" src="pics/rivach.png"></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </section>
+    <!--Scripts-->
+    <script>
+        $("#submit").click(function() {
+            alert("Successfully Submited");
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#your_form_id').on('submit', function(evt) {
+                evt.preventDefault();
+                setTimeout(function() {
+                    window.location.reload();
+                }, 0);
+                this.submit();
+            });
+        });
+    </script>
+
+    <!--https://script.google.com/macros/s/AKfycbyKGU_7weZjdMIcVZHL2hmRXN51voYwmM9rWnc_U-QpfNOt2iMT/exec-->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx1w2b7QgeodBvElebJ811SK0ZJzPvcJhgkGIaSIj2Ivmv6B5c/exec'
+        const form = document.forms['submit-to-google-sheet']
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <!---->
+    <script>
+        //Array of images which you want to show: Use path you want.
+        var images = new Array('pics/bg.jpg', 'pics/c3.jpg', 'pics/c1.jpg');
+        var nextimage = 0;
+        doSlideshow();
+
+        function doSlideshow() {
+            if (nextimage >= images.length) {
+                nextimage = 0;
+            }
+            $('.hero1')
+                .css('background-image', 'url("' + images[nextimage++] + '")')
+                .fadeIn(1000, function() {
+                    setTimeout(doSlideshow, 5000);
+                });
+        }
+    </script>
+
+</body>
+
+</html>
