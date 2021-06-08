@@ -12,11 +12,12 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="aos.css">
     <script type="text/javascript" src="js/nav.js"></script>
 
     <style type="text/css">
-        #colr {
-            background: -webkit-linear-gradient(#ffffff, #252525);
+        .colr {
+            background: -webkit-linear-gradient(rgb(0, 247, 255)50%, rgb(141, 54, 255) 100.2%);
             background-clip: content-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -47,7 +48,9 @@
             .navicon {
                 width: 1.125em;
                 height: .125em;
-                margin-left: 600%;
+                font-size: x-large;
+                margin-top: -80%;
+                margin-left: 400%;
             }
             .navicon::before,
             .navicon::after {
@@ -84,6 +87,9 @@
             .menu-btn:checked~.menu-icon .navicon::after {
                 top: 0;
             }
+            .drugtext {
+                font-size: 14px;
+            }
         }
         
         .overlay {
@@ -95,9 +101,6 @@
             width: 150%;
             position: absolute;
             z-index: 100;
-            -webkit-box-shadow: 0 8px 6px -6px #999;
-            -moz-box-shadow: 0 8px 6px -6px #999;
-            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
         }
         
         ul li ul {
@@ -212,13 +215,23 @@
             .fotertxt {
                 font-size: x-small;
             }
+            .drugbg {
+                background-image: url(pics/drug.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) !important;
+                background-blend-mode: overlay !important;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        
+        .drugbg {
+            background-image: url(pics/drug.jpg), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+            background-blend-mode: overlay;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         .overlay {
             width: 100%;
-            -webkit-box-shadow: 0 8px 6px -6px #999;
-            -moz-box-shadow: 0 8px 6px -6px #999;
-            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
         }
     </style>
 
@@ -267,34 +280,34 @@
                     <img class=" w-30 h-20 p-0 " src="pics/centella.png" alt="">
 
                 </a>
-                <nav id="nvb" class="menu  md:py-2 md:pl-4  md:border-gray-100 z-100 ml-36 mr-auto	flex flex-wrap items-center text-black justify-center ">
+                <nav id="nvb" class="menu  md:py-2 md:pl-4  md:border-gray-100 z-100 ml-16 mr-auto	flex flex-wrap items-center text-black justify-center ">
                     <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-0 relative " style="position: relative;top:-10px ;padding-left: 25%;padding-top: 0%;" for="menu-btn">
+                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-0 relative " style="position: relative;top:-10px ;padding-left: 5%;padding-top: 0%;" for="menu-btn">
     <span class="navicon bg-blue-900 flex object-center relative " ></span>
   </label>
                     <ul class="menu  border-b md:border-none text-xl flex justify-end list-reset m-0    " style="font-weight: 450;">
-                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="index.html#about">About</a></li>
-                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="index.html#team">Team</a></li>
-                        <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="index.html#service">Offerings</a>
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="index.html#about">About</a></li>
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="index.html#team">Team</a></li>
+                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="centella-discovery.html"> Drug Discovery</a></li>
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="index.html#service">Offerings</a>
                             <ul>
-                                <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="scientific-communication.html">Scientific Communication</a></li>
-                                <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="medical-communication.html">Medical Communication</a></li>
-                                <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="market-research.html">Market Research</a></li>
-                                <li class=" border-t md:border-none"><a class="m-3 hover:text-blue-600" href="centella-academy.html">Centella Academy</a></li>
+                                <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="scientific-communication.html">Scientific Communication</a></li>
+                                <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="medical-communication.html">Medical Communication</a></li>
+                                <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-600" href="market-research.html">Market Research</a></li>
+                                <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-600" href="centella-academy.html">Centella Academy</a></li>
                             </ul>
                         </li>
-                        <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="centella-discovery.html">Centella Drug Discovery</a></li>
-                        <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="index.html#whycentella">Why Centella?</a></li>
 
-                        <li class="active border-t md:border-none"><a class="m-3 hover:text-blue-600" href="career.html">Careers</a></li>
-                        <button class="cont inline-flex text-xl  items-center  p-12 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-black mx-24 md:mt-0" style="background-color: #1bb3f4;"><a href="index.html#consult" >Contact us</a></button>
+                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="index.html#whycentella">Why Centella?</a></li>
+                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="career.html">Careers</a></li>
+                        <button class="cont inline-flex text-lg  items-center  p-12 py-1 px-6 focus:outline-none  rounded text-black mx-9 -mt-1" style="background-color: #1bb3f4;font-weight: bold;font-family: montserrat;"><a href="#consult" >Contact us</a></button>
                     </ul>
 
                 </nav>
             </div>
         </header>
     </div>
-
+    <!--
     <section class="text-black cend body-font">
         <div class=" mx-auto flex px-5  py-24 items-center justify-center flex-col" style="padding-top: 9%;font-family: montserrat;">
             <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="pics/cd.svg">
@@ -307,8 +320,60 @@
                 </div>
             </div>
         </div>
+    </section>-->
+    <section class="text-white body-font" style="padding-top: 2%;">
+        <div class="container drugbg mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            </div>
+            <div data-aos="fade-left" class="lg:flex-grow md:w-1/2 lg:pl-36 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font text-6xl mt-12 mb-4 pb-3 font-medium colr">Drug Discovery
+
+                </h1>
+                <p class="mb-8 drugtext text-lg leading-relaxed text-align-justify">Traditional Drug Discovery is a time consuming and resource intensive process that can take up to 10-15 years and investment as much as $2.6 billion for a new drug to enter the market. On the other hand, patients who are afflicted with
+                    orphan and neglected diseases are more prone to morbidity given the meagre amount of treatment options available. </p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-black  border-0 py-2 px-10  focus:outline-none rounded text-xl" style="background-color: #eccd00;font-weight: bold;font-family: montserrat;"><a href="#discovery"> Know more </a></button>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer class="text-white" style="font-family: Montserrat;padding-bottom: 2%;padding-top: 0%;background-color: rgb(0, 0, 0);">
+    <section id="discovery" class="text-black body-font">
+        <div class="container mx-auto flex px-5  md:flex-row flex-col items-center " style="padding-top: 7%;padding-bottom: 2%;background: #ffffff;">
+            <div data-aos="fade-right" class=" md:w-1/2 w-5/6 mb-10 md:mb-0 ">
+                <img src="pics/dd3.jpg" class="rounded" alt="">
+            </div>
+            <div data-aos="fade-left" class="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-16 pr-6 flex flex-col md:items-start md:text-left items-center text-center">
+
+                <p class="mb-0 drugtext text-xl leading-relaxed text-align-justify">Due to the high costs associated with new drug development and low expected revenues in these particular cases, pharma companies cannot afford a giant investment in these therapeutic areas. Taken together these facts, there is a pressing
+                    need to make drug development trajectory speed up at low-cost while not compromising on quality. </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="text-black body-font">
+        <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center " style="background: #ffffff;">
+
+            <div data-aos="fade-right" class="lg:flex-grow md:w-1/2 lg:pl-6 md:pl-16 pr-6 flex flex-col md:items-start md:text-left items-center text-center">
+
+                <p class="mb-8 drugtext text-lg mt-6 text-align-justify"> Given the emergence of Artificial Intelligence/ Machine Learning in the past decade and its immense potential, Centella Discovery is developing advanced AI/ML tools for novel therapeutics in the domains of Oncology, Infectious diseases,
+                    Metabolic disorders and Orphan diseases. The company accelerates therapy development by designing small molecules, therapeutic switching of drugs, analysing big data, identification of novel targets, database development. Centella
+                    also offers subject matter expertise solutions in the space of computer aided drug discovery services & medicinal chemistry. Our team at Centella is rooted in medicinal chemistry, biological sciences and holds deep expertise in bio/chemiinformatics,
+                    artificial intelligence and machine learning (AI/ML). </p>
+
+            </div>
+            <div data-aos="fade-left" class=" md:w-1/2 w-5/6 mb-0 md:mb-0 ">
+                <img src="pics/ai.png" class="rounded" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="body-font">
+        <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col" style="background: #ffffff;">
+            <img data-aos="fade-right" class="md:w-2/3 object-center rounded " alt="chart" src="pics/dd.PNG">
+
+        </div>
+    </section>
+    <footer class="text-white" style="font-family: Montserrat;padding-bottom: 2%;padding-top: 0%;background-color: #060505;">
         <a class="flex title-font  items-center   mb-4 md:mb-2 md:ml-9" href="index.html">
             <img class=" w-30 h-20 p-0  " style="object-fit: cover;padding-left: 45%;padding-top: 6px;" src="pics/centella.png" alt="logo">
         </a>
@@ -349,7 +414,12 @@
         </section>
     </footer>
     </section>
-
+    <script src="aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+    </script>
 </body>
 
 </html>

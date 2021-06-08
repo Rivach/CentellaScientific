@@ -1,314 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Centella Market Research</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <meta name="keywords" content="centella, centella scientific, Centella, Centella Scientific, centella.co.in, Centella Scientific communication, centella drug discovery, centella academy, centella medical communication, centella market research, Centella Editing "
     />
-    <meta
-      name="keywords"
-      content="centella, centella scientific, Centella, Centella Scientific, centella.co.in, Centella Scientific communication, centella drug discovery, centella academy, centella medical communication, centella market research, Centella Editing "
-    />
-    <meta
-      name="description"
-      content="Centella is a technology platform that provide end-to-end scientific research solutions to the scientific community. It is founded and lead by experienced & practicing research scientists. "
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Centella is a technology platform that provide end-to-end scientific research solutions to the scientific community. It is founded and lead by experienced & practicing research scientists. " />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/nav.js"></script>
     <link rel="stylesheet" href="aos.css" />
     <link rel="stylesheet" href="aos.js" />
     <style type="text/css">
-      #colr {
-        background: -webkit-linear-gradient(#ffffff, #252525);
-        background-clip: content-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        transform-style: preserve-3d;
-        overflow-y: scroll;
-        overflow-x: hidden;
-      }
-
-      header {
-        transform-style: preserve-3d;
-        position: relative;
-        top: 0;
-        transition: top 0.3s ease-in-out;
-        z-index: 100000;
-      }
-
-      .nav-up {
-        top: -110px;
-      }
-
-      @media (max-width: 767px) {
-        .navicon {
-          width: 1.125em;
-          height: 0.125em;
-          margin-left: 600%;
+        #colr {
+            background: -webkit-linear-gradient(#ffffff, #252525);
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        .navicon::before,
-        .navicon::after {
-          display: block;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          transition: all 0.2s ease-out;
-          content: '';
-          background: #3d4852;
+        
+        html {
+            scroll-behavior: smooth;
         }
-        .navicon::before {
-          top: 5px;
+        
+        body {
+            transform-style: preserve-3d;
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
-        .navicon::after {
-          top: -5px;
+        
+        header {
+            transform-style: preserve-3d;
+            position: relative;
+            top: 0;
+            transition: top 0.3s ease-in-out;
+            z-index: 100000;
         }
-        .menu-btn:not(:checked) ~ .menu {
-          display: none;
+        
+        .nav-up {
+            top: -110px;
         }
-        .menu-btn:checked ~ .menu {
-          display: block;
+        
+        @media (max-width: 767px) {
+            .navicon {
+                width: 1.125em;
+                height: 0.125em;
+                font-size: x-large;
+                margin-top: -80%;
+                margin-left: 400%;
+            }
+            .navicon::before,
+            .navicon::after {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: all 0.2s ease-out;
+                content: '';
+                background: #3d4852;
+            }
+            .navicon::before {
+                top: 5px;
+            }
+            .navicon::after {
+                top: -5px;
+            }
+            .menu-btn:not(:checked)~.menu {
+                display: none;
+            }
+            .menu-btn:checked~.menu {
+                display: block;
+            }
+            .menu-btn:checked~.menu-icon .navicon {
+                background: transparent;
+            }
+            .menu-btn:checked~.menu-icon .navicon::before {
+                transform: rotate(-45deg);
+            }
+            .menu-btn:checked~.menu-icon .navicon::after {
+                transform: rotate(45deg);
+            }
+            .menu-btn:checked~.menu-icon .navicon::before,
+            .menu-btn:checked~.menu-icon .navicon::after {
+                top: 0;
+            }
         }
-        .menu-btn:checked ~ .menu-icon .navicon {
-          background: transparent;
-        }
-        .menu-btn:checked ~ .menu-icon .navicon::before {
-          transform: rotate(-45deg);
-        }
-        .menu-btn:checked ~ .menu-icon .navicon::after {
-          transform: rotate(45deg);
-        }
-        .menu-btn:checked ~ .menu-icon .navicon::before,
-        .menu-btn:checked ~ .menu-icon .navicon::after {
-          top: 0;
-        }
-      }
-
-      .overlay {
-        position: absolute;
-        z-index: 100;
-      }
-
-      .overlay {
-        width: 150%;
-        position: absolute;
-        z-index: 100;
-      }
-
-      ul li ul {
-        display: none;
-      }
-
-      ul li:hover ul {
-        display: block;
-      }
-
-      ul li ul {
-        display: none;
-        position: absolute;
-        z-index: 1;
-      }
-
-      ul li:hover ul {
-        display: block;
-        background-color: whitesmoke;
-        border-radius: 2%;
-        padding: 1%;
-        z-index: 1;
-      }
-
-      .social-container {
-        width: 186px;
-        margin: 0vh auto;
-        margin-right: 1%;
-        text-align: center;
-      }
-
-      .social-icons {
-        padding: 0;
-        list-style: none;
-        margin: 0.1em;
-      }
-
-      .social-icons li {
-        display: inline-block;
-        margin: 0.18em;
-        position: relative;
-        font-size: 1.2em;
-      }
-
-      .social-icons i {
-        color: #fff;
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        transition: all 265ms ease-out;
-      }
-
-      .social-icons a {
-        display: inline-block;
-      }
-
-      .social-icons a:before {
-        transform: scale(1);
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        content: ' ';
-        width: 26px;
-        height: 26px;
-        border-radius: 100%;
-        display: block;
-        background: linear-gradient(45deg, #00b5f5, #002a8f);
-        transition: all 265ms ease-out;
-      }
-
-      .social-icons a:hover:before {
-        transform: scale(0);
-        transition: all 265ms ease-in;
-      }
-
-      .social-icons a:hover i {
-        transform: scale(2.2);
-        -ms-transform: scale(2.2);
-        -webkit-transform: scale(2.2);
-        color: #00b5f5;
-        background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
-        background-clip: content-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all 265ms ease-in;
-      }
-
-      .contain {
-        width: 130%;
-        -webkit-box-shadow: 0 8px 6px -6px #999;
-        -moz-box-shadow: 0 8px 6px -6px #999;
-        box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
-      }
-
-      @keyframes moveright {
-        0% {
-          transform: translateX(-100px);
-          visibility: visible;
-        }
-        100% {
-          transform: translateX(0);
-          visibility: visible;
-        }
-      }
-
-      @media only screen and (max-width: 767px) {
-        .txt {
-          padding-top: 20%;
-          font-size: 32px;
-          color: white;
-        }
-        .txt2 {
-          width: 100%;
-          font-size: 14px;
-          text-align: left;
-        }
-        .menu {
-          padding-top: 0%;
-          width: 100%;
-          margin-left: 0%;
-          animation: moveright 0.1s linear 1;
-          visibility: hidden;
-          animation-fill-mode: forwards;
-          position: relative;
-          z-index: 10;
-        }
-        .logo {
-          margin-right: 0%;
-          width: 50%;
-        }
-        .w1,
-        .w2,
-        .w3,
-        .w4,
-        .w5,
-        .w6,
-        .w7,
-        .w8 {
-          font-size: 16px;
-        }
+        
         .overlay {
-          width: 150%;
-          -webkit-box-shadow: 0 8px 6px -6px #999;
-          -moz-box-shadow: 0 8px 6px -6px #999;
-          box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+            position: absolute;
+            z-index: 100;
         }
-        .fotertxt {
-          font-size: x-small;
+        
+        .overlay {
+            width: 150%;
+            position: absolute;
+            z-index: 100;
         }
-      }
-
-      .overlay {
-        width: 100%;
-        -webkit-box-shadow: 0 8px 6px -6px #999;
-        -moz-box-shadow: 0 8px 6px -6px #999;
-        box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
-      }
+        
+        ul li ul {
+            display: none;
+        }
+        
+        ul li:hover ul {
+            display: block;
+        }
+        
+        ul li ul {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        ul li:hover ul {
+            display: block;
+            background-color: whitesmoke;
+            border-radius: 2%;
+            padding: 1%;
+            z-index: 1;
+        }
+        
+        .social-container {
+            width: 186px;
+            margin: 0vh auto;
+            margin-right: 1%;
+            text-align: center;
+        }
+        
+        .social-icons {
+            padding: 0;
+            list-style: none;
+            margin: 0.1em;
+        }
+        
+        .social-icons li {
+            display: inline-block;
+            margin: 0.18em;
+            position: relative;
+            font-size: 1.2em;
+        }
+        
+        .social-icons i {
+            color: #fff;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            transition: all 265ms ease-out;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+        }
+        
+        .social-icons a:before {
+            transform: scale(1);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            content: ' ';
+            width: 26px;
+            height: 26px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, #00b5f5, #002a8f);
+            transition: all 265ms ease-out;
+        }
+        
+        .social-icons a:hover:before {
+            transform: scale(0);
+            transition: all 265ms ease-in;
+        }
+        
+        .social-icons a:hover i {
+            transform: scale(2.2);
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            color: #00b5f5;
+            background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 265ms ease-in;
+        }
+        
+        .contain {
+            width: 130%;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
+        
+        @keyframes moveright {
+            0% {
+                transform: translateX(-100px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateX(0);
+                visibility: visible;
+            }
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .txt {
+                padding-top: 20%;
+                font-size: 32px;
+                color: white;
+            }
+            .txt2 {
+                width: 100%;
+                font-size: 14px;
+                text-align: left;
+            }
+            .menu {
+                padding-top: 0%;
+                width: 100%;
+                margin-left: 0%;
+                animation: moveright 0.1s linear 1;
+                visibility: hidden;
+                animation-fill-mode: forwards;
+                position: relative;
+                z-index: 10;
+            }
+            .logo {
+                margin-right: 0%;
+                width: 50%;
+            }
+            .w1,
+            .w2,
+            .w3,
+            .w4,
+            .w5,
+            .w6,
+            .w7,
+            .w8 {
+                font-size: 16px;
+            }
+            .overlay {
+                width: 150%;
+                -webkit-box-shadow: 0 8px 6px -6px #999;
+                -moz-box-shadow: 0 8px 6px -6px #999;
+                box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+            }
+            .fotertxt {
+                font-size: x-small;
+            }
+        }
+        
+        .overlay {
+            width: 100%;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-197087162-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197087162-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || []
+        window.dataLayer = window.dataLayer || []
 
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        gtag('js', new Date())
 
-      gtag('config', 'UA-197087162-1')
+        gtag('config', 'UA-197087162-1')
     </script>
 
     <!-- Google Tag Manager -->
     <script>
-      ;(function (w, d, s, l, i) {
-        w[l] = w[l] || []
-        w[l].push({
-          'gtm.start': new Date().getTime(),
-          event: 'gtm.js',
-        })
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : ''
-        j.async = true
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-        f.parentNode.insertBefore(j, f)
-      })(window, document, 'script', 'dataLayer', 'GTM-PSC5X9H')
+        ;
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || []
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js',
+            })
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : ''
+            j.async = true
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+            f.parentNode.insertBefore(j, f)
+        })(window, document, 'script', 'dataLayer', 'GTM-PSC5X9H')
     </script>
     <!-- End Google Tag Manager -->
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
+    <noscript><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-PSC5X9H"
         height="0"
         width="0"
@@ -317,27 +303,18 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="mx-0 naav">
-      <header class="fixed nav-down mx-auto w-full">
-        <div
-          class="
+        <header class="fixed nav-down mx-auto w-full">
+            <div class="
             overlay
             mx-auto
             object-center
             flex flex-wrap flex-col
             md:flex-row
-          "
-          id="bar"
-          style="background-color: rgb(255, 255, 255)"
-        >
-          <a
-            class="logo flex items-center mb-0 mr-auto md:ml-auto"
-            href="index.html"
-          >
-            <img class="w-30 h-20 p-0" src="pics/centella.png" alt="" />
-          </a>
-          <nav
-            id="nvb"
-            class="
+          " id="bar" style="background-color: rgb(255, 255, 255)">
+                <a class="logo flex items-center mb-0 mr-auto md:ml-auto" href="index.html">
+                    <img class="w-30 h-20 p-0" src="pics/centella.png" alt="" />
+                </a>
+                <nav id="nvb" class="
               menu
               md:py-2
               md:pl-4
@@ -349,11 +326,9 @@
               items-center
               text-black
               justify-center
-            "
-          >
-            <input class="menu-btn hidden" type="checkbox" id="menu-btn" />
-            <label
-              class="
+            ">
+                    <input class="menu-btn hidden" type="checkbox" id="menu-btn" />
+                    <label class="
                 menu-icon
                 block
                 cursor-pointer
@@ -361,21 +336,17 @@
                 px-2
                 py-0
                 relative
-              "
-              style="
+              " style="
                 position: relative;
                 top: -10px;
                 padding-left: 25%;
                 padding-top: 0%;
-              "
-              for="menu-btn"
-            >
+              " for="menu-btn">
               <span
                 class="navicon bg-blue-900 flex object-center relative"
               ></span>
             </label>
-            <ul
-              class="
+                    <ul class="
                 menu
                 border-b
                 md:border-none
@@ -384,12 +355,9 @@
                 justify-end
                 list-reset
                 m-0
-              "
-              style="font-weight: 450"
-            >
-              <li class="border-t md:border-none">
-                <a class="m-3 hover:text-blue-600" href="index.html#about"
-                  >About</a
+              " style="font-weight: 450">
+                        <li class="border-t md:border-none">
+                            <a class="m-3 hover:text-blue-600" href="index.html#about">About</a
                 >
               </li>
               <li class="border-t md:border-none">
@@ -436,7 +404,7 @@
                 <a
                   class="m-3 hover:text-blue-600"
                   href="centella-discovery.html"
-                  >Centella Drug Discovery</a
+                  > Drug Discovery</a
                 >
               </li>
               <li class="active border-t md:border-none">
@@ -458,42 +426,32 @@
                   items-center
                   p-12
                   py-1
-                  px-2
+                  px-6
                   focus:outline-none
                   hover:bg-blue-600
                   rounded
                   text-black
-                  mx-24
-                  md:mt-0
+                  mx-12
+                  -mt-1
                 "
                 style="background-color: #1bb3f4"
               >
                 <a href="index.html#consult">Contact us</a>
-              </button>
-            </ul>
-          </nav>
-        </div>
-      </header>
+                            </button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     </div>
-    <section
-      class="text-white body-font bg-black py-16"
-      style="padding-top: 10%; padding-bottom: 2%"
-    >
-      <div
-        data-aos="fade-right"
-        class="container mx-auto px-5 py-0 mx-0 mb-0 bg-transparent"
-      >
-        <h1
-          class="txt text-6xl font-medium text-center text-white mb-0 p-0"
-          id="colr"
-        >
-          MARKET RESEARCH
-        </h1>
-      </div>
+    <section class="text-white body-font bg-black py-16" style="padding-top: 10%; padding-bottom: 2%">
+        <div data-aos="fade-right" class="container mx-auto px-5 py-0 mx-0 mb-0 bg-transparent">
+            <h1 class="txt text-6xl font-medium text-center text-white mb-0 p-0" id="colr">
+                MARKET RESEARCH
+            </h1>
+        </div>
     </section>
     <section class="text-black">
-      <div
-        class="
+        <div class="
           container
           mx-auto
           flex
@@ -502,21 +460,11 @@
           md:flex-row
           flex-col
           items-center
-        "
-      >
-        <div
-          data-aos="fade-down-right"
-          class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-        >
-          <img
-            class="object-cover object-center rounded"
-            alt="hero"
-            src="pics/m.svg"
-          />
-        </div>
-        <div
-          data-aos="fade-up-left"
-          class="
+        ">
+            <div data-aos="fade-down-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="pics/m.svg" />
+            </div>
+            <div data-aos="fade-up-left" class="
             lg:flex-grow
             md:w-1/2
             lg:pl-24
@@ -526,274 +474,183 @@
             md:text-left
             items-center
             text-center
-          "
-        >
-          <h1
-            class="text-lg font-medium txt2 text-black mb-0"
-            style="
+          ">
+                <h1 class="text-lg font-medium txt2 text-black mb-0" style="
               font-family: montserrat;
               padding-right: 1%;
               padding-top: 4%;
               padding-bottom: 1%;
-            "
-          >
-            Whether it is startup or grown-up company, a thorough data driven
-            market research is the key differentiator in making the product or
-            service forceful. An adept market research enables organizations to
-            rally employees, set the direction and define goals for the future.
-            In a dynamic business environment, shifts in economic conditions,
-            demographic changes, changes in technology and new regulations can
-            all impact the way business is done. Market research can help you
-            get accurate and specific information about your customers and
-            competitors, which is a critical part of starting or expanding your
-            business.
-          </h1>
+            ">
+                    Whether it is startup or grown-up company, a thorough data driven market research is the key differentiator in making the product or service forceful. An adept market research enables organizations to rally employees, set the direction and define goals
+                    for the future. In a dynamic business environment, shifts in economic conditions, demographic changes, changes in technology and new regulations can all impact the way business is done. Market research can help you get accurate and
+                    specific information about your customers and competitors, which is a critical part of starting or expanding your business.
+                </h1>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section
-      class="text-black bg-white py-18"
-      style="font-family: montserrat; padding-top: 20px"
-    >
-      <h1
-        class="text-4xl font-medium text-center text-black mb-6"
-        style="font-family: Montserrat"
-      >
-        Why Market Research ?
-      </h1>
-      <div>
-        <h1
-          class="text-xl w1 font-medium mb-0"
-          style="
+    <section class="text-black bg-white py-18" style="font-family: montserrat; padding-top: 20px">
+        <h1 class="text-4xl font-medium text-center text-black mb-6" style="font-family: Montserrat">
+            Why Market Research ?
+        </h1>
+        <div>
+            <h1 class="text-xl w1 font-medium mb-0" style="
             background-color: rgb(241, 241, 241);
             padding: 15%;
             padding-right: 0;
             padding-top: 1%;
             padding-bottom: 1%;
-          "
-        >
-          • To get insights regarding characteristics, preferences and behaviors
-          of your customers
-        </h1>
-        <h1
-          class="text-xl w2 font-medium mb-0"
-          style="
+          ">
+                • To get insights regarding characteristics, preferences and behaviors of your customers
+            </h1>
+            <h1 class="text-xl w2 font-medium mb-0" style="
             background-color: #ffffff;
             padding: 15%;
             padding-top: 1%;
             padding-bottom: 1%;
-          "
-        >
-          • Recognize opportunities to enhance sales and grow your business
-        </h1>
-        <h1
-          class="text-xl w3 font-medium mb-0"
-          style="
+          ">
+                • Recognize opportunities to enhance sales and grow your business
+            </h1>
+            <h1 class="text-xl w3 font-medium mb-0" style="
             background-color: rgb(241, 241, 241);
             padding: 15%;
             padding-top: 1%;
             padding-bottom: 1%;
-          "
-        >
-          • Gauge the level of competition in your market
-        </h1>
-        <h1
-          class="text-xl w4 font-medium mb-0"
-          style="
+          ">
+                • Gauge the level of competition in your market
+            </h1>
+            <h1 class="text-xl w4 font-medium mb-0" style="
             background-color: #ffffff;
             padding: 15%;
             padding-top: 1%;
             padding-bottom: 1%;
-          "
-        >
-          • Minimize the risk of business decisions
-        </h1>
-        <h1
-          class="text-xl w5 font-medium mb-0"
-          style="
+          ">
+                • Minimize the risk of business decisions
+            </h1>
+            <h1 class="text-xl w5 font-medium mb-0" style="
             background-color: rgb(241, 241, 241);
             padding: 15%;
             padding-top: 1%;
             padding-bottom: 1%;
-          "
-        >
-          • Develop a fool proof business plan
-        </h1>
-        <h1
-          class="text-xl w6 font-medium mb-0"
-          style="
+          ">
+                • Develop a fool proof business plan
+            </h1>
+            <h1 class="text-xl w6 font-medium mb-0" style="
             background-color: #ffffff;
             padding: 15%;
             padding-top: 1%;
             padding-bottom: 1%;
-          "
-        >
-          • Roll-out a new advertising campaign
-        </h1>
-        <h1
-          class="text-xl w7 font-medium mb-0"
-          style="
+          ">
+                • Roll-out a new advertising campaign
+            </h1>
+            <h1 class="text-xl w7 font-medium mb-0" style="
             background-color: rgb(241, 241, 241);
             padding: 15%;
             padding-top: 1%;
             padding-bottom: 1%;
-          "
-        >
-          • Introduce new lines of products or services
-        </h1>
-      </div>
+          ">
+                • Introduce new lines of products or services
+            </h1>
+        </div>
     </section>
-    <h1
-      class="text-xl w8 font-medium bg-white mb-0"
-      style="
+    <h1 class="text-xl w8 font-medium bg-white mb-0" style="
         font-family: montserrat;
         padding: 15%;
         padding-top: 2%;
         padding-bottom: 3%;
-      "
-    >
-      Centella Scientific helps businesses across segments, industries and
-      verticals to take informed decisions to venture into new markets, new
-      portfolios, and new clients . Our professional team of researchers
-      provides business intelligence, analytics of given area of using
-      qualitative and quantitative tools to help organizations to get in growth
-      trajectory.
+      ">
+        Centella Scientific helps businesses across segments, industries and verticals to take informed decisions to venture into new markets, new portfolios, and new clients . Our professional team of researchers provides business intelligence, analytics of
+        given area of using qualitative and quantitative tools to help organizations to get in growth trajectory.
     </h1>
 
-    <section
-      class="mx-auto bg-white"
-      style="padding-top: 1%; font-family: Montserrat"
-    >
-      <h3
-        class="text-4xl font-medium text-center title-font mb-0 text-black"
-        style="font-family: Montserrat"
-      >
-        What We Offer?
-      </h3>
+    <section class="mx-auto bg-white" style="padding-top: 1%; font-family: Montserrat">
+        <h3 class="text-4xl font-medium text-center title-font mb-0 text-black" style="font-family: Montserrat">
+            What We Offer?
+        </h3>
 
-      <div
-        class="container mx-auto px-5 py-24"
-        style="padding: 13%; padding-top: 4%; padding-bottom: 4%"
-      >
-        <div class="flex flex-wrap -m-4">
-          <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
-            <a class="block relative h-32 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="
+        <div class="container mx-auto px-5 py-24" style="padding: 13%; padding-top: 4%; padding-bottom: 4%">
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-32 rounded overflow-hidden">
+                        <img alt="ecommerce" class="
                   relative
                   object-fit object-center
                   w-full
                   h-full
                   block
                   z-0
-                "
-                src="pics/mr1.svg"
-              />
-            </a>
-            <div class="mt-4">
-              <h2 class="text-black text-center title-font text-lg font-medium">
-                Qualitative & Quantitative Research
-              </h2>
+                " src="pics/mr1.svg" />
+                    </a>
+                    <div class="mt-4">
+                        <h2 class="text-black text-center title-font text-lg font-medium">
+                            Qualitative & Quantitative Research
+                        </h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-32 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/mr2.svg" />
+                    </a>
+                    <div class="mt-4">
+                        <h2 class="text-black text-center title-font text-lg font-medium">
+                            Pricing Strategies & Growth Drivers
+                        </h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-32 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/mr3.svg" />
+                    </a>
+                    <div class="mt-4">
+                        <h2 class="text-black text-center title-font text-lg font-medium">
+                            Consulting Services for Marketing, Advertising & Branding
+                        </h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-32 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/mr4.svg" />
+                    </a>
+                    <div class="mt-4">
+                        <h2 class="text-black text-center title-font text-lg font-medium">
+                            Customer Need & Comparative Analysis of Services and Products
+                        </h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-32 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block" src="pics/mr5.svg" />
+                    </a>
+                    <div class="mt-4">
+                        <h2 class="text-black text-center title-font text-lg font-medium">
+                            Insights on Market trends & Associated opportunites
+                        </h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
+                    <a class="block relative h-32 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-fit object-center w-full h-full block z-0" src="pics/mr6.svg" />
+                    </a>
+                    <div class="mt-4">
+                        <h2 class="text-black text-center title-font text-lg font-medium">
+                            Market Reports
+                        </h2>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
-            <a class="block relative h-32 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-fit object-center w-full h-full block"
-                src="pics/mr2.svg"
-              />
-            </a>
-            <div class="mt-4">
-              <h2 class="text-black text-center title-font text-lg font-medium">
-                Pricing Strategies & Growth Drivers
-              </h2>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
-            <a class="block relative h-32 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-fit object-center w-full h-full block"
-                src="pics/mr3.svg"
-              />
-            </a>
-            <div class="mt-4">
-              <h2 class="text-black text-center title-font text-lg font-medium">
-                Consulting Services for Marketing, Advertising & Branding
-              </h2>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
-            <a class="block relative h-32 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-fit object-center w-full h-full block"
-                src="pics/mr4.svg"
-              />
-            </a>
-            <div class="mt-4">
-              <h2 class="text-black text-center title-font text-lg font-medium">
-                Customer Need & Comparative Analysis of Services and Products
-              </h2>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
-            <a class="block relative h-32 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-fit object-center w-full h-full block"
-                src="pics/mr5.svg"
-              />
-            </a>
-            <div class="mt-4">
-              <h2 class="text-black text-center title-font text-lg font-medium">
-                Insights on Market trends & Associated opportunites
-              </h2>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 p-4 w-full mb-0">
-            <a class="block relative h-32 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-fit object-center w-full h-full block z-0"
-                src="pics/mr6.svg"
-              />
-            </a>
-            <div class="mt-4">
-              <h2 class="text-black text-center title-font text-lg font-medium">
-                Market Reports
-              </h2>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <section>
-      <footer
-        class="text-white"
-        style="
+        <footer class="text-white" style="
           font-family: Montserrat;
           padding-bottom: 2%;
           padding-top: 0%;
           background-color: rgb(0, 0, 0);
-        "
-      >
-        <a
-          class="flex title-font items-center mb-4 md:mb-2 md:ml-9"
-          href="index.html"
-        >
-          <img
-            class="w-30 h-20 p-0"
-            style="object-fit: cover; padding-left: 45%; padding-top: 6px"
-            src="pics/centella.png"
-            alt="logo"
-          />
-        </a>
-        <nav
-          class="
+        ">
+            <a class="flex title-font items-center mb-4 md:mb-2 md:ml-9" href="index.html">
+                <img class="w-30 h-20 p-0" style="object-fit: cover; padding-left: 45%; padding-top: 6px" src="pics/centella.png" alt="logo" />
+            </a>
+            <nav class="
             md:mr-auto
             md:ml-5
             md:py-
@@ -802,10 +659,8 @@
             items-center
             justify-center
             mb-4
-          "
-        >
-          <a class="mr-5 text-lg hover:text-blue-600" href="index.html#about"
-            >About</a
+          ">
+                <a class="mr-5 text-lg hover:text-blue-600" href="index.html#about">About</a
           >
           <a class="mr-5 text-lg hover:text-blue-600" href="index.html#service"
             >Services</a
@@ -820,63 +675,44 @@
             >Contact Us</a
           >
           <a class="mr-5 text-lg hover:text-blue-600">Privacy Policy</a>
-        </nav>
-        <hr
-          style="
+            </nav>
+            <hr style="
             height: 1px;
             border-width: 1;
             background-color: #000000;
             color: #000000;
-          "
-        />
-        <div
-          class="px-5 py-3 mx-auto flex items-center sm:flex-row flex-col"
-          style="padding-top: 3%"
-        >
-          <p class="fotertxt" style="font-size: 16px">
-            © 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
-          </p>
-          <div class="social-container">
-            <ul class="social-icons">
-              <li>
-                <a
-                  href="https://www.instagram.com/centella.scientific/"
-                  target="_blank"
-                  ><i class="fa fa-instagram"></i
+          " />
+            <div class="px-5 py-3 mx-auto flex items-center sm:flex-row flex-col" style="padding-top: 3%">
+                <p class="fotertxt" style="font-size: 16px">
+                    © 2021 CENTELLA SCIENTIFIC PRIVATE LIMITED. All rights reserved
+                </p>
+                <div class="social-container">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.instagram.com/centella.scientific/" target="_blank"><i class="fa fa-instagram"></i
                 ></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/centellascient1" target="_blank"
-                  ><i class="fa fa-twitter"></i
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/centellascient1" target="_blank"><i class="fa fa-twitter"></i
                 ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/centellascientific/"
-                  target="_blank"
-                  ><i class="fa fa-linkedin"></i
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/centellascientific/" target="_blank"><i class="fa fa-linkedin"></i
                 ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/Centella-Scientific-103572945211581"
-                  target="_blank"
-                  ><i class="fa fa-facebook"></i
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Centella-Scientific-103572945211581" target="_blank"><i class="fa fa-facebook"></i
                 ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w"
-                  target="_blank"
-                  ><i class="fa fa-youtube"></i
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w" target="_blank"><i class="fa fa-youtube"></i
                 ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <section class="text-white container">
-          <div
-            class="
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="text-white container">
+                <div class="
               container
               mx-auto
               flex
@@ -884,38 +720,26 @@
               md:flex-row
               flex-col
               items-center
-            "
-          >
-            <div class="lg:flex-grow md:w-1/2 flex flex-col text-right">
-              <h4 class="text-lg dsg" style="padding-top: 2%">
-                Designed & Developed by
-              </h4>
-            </div>
-            <div
-              class="lg:max-w-lg lg:w-full md:w-1/2"
-              style="padding-top: 14px"
-            >
-              <a
-                href="https://rivach.com/"
-                style="font-weight: bold"
-                class="colr"
-                target="_blank"
-              >
-                <img
-                  class="h-20 object-center rounded"
-                  alt="rivach.com"
-                  src="pics/rivach.png"
-              /></a>
-            </div>
-          </div>
-        </section>
-      </footer>
+            ">
+                    <div class="lg:flex-grow md:w-1/2 flex flex-col text-right">
+                        <h4 class="text-lg dsg" style="padding-top: 2%">
+                            Designed & Developed by
+                        </h4>
+                    </div>
+                    <div class="lg:max-w-lg lg:w-full md:w-1/2" style="padding-top: 14px">
+                        <a href="https://rivach.com/" style="font-weight: bold" class="colr" target="_blank">
+                            <img class="h-20 object-center rounded" alt="rivach.com" src="pics/rivach.png" /></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </section>
     <script src="aos.js"></script>
     <script>
-      AOS.init({
-        duration: 500,
-      })
+        AOS.init({
+            duration: 500,
+        })
     </script>
-  </body>
+</body>
+
 </html>
