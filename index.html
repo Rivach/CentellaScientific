@@ -1326,8 +1326,8 @@
         <div class="container px-5 py-12 mx-auto  flex flex-wrap items-center" id="consult" style="padding-top: 5%;padding-bottom: 0%;">
             <div class=" md:w-full bg-transparent rounded-lg p-0 flex flex-col md:ml-200 w-full mt-6 md:mt-0">
                 <h2 class="colr text-5xl contactus  mb-0 text-center  "><span style="font-family: montserrat; font-weight: bold;padding-bottom: 0%;">Reach out to us</span></h2>
-                <form  action="https://formsubmit.co/centellascientific@gmail.com" method="POST" data-aos="fade-up-right" style="animation-delay: 1s;" id="submitf" onsubmit="window.location.reload()">
-                    <div class="contentform" style="font-family: Roboto;">
+                <form   action="https://formsubmit.co/centellascientific@gmail.com" method="POST" data-aos="fade-up-right" style="animation-delay: 1s;" id="submitf" onsubmit="window.location.reload()" />
+                    <div class="contentform" style="font-family: montserrat;">
                         <div class="leftcontact">
                             <div class="form-group">
                                 <p>First Name<span>*</span></p>
@@ -1395,11 +1395,11 @@
                         <div class="form-group">
                             <p>Message <span></span></p>
                             <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-                            <textarea name="message" rows="14" required></textarea>
+                            <textarea type="text" name="message" rows="14" required></textarea>
                             <div class="validation"></div>
                         </div>
                     </div>
-                    <button type="submit" id="submit" class="bouton-contact" style="font-family: Montserrat;"><h2>Submit</h2></button>
+                    <button type="submit" id="submit" class="bouton-contact" style="font-family: Montserrat;">Submit</button>
                 </form>
             </div>
         </div>
@@ -1451,7 +1451,7 @@
         $("#submit").click(function() {
             alert("Successfully Submited");
         });
-    </script>-->
+    </script>
     <script>
         $(document).ready(function() {
             $('#submitf').on('submit', function(evt) {
@@ -1463,9 +1463,9 @@
             });
         });
     </script>
-
+-->
     <!--https://script.google.com/macros/s/AKfycbyKGU_7weZjdMIcVZHL2hmRXN51voYwmM9rWnc_U-QpfNOt2iMT/exec-->
-
+<!--
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx1w2b7QgeodBvElebJ811SK0ZJzPvcJhgkGIaSIj2Ivmv6B5c/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -1478,7 +1478,7 @@
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
         })
-    </script>
+    </script>-->
     <script src="aos.js"></script>
     <script>
         AOS.init({
