@@ -1275,7 +1275,7 @@
                 <h3 class="colr team text-5xl  title-font mb-10 text-indigo-500" style="font-weight: bold;">Our Team</h3>
             </div>
             <div data-aos="fade-right" style="animation-delay: 1s;" class="flex flex-wrap -m-4">
-                <div class="p-10 lg:w-1/4 md:w-1/2 mx-auto">
+              <!-- <div class="p-10 lg:w-1/4 md:w-1/2 mx-auto">
                     <a href="team1.html">
                         <div class="h-full flex flex-col items-center text-center">
                             <img alt="team" id="box" class=" flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/riyaz.png">
@@ -1285,7 +1285,7 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div>-->
                 <div data-aos="fade-up" style="animation-delay: 1s;" class="p-8 lg:w-1/4 md:w-1/2 mx-auto">
                     <a href="team2.html">
                         <div class="h-full flex flex-col items-center text-center">
@@ -1303,7 +1303,7 @@
                             <img alt="team" id="box" class="flex-shrink-0 rounded-lg  width-full  object-cover object-center mb-4" src="pics/poorna.png">
                             <div class="w-full">
                                 <h2 class="title-font  text-lg  text-2xl">Dr.Poornachandra Yedla</h2>
-                                <h3 class=" mb-0">Head‐Molecular Biology, Drug Discovery</h3>
+                                <h3 class=" mb-0">Head‐Molecular Biology <br> & Co-Founder</h3>
                             </div>
                         </div>
                     </a>
@@ -1326,37 +1326,37 @@
         <div class="container px-5 py-12 mx-auto  flex flex-wrap items-center" id="consult" style="padding-top: 5%;padding-bottom: 0%;">
             <div class=" md:w-full bg-transparent rounded-lg p-0 flex flex-col md:ml-200 w-full mt-6 md:mt-0">
                 <h2 class="colr text-5xl contactus  mb-0 text-center  "><span style="font-family: montserrat; font-weight: bold;padding-bottom: 0%;">Reach out to us</span></h2>
-                <form action="https://formsubmit.co/centellascientific@email.com" data-aos="fade-up-right" style="animation-delay: 1s;" id="submit-to-google-sheet" onsubmit="window.location.reload()">
+                <form  action="https://formsubmit.co/centellascientific@gmail.com" method="POST" data-aos="fade-up-right" style="animation-delay: 1s;" id="submitf" onsubmit="window.location.reload()">
                     <div class="contentform" style="font-family: Roboto;">
                         <div class="leftcontact">
                             <div class="form-group">
                                 <p>First Name<span>*</span></p>
                                 <span class="icon-case"><i class="fa fa-user"></i></span>
-                                <input type="text" name="firstname" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné." />
+                                <input type="text"  name="firstname" id="nom"   required>
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
                                 <p>E-mail <span>*</span></p>
                                 <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-                                <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire." />
+                                <input type="email" required name="email" id="email" data-rule="email" required >
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
                                 <p>Designation<span></span></p>
                                 <span class="icon-case"><i class="fa fa-info"></i></span>
-                                <input type="text" name="designation" id="postal" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné." />
+                                <input type="text" name="designation" id="postal" required >
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
                                 <p>Country </p>
                                 <span class="icon-case"><i class="fa fa-map-marker"></i></span>
-                                <input type="text" name="country" id="adresse" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné." />
+                                <input type="text" name="country" id="adresse" required>
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
                                 <p>City </p>
                                 <span class="icon-case"><i class="fa fa-building-o"></i></span>
-                                <input type="text" name="city" id="ville" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné." />
+                                <input type="text" name="city" id="ville"  />
                                 <div class="validation"></div>
                             </div>
                         </div>
@@ -1364,38 +1364,38 @@
                             <div class="form-group">
                                 <p>Last Name <span>*</span></p>
                                 <span class="icon-case"><i class="fa fa-user"></i></span>
-                                <input type="text" name="lastname" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire." />
+                                <input type="text"  class="required" name="lastname" id="nom" required />
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
                                 <p>Phone number <span>*</span></p>
                                 <span class="icon-case"><i class="fa fa-phone"></i></span>
-                                <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres" />
+                                <input type="text" name="phone" id="phone" data-rule="maxlen:10"  required />
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
                                 <p>Organisation/Institution<span>*</span></p>
                                 <span class="icon-case"><i class="fa fa-home"></i></span>
-                                <input type="text" name="organisation" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné." />
+                                <input type="text" name="organisation" id="society"  />
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
                                 <p>Subject <span></span></p>
                                 <span class="icon-case"><i class="fa fa-comment-o"></i></span>
-                                <input type="text" name="subject" id="sujet" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné." />
+                                <input type="text" name="subject" id="sujet"  />
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
                                 <p>Area Of Study<span></span></p>
                                 <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-                                <input type="text" name="area-study" id="ville" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné." />
+                                <input type="text" name="area-study" id="ville"  />
                                 <div class="validation"></div>
                             </div>
                         </div>
                         <div class="form-group">
                             <p>Message <span></span></p>
                             <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-                            <textarea name="message" rows="14"></textarea>
+                            <textarea name="message" rows="14" required></textarea>
                             <div class="validation"></div>
                         </div>
                     </div>
@@ -1446,15 +1446,15 @@
             </section>
         </footer>
     </section>
-    <!--Scripts-->
+    <!--Scripts
     <script>
         $("#submit").click(function() {
             alert("Successfully Submited");
         });
-    </script>
+    </script>-->
     <script>
         $(document).ready(function() {
-            $('#your_form_id').on('submit', function(evt) {
+            $('#submitf').on('submit', function(evt) {
                 evt.preventDefault();
                 setTimeout(function() {
                     window.location.reload();
